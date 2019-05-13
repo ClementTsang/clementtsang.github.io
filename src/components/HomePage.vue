@@ -1,12 +1,40 @@
 <template>
-  <div>
-	  HomePage
+  <div style="background-color: #fafafa">
+	  <!--Divider to block out the navbar-->
+	<b-card
+		overlay
+		style="height: 31rem; border: none; background-color: #CF6679"
+		no-body
+		class="rounded-0"
+	></b-card>
+	<About/>
+	<Resume/>
+	<Projects/>
+	<Contact/>
+	<!--Temp-->
+	<b-card
+			overlay
+			style="height: 41rem; border: none; background-color: #CF6679"
+			no-body
+			class="rounded-0"
+	  ></b-card>
   </div>
 </template>
 
 <script>
+import About from "@/components/About.vue";
+import Resume from "@/components/Resume.vue";
+import Projects from "@/components/Projects.vue";
+import Contact from "@/components/Contact.vue";
+
 export default {
-	name: "HomePage"
+	name: "HomePage",
+	components: {
+		About,
+		Resume,
+		Projects,
+		Contact,
+	}
 };
 </script>
 
