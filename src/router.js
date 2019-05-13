@@ -1,24 +1,35 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
+import HomePage from "@/components/HomePage.vue";
+import Notes from "@/components/Notes.vue";
+import Contacts from "@/components/Contacts.vue";
 
 Vue.use(Router);
 
-export default new Router({
-  routes: [
-    {
-      path: "/",
-      name: "home",
-      component: Home
-    },
-    {
-      path: "/about",
-      name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./views/About.vue")
-    }
-  ]
+let router = new Router({
+	mode: 'history',
+	routes: [
+		{
+			path: "/",
+			name: "Clement Tsang",
+			component: HomePage,
+		},
+		{
+			path: "/notes",
+			name: "Clement Tsang - Notes",
+			component: Notes,
+		},
+		{
+			path: "/contact",
+			name: "Clement Tsang - Contact Me",
+			component: Contacts,
+		},
+	],
 });
+
+router.beforeEach((to, from, next) => {
+	document.title = to.name;
+	next();
+});
+
+export default router;
