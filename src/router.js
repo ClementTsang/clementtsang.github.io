@@ -19,7 +19,7 @@ let router = new Router({
 		}
 		if (to.hash) {
 			// TODO: We require a check to make sure that we are at the correct position!  We might be able to fix this and our issue with anchor links in one stone...
-			return window.scrollTo({ top: (document.querySelector(to.hash).offsetTop), behavior: 'smooth' });
+			return window.scrollTo({ top: (document.querySelector(to.hash).offsetTop - 6 * parseFloat(getComputedStyle(document.querySelector(to.hash)).fontSize)), behavior: 'smooth' });
 		}
 		return window.scrollTo({ top: 0, behavior: 'smooth' });
 	},
