@@ -5,7 +5,7 @@
 			<b-navbar-nav class="ml-auto">
 				<!--TODO: Drop into hamburger bar at certain width-->
 				<b-nav-item to="/#about" replace>About</b-nav-item>
-				<b-nav-item to="/#resume" replace>Resume</b-nav-item>
+				<b-nav-item to="/#resume" replace>Skills</b-nav-item>
 				<b-nav-item to="/#projects" replace>Projects</b-nav-item>
 				<b-nav-item to="/#contact" replace>Contact</b-nav-item>
 			</b-navbar-nav>
@@ -25,6 +25,7 @@ export default {
 }
 </script>
 
+<!--Highlight each link if we are scrolling over it?-->
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 

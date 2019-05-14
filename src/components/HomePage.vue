@@ -3,19 +3,19 @@
 	  <!--Divider to block out the navbar-->
 	<b-card
 		overlay
-		style="height: 31rem; border: none; background-color: #FF0266"
+		style="height: 31rem; border: none; background-color: #FF7597"
 		no-body
 		class="rounded-0"
 		id="home"
 	></b-card>
 	<About/>
-	<Resume/>
+	<Skills/>
 	<Projects/>
 	<Contact/>
-	<!--Temp-->
+	<!--TODO: Make this part large enough *just* so you can scroll to the bottom component!-->
 	<b-card
 			overlay
-			style="height: 41rem; border: none; background-color: #FF0266"
+			style="height: 41rem; border: none; background-color: #FF7597"
 			no-body
 			class="rounded-0"
 	  ></b-card>
@@ -23,16 +23,16 @@
 </template>
 
 <script>
-import About from "@/components/About.vue";
-import Resume from "@/components/Resume.vue";
-import Projects from "@/components/Projects.vue";
-import Contact from "@/components/Contact.vue";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default {
 	name: "HomePage",
 	components: {
 		About,
-		Resume,
+		Skills,
 		Projects,
 		Contact,
 	}
