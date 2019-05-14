@@ -3,9 +3,10 @@
 	  <!--Divider to block out the navbar-->
 	<b-card
 		overlay
-		style="height: 31rem; border: none; background-color: #CF6679"
+		style="height: 31rem; border: none; background-color: #FF0266"
 		no-body
 		class="rounded-0"
+		id="home"
 	></b-card>
 	<About/>
 	<Resume/>
@@ -14,7 +15,7 @@
 	<!--Temp-->
 	<b-card
 			overlay
-			style="height: 41rem; border: none; background-color: #CF6679"
+			style="height: 41rem; border: none; background-color: #FF0266"
 			no-body
 			class="rounded-0"
 	  ></b-card>

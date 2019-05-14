@@ -34,7 +34,10 @@
       "plugin:vue/essential"
     ],
     "rules": {
-        "indent": ["error", "tab"]
+      "indent": [
+        "error",
+        "tab"
+      ]
     },
     "parserOptions": {
       "parser": "babel-eslint"
