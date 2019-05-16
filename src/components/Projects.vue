@@ -1,6 +1,6 @@
 <template>
-	<div id="projects" style="background-color: #fafafa">
-		<h3>Projects</h3>
+	<div id="projects" style="background-color: #ECEFF4">
+		<h3 class="title">Projects</h3>
 		<!--TODO: Insert 6 projects-->
 	</div>
 </template>
@@ -12,4 +12,11 @@ export default {
 </script>
 
 <style scoped>
+	h3.title {
+		text-align: center;
+		color: #2E3440;
+		padding-top: 3rem;
+		padding-bottom: 1rem;
+		font-size: 250%;
+	}
 </style>

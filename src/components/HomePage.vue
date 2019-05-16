@@ -1,21 +1,22 @@
 <template>
-  <div style="background-color: #fafafa">
-	  <!--Divider to block out the navbar-->
+  <div style="background-color: #ECEFF4">
+	  <!--Divider to block out the navbar --- Could do some red accent!-->
 	<b-card
 		overlay
-		style="height: 31rem; border: none; background-color: #FF7597"
+		style="height: 31rem; border: none; background-color: #D8DEE9"
 		no-body
 		class="rounded-0"
 		id="home"
 	></b-card>
 	<About/>
+	<div style="padding-bottom: 20rem"></div>
 	<Skills/>
+	<div style="padding-bottom: 20rem"></div>
 	<Projects/>
-	<Contact/>
 	<!--TODO: Make this part large enough *just* so you can scroll to the bottom component!-->
 	<b-card
 			overlay
-			style="height: 41rem; border: none; background-color: #FF7597"
+			style="height: 16rem; border: none; background-color: #ECEFF4"
 			no-body
 			class="rounded-0"
 	  ></b-card>
@@ -26,7 +27,6 @@
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
 
 export default {
 	name: "HomePage",
@@ -34,7 +34,6 @@ export default {
 		About,
 		Skills,
 		Projects,
-		Contact,
 	}
 };
 </script>
