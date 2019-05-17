@@ -1,22 +1,34 @@
 <template>
-  <div style="background-color: #ECEFF4">
+  <div style="background-color: #ECEFF4; display: flex; flex-direction: column">
 	  <!--Divider to block out the navbar --- Could do some red accent!-->
 	<b-card
 		overlay
-		style="height: 31rem; border: none; background-color: #D8DEE9"
+		style="height: 31rem; border: none; background-color: #88C0D0;"
 		no-body
 		class="rounded-0"
 		id="home"
 	></b-card>
 	<About/>
-	<div style="padding-bottom: 20rem"></div>
+	<b-card
+		overlay
+		style="height: 15rem; border: none; background-color: #E5E9F0;"
+		no-body
+		class="rounded-0"
+		id="home"
+	></b-card>
 	<Skills/>
-	<div style="padding-bottom: 20rem"></div>
+	<b-card
+		overlay
+		style="height: 15rem; border: none; background-color: #ECEFF4;"
+		no-body
+		class="rounded-0"
+		id="home"
+	></b-card>
 	<Projects/>
 	<!--TODO: Make this part large enough *just* so you can scroll to the bottom component!-->
 	<b-card
 			overlay
-			style="height: 16rem; border: none; background-color: #ECEFF4"
+			style="height: 16rem; border: none; background-color: #E5E9F0"
 			no-body
 			class="rounded-0"
 	  ></b-card>

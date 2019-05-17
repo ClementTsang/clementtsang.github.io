@@ -55,12 +55,17 @@ export default {
 		font-size: 110%;
 	}
 
+	b-card-img {
+		width: 70%;
+		height: 70%;
+	}
+
 	.work-card {
 		color: #2E3440;
-		height: 21rem; 
 		border: none; 
 		margin: 0 auto;
-		max-width: 75rem;
-		background-color: #E5E9F0
+		width: 70%;
+		height: 70%;
+		background-color: #E5E9F0;
 	}
 </style>

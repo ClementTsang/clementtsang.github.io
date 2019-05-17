@@ -1,13 +1,18 @@
 <template>
 	<div id="app">
-		<b-navbar toggleable="md" fixed="top" type="light" variant="light" style="height: 6em; background-color: #E5E9F0 !important;">
-			<b-navbar-brand to="/#home" class="branding" style="font-size: 175%; padding-left: 1rem">Clement Tsang</b-navbar-brand>
-			<b-navbar-nav class="ml-auto" style="padding-right: 1rem">
-				<!--TODO: Drop into hamburger bar at certain width-->
-				<b-nav-item to="/#about" replace>About</b-nav-item>
-				<b-nav-item to="/#skills" replace>Skills</b-nav-item>
-				<b-nav-item to="/#projects" replace>Projects</b-nav-item>
-			</b-navbar-nav>
+		<b-navbar toggleable="lg" fixed="top" type="light" variant="light" style="background-color: #f2f4f8 !important;">
+			<b-navbar-brand to="/#home" class="branding" style="font-size: 175%; padding-left: 1rem;">Clement Tsang</b-navbar-brand>
+			<b-navbar-toggle target="nav-collapse" style="padding-right: 1rem" ></b-navbar-toggle>
+			
+			<b-collapse id="nav-collapse" is-nav style="margin-top: 0em">
+				<b-navbar-nav class="ml-auto" style="padding-left: 1rem">
+
+					<b-nav-item to="/#about" replace>About</b-nav-item>
+					<b-nav-item to="/#skills" replace>Experience</b-nav-item>
+					<b-nav-item to="/#projects" replace>Projects</b-nav-item>
+
+				</b-navbar-nav>
+			</b-collapse>
 		</b-navbar>
 		<router-view/>
 	</div>
@@ -37,6 +42,10 @@ export default {
 		font-family: "Karla", Helvetica, Arial, sans-serif !important;
 		color: #2E3440 !important;
 		font-size: 110%;
+	}
+
+	.icon {
+		display: none;
 	}
 
 </style>

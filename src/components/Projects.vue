@@ -1,5 +1,5 @@
 <template>
-	<div id="projects" style="background-color: #ECEFF4">
+	<div id="projects" style="background-color: #E5E9F0">
 		<h3 class="title">Projects</h3>
 		<!--TODO: Insert 6 projects-->
 	</div>

@@ -20,7 +20,7 @@ let router = new Router({
 	],
 	scrollBehavior: function (to) {
 		if (to.hash && document.querySelector(to.hash)) {
-			return window.scrollTo({ top: (document.querySelector(to.hash).offsetTop - 6 * parseFloat(getComputedStyle(document.querySelector(to.hash)).fontSize)), behavior: 'smooth' });
+			return window.scrollTo({ top: (document.querySelector(to.hash).offsetTop - 4 * parseFloat(getComputedStyle(document.querySelector(to.hash)).fontSize)), behavior: 'smooth' });
 		}
 	},
 });
