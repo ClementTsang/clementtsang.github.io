@@ -4,8 +4,8 @@
 		<div>
 			<p class="text">I'm currently a Computer Science student from the University of Waterloo.<br/>
 			My hobbies include reading, listening to music, piano, and working on personal projects.  
-			<p class="text">If you wish to contact me, feel free to through <b-link href="mailto:clementjhtsang@gmail.com">my email</b-link>.</p>
-			<p class="text">Resume Github LinkedIn</p>	
+			<p class="text">My resume can be found <b-link href="">here</b-link>.</p>
+			<p class="text">Email Github LinkedIn</p>	
 		</div>
 	</div>
 </template>
@@ -20,8 +20,8 @@ export default {
 	h3.title {
 		text-align: center;
 		color: #2E3440;
-		padding-top: 3rem;
-		padding-bottom: 1rem;
+		padding-top: 5%;
+		padding-bottom: 4%;
 		font-size: 250%;
 	}
 
