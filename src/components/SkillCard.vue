@@ -1,31 +1,31 @@
 <template>
-	<div id="skill-card">
-		<h4>{{cardTitle}}</h4>
-		<h5>{{cardSubTitle}}</h5>
-		<p>{{cardBody}}</p>
-	</div>
+  <div id="skill-card">
+    <h4>{{cardTitle}}</h4>
+    <h5>{{cardSubTitle}}</h5>
+    <p>{{cardBody}}</p>
+  </div>
 </template>
 
 <script>
 export default {
 	props: {
 		imgSrc: {
-			type: String,
+			type: String
 		},
 		cardTitle: {
 			type: String,
-			required: true,
+			required: true
 		},
 		cardSubTitle: {
 			type: String,
-			required: true,
+			required: true
 		},
 		cardBody: {
 			type: String,
-			required: true,
-		},
+			required: true
+		}
 	},
-	name: "SkillCard",
+	name: 'SkillCard'
 };
 </script>
 

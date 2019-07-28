@@ -1,15 +1,11 @@
 /* eslint-disable no-unused-vars */
-import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-import BootstrapVue from "bootstrap-vue";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
+import 'buefy/dist/buefy.css';
 
-Vue.use(BootstrapVue);
+import Vue from 'vue';
+import Buefy from 'buefy';
+import router from './router';
+import App from './App.vue';
+
+Vue.use(Buefy);
 Vue.config.productionTip = false;
-
-new Vue({
-	router,
-	render: h => h(App)
-}).$mount("#app");
+new Vue({ router, render: h => h(App) }).$mount('#app');

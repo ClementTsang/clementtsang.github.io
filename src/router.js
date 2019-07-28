@@ -1,26 +1,29 @@
-import Vue from "vue";
-import Router from "vue-router";
-import HomePage from "@/components/HomePage";
-import NotFoundComponent from "@/components/NotFoundComponent";
+import Vue from 'vue';
+import Router from 'vue-router';
+import HomePage from '@/components/HomePage';
+import NotFoundComponent from '@/components/NotFoundComponent';
 
 Vue.use(Router);
 
-let router = new Router({
+const router = new Router({
 	mode: 'history',
 	routes: [
 		{
-			path: "/",
-			name: "Clement Tsang",
+			path: '/',
+			name: 'Clement Tsang',
 			component: HomePage,
 		},
 		{
-			path: "*",
+			path: '*',
 			component: NotFoundComponent,
 		},
 	],
-	scrollBehavior: function (to) {
+	scrollBehavior(to) {
 		if (to.hash && document.querySelector(to.hash)) {
-			return window.scrollTo({ top: (document.querySelector(to.hash).offsetTop - 4 * parseFloat(getComputedStyle(document.querySelector(to.hash)).fontSize)), behavior: 'smooth' });
+			return window.scrollTo({
+				top: document.querySelector(to.hash).offsetTop - document.querySelector('.navbar').offsetHeight,
+				behavior: 'smooth',
+			});
 		}
 	},
 });
@@ -31,8 +34,7 @@ router.beforeEach((to, from, next) => {
 });
 
 router.afterEach((to, from) => {
-	router.replace({path: "/"});
+	router.replace({ path: '/' });
 });
-
 
 export default router;

@@ -1,61 +1,83 @@
 <template>
-	<div id="app">
-		<b-navbar toggleable="md" fixed="top" type="light" variant="light" style="background-color: #f2f4f8 !important;">
-			<b-navbar-brand to="/#home" class="branding" style="font-size: 175%; padding-left: 1rem;">Clement Tsang</b-navbar-brand>
-			<b-navbar-toggle target="nav-collapse" style="padding-left: 1rem; padding-right: 1rem; border: none; " ></b-navbar-toggle>
-			
-			<b-collapse id="nav-collapse" is-nav style="margin-top: 0em">
-				<b-navbar-nav class="ml-auto" style="padding-left: 1rem">
+  <div id="app">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <router-link class="navbar-item" to="/#home">
+          <p>Clement Tsang</p>
+        </router-link>
 
-					<b-nav-item class="nav-label" to="/#about" replace>About</b-nav-item>
-					<b-nav-item class="nav-label" to="/#skills" replace>Experience</b-nav-item>
-					<b-nav-item class="nav-label" to="/#projects" replace>Projects</b-nav-item>
+        <a
+          id="menu-hamburger"
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="mainNavBar"
+          v-on:click="toggleHamburger"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-				</b-navbar-nav>
-			</b-collapse>
-		</b-navbar>
-		<router-view/>
-	</div>
+      <div id="mainNavBar" class="navbar-menu">
+        <div class="navbar-end">
+          <router-link class="navbar-item" to="/#about">About</router-link>
+          <router-link class="navbar-item" to="/#experience">Experience</router-link>
+          <router-link class="navbar-item" to="/#skills">Skills</router-link>
+          <router-link class="navbar-item" to="/#projects">Projects</router-link>
+        </div>
+      </div>
+    </nav>
+    <router-view />
+  </div>
 </template>
 
 <script>
 export default {
 	data() {
-		return {
-		}
+		return {};
 	},
 	methods: {
+		toggleHamburger() {
+			const burgerEle = document.getElementById("menu-hamburger");
+			const target = burgerEle.dataset.target;
+			burgerEle.classList.toggle("is-active");
+			document.getElementById(target).classList.toggle("is-active");
+		}
 	},
-}
+};
 </script>
 
-<!--Highlight each link if we are scrolling over it?-->
-<style scoped>
-	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-	@import url('https://fonts.googleapis.com/css?family=Karla');
 
-	#app {
-		font-family: "Karla", Helvetica, Arial, sans-serif;
-	}
+<style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Karla");
+:root {
+	/*https://coolors.co/fbf5f3-848c8e-bb4430-435058-f3efe0*/
+	--main-background:whitesmoke;
+	--dark-text-colour: #071013;
+	--accent-1: #bb4430;
+	--faded-accent-1: #c84630;
+	--accent-2: #435058;
+	--accent-3: #848c8e;
+	--main-background-two: #f3efe0;
+}
 
-	.ml-auto {
-		font-family: "Karla", Helvetica, Arial, sans-serif !important;
-		color: #2E3440 !important;
-		font-size: 110%;
-	}
+.navbar {
+	height: 4rem;
+}
 
-	.nav-label{
-		color: #2E3440 !important;
-	}
-	
+.navbar, .navbar-menu, .navbar-item, .navbar-link, .navbar-dropdown, #menu-hamburger {
+	background-color: var(--main-background) !important;
+	color: var(--dark-text-colour) !important;
+	font-family: "Karla", sans-serif !important;
+	font-size: 1.3rem !important;
+}
 
-	.nav-label:hover {
-		border-radius: 5px;
-		background-color: #ECEFF4 !important;
-	}
-
-	.icon {
-		display: none;
-	}
+.navbar-item:hover {
+	background-color: var(--accent-1) !important;
+	color: var(--main-background) !important;
+}
 
 </style>

@@ -1,28 +1,41 @@
 <template>
-	<div id="skills" style="background-color: #ECEFF4">
-		<h3 class="title">Work Experience</h3>
-		<!--TODO: Insert skills-->
-		<!--TODO: Insert past experience-->
-		<SkillCard imgSrc="" cardTitle="University of Waterloo" cardSubTitle="Temp" cardBody="Temp"/>
-	</div>
+  <div id="skills" class="columns">
+	  	<div class="column is-3"></div>
+		<div class="column is-6">
+			<article>
+				<p class="title">Skills</p>
+				<div class="is-divider"></div>
+			</article>
+		</div>
+  </div>
 </template>
 
 <script>
-import SkillCard from "@/components/SkillCard"
 export default {
 	name: "Skills",
-	components: {
-		SkillCard,
-	}
 };
 </script>
 
 <style scoped>
-	h3.title {
-		text-align: center;
-		color: #2E3440;
-		padding-top: 5%;
-		padding-bottom: 4%;
-		font-size: 250%;
+	#skills {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+		background-color: var(--main-background);
+	}
+
+	h3 {
+		font-size: 1rem !important;
+  		color: var(--dark-text-colour) !important;
+		font-family: "Karla", sans-serif !important;
+	}
+
+	.is-divider {
+  		border-top-color: var(--dark-text-colour) !important;
+	}
+
+	.title {
+		font-size: 3rem !important;
+  		color: var(--dark-text-colour) !important;
+		font-family: "Karla", sans-serif !important;
 	}
 </style>

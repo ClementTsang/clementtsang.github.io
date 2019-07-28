@@ -1,34 +1,45 @@
 <template>
-	<div id="about" style="background-color: #E5E9F0">
-		<h3 class="title">Hello!  I'm Clement.</h3>
-		<div>
-			<p class="text">I'm currently a Computer Science student from the University of Waterloo.<br/>
-			My hobbies include reading, listening to music, piano, and working on personal projects.  
-			<p class="text">My resume can be found <b-link href="">here</b-link>.</p>
-			<p class="text">Email Github LinkedIn</p>	
+	<div id="about" class="columns is-marginless">
+		<div class="column is-3"></div>
+		<div class="column is-6">
+			<article>
+				<p class="title">About me</p>
+				<div class="is-divider"></div>
+				<p class="subtitle">I'm a developer who enjoys working on a variety of tasks.  
+					I'm also currently a CS student at the University of Waterloo.  I enjoy music, reading, and working on personal projects in my free time.</p>
+				<br/>
+				<h3 class="subtitle has-text-centered">Resume | GitHub</h3>
+			</article>
 		</div>
 	</div>
 </template>
 
 <script>
 export default {
-	name: "About"
+  	name: "About",
 };
 </script>
 
 <style scoped>
-	h3.title {
-		text-align: center;
-		color: #2E3440;
-		padding-top: 5%;
-		padding-bottom: 4%;
-		font-size: 250%;
+	#about {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+		background-color: var(--main-background);
 	}
 
-	p.text {
-		color: #2E3440;
-		text-align: center;
-		font-size: 110%;
-		padding: 0rem 10rem 0rem;
+	h3 {
+		font-size: 1rem !important;
+  		color: var(--dark-text-colour) !important;
+		font-family: "Karla", sans-serif !important;
+	}
+
+	.is-divider {
+  		border-top-color: var(--dark-text-colour) !important;
+	}
+
+	.title {
+		font-size: 3rem !important;
+  		color: var(--dark-text-colour) !important;
+		font-family: "Karla", sans-serif !important;
 	}
 </style>
