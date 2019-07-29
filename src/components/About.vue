@@ -4,7 +4,7 @@
 		<div class="column is-6">
 			<article>
 				<p class="title">About me</p>
-				<div class="is-divider"></div>
+				<hr class="is-divider"/>
 				<p class="subtitle">I'm a developer who enjoys working on a variety of tasks.  
 					I'm also currently a CS student at the University of Waterloo.  I enjoy music, reading, and working on personal projects in my free time.</p>
 				<br/>
@@ -31,10 +31,6 @@ export default {
 		font-size: 1rem !important;
   		color: var(--dark-text-colour) !important;
 		font-family: "Karla", sans-serif !important;
-	}
-
-	.is-divider {
-  		border-top-color: var(--dark-text-colour) !important;
 	}
 
 	.title {

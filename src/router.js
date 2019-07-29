@@ -21,7 +21,7 @@ const router = new Router({
 	scrollBehavior(to) {
 		if (to.hash && document.querySelector(to.hash)) {
 			return window.scrollTo({
-				top: document.querySelector(to.hash).offsetTop - document.querySelector('.navbar').offsetHeight,
+				top: document.querySelector(to.hash).offsetTop - document.querySelector('.navbar-brand').offsetHeight + 1,
 				behavior: 'smooth',
 			});
 		}

@@ -1,10 +1,10 @@
 <template>
-  <div id="skills" class="columns">
+  <div id="skills" class="columns is-marginless">
 	  	<div class="column is-3"></div>
 		<div class="column is-6">
 			<article>
 				<p class="title">Skills</p>
-				<div class="is-divider"></div>
+				<hr class="is-divider"/>
 			</article>
 		</div>
   </div>
@@ -21,16 +21,6 @@ export default {
 		padding-top: 6rem;
 		padding-bottom: 6rem;
 		background-color: var(--main-background);
-	}
-
-	h3 {
-		font-size: 1rem !important;
-  		color: var(--dark-text-colour) !important;
-		font-family: "Karla", sans-serif !important;
-	}
-
-	.is-divider {
-  		border-top-color: var(--dark-text-colour) !important;
 	}
 
 	.title {

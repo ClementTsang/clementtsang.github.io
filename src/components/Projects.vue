@@ -1,10 +1,10 @@
 <template>
-  <div id="projects" class="columns">
+  <div id="projects" class="columns is-marginless">
 	  	<div class="column is-3"></div>
 		<div class="column is-6">
 			<article>
 				<p class="title">Projects</p>
-				<div class="is-divider"></div>
+				<hr class="is-divider"/>
 			</article>
 		</div>
   </div>
@@ -21,10 +21,6 @@ export default {
 		padding-top: 6rem;
 		padding-bottom: 6rem;
 		background-color: var(--main-background-two);
-	}
-
-	.is-divider {
-  		border-top-color: var(--dark-text-colour) !important;
 	}
 
 	.title {

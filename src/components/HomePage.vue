@@ -6,7 +6,7 @@
 			  <h1 class="hero-title">
 				  Clement Tsang
 			  </h1>
-			  <div class="is-divider"></div>
+			  <hr class="is-divider"/>
 			  <h2 class="hero-subtitle">
 				  Welcome to my website!
 			  </h2>
@@ -35,7 +35,6 @@
 </template>
 
 <script>
-import bulmaDivider from 'bulma-divider'
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
@@ -58,6 +57,7 @@ export default {
 </script>
 
 <style scoped>
+
 .hero-body {
 	background-color: var(--accent-1);
 	color: var(--main-background) !important;
@@ -67,17 +67,17 @@ export default {
 
 .hero-title {
 	font-size: 4rem !important;
-	color: var(--main-block-colour) !important;
+	color: var(--main-background) !important;
 	font-weight: bold;
 }
 
 .hero-subtitle {
 	font-size: 2rem !important;
-	color: var(--main-block-colour) !important;
+	color: var(--main-background) !important;
 }
 
 .is-divider {
-	border-top-color: var(--main-block-colour) !important;
+	background-color: var(--main-background)
 }
 
 </style>
