@@ -6,9 +6,17 @@
 				<p class="title">About me</p>
 				<hr class="is-divider"/>
 				<p class="subtitle">I'm a developer who enjoys working on a variety of tasks.  
-					I'm also currently a CS student at the University of Waterloo.  I enjoy music, reading, and working on personal projects in my free time.</p>
+					I'm also currently a third year CS student at the University of Waterloo.  I enjoy music, reading, and working on personal projects in my free time.</p>
 				<br/>
-				<h3 class="subtitle has-text-centered">Resume | GitHub</h3>
+				<div class="has-text-centered">
+					<h3 class="subtitle has-text-centered" style="display:inline">
+						<a href="#" target="_blank">Resume</a>
+					</h3>
+					<h3 class="subtitle has-text-centered" style="display:inline"> | </h3>
+					<h3 class="subtitle has-text-centered" style="display:inline">
+						<a href="https://github.com/ClementTsang" target="_blank">GitHub</a>
+					</h3>
+				</div>
 			</article>
 		</div>
 	</div>
