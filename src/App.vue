@@ -57,30 +57,37 @@ export default {
 </script>
 
 
-<style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Karla");
+<style>
+@import url('https://fonts.googleapis.com/css?family=Raleway|Quicksand|Karla&display=swap');
+
 :root {
 	/*https://coolors.co/fbf5f3-848c8e-bb4430-435058-f3efe0*/
 	--main-background:whitesmoke;
 	--dark-text-colour: #071013;
-	--accent-1: #bb4430;
-	--faded-accent-1: #c84630;
-	--accent-2: #435058;
-	--accent-2-dark: #2c353a;
-	--accent-3: #848c8e;
+	--accent-1: #50B19F;
+	--accent-2: #407B97;
+	--accent-3: #383542;
+	--accent-4: #A1E2D2;
 	--main-background-two: #f3efe0;
 }
 
 .navbar, .navbar-menu, .navbar-item, .navbar-link, .navbar-dropdown, #menu-hamburger {
-	background-color: var(--accent-2) !important;
+	background-color: var(--accent-3) !important;
 	color: var(--main-background) !important;
-	font-family: "Karla", sans-serif !important;
-	font-size: 1.3rem !important;
+	font-family: "Raleway", sans-serif !important;
+	font-size: 1.2rem !important;
 }
 
 .navbar-item:hover {
 	background-color: var(--accent-1) !important;
 	color: var(--main-background) !important;
+}
+
+.navbar-item:active, .navbar-item:focus {
+	outline: 0;
+	border: none;
+	-moz-outline-style: none;
+	outline-style: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -113,6 +120,37 @@ export default {
 	margin: 1em 0;
 	margin-top: 0.5em;
 	padding: 0;
+}
+
+.is-thin-divider {
+	background-color: var(--dark-text-colour);
+	display: block;
+	height: 1px;
+	border: 0;
+	margin: 1em 0;
+	margin-top: 0.5em;
+	padding: 0;
+}
+
+
+.title {
+	font-size: 2.75rem !important;
+	color: var(--dark-text-colour) !important;
+	font-family: "Quicksand", sans-serif !important;
+	font-weight: 300;
+}
+
+.subtitle {
+	font-size: 1.75rem !important;
+	color: var(--dark-text-colour) !important;
+	font-family: "Raleway", sans-serif !important;
+}
+
+h3 {
+	font-size: 1.05rem !important;
+	color: var(--dark-text-colour) !important;
+	font-family: "Raleway", sans-serif !important;
+	line-height: 160%;
 }
 
 </style>

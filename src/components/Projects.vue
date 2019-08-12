@@ -1,7 +1,6 @@
 <template>
-  <div id="projects" class="columns is-marginless">
-	  	<div class="column is-3"></div>
-		<div class="column is-6">
+  <div id="projects" class="columns is-marginless is-centered">
+		<div class="column is-8">
 			<article>
 				<p class="title">Projects</p>
 				<hr class="is-divider"/>
@@ -17,15 +16,9 @@ export default {
 </script>
 
 <style scoped>
-	#projects {
-		padding-top: 6rem;
-		padding-bottom: 6rem;
-		background-color: var(--main-background-two);
-	}
-
-	.title {
-		font-size: 3rem !important;
-  		color: var(--dark-text-colour) !important;
-		font-family: "Karla", sans-serif !important;
-	}
+#projects {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	background-color: var(--main-background-two);
+}
 </style>

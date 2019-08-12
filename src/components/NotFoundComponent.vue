@@ -1,5 +1,5 @@
 <template>
-  <div id="about">How did you get here?</div>
+  <div id="about">Woah - how did you get <i>here?</i></div>
 </template>
 
 <script>

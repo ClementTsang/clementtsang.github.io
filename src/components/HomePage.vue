@@ -2,15 +2,15 @@
   <div id="home">
     <section class="hero is-fullheight-with-navbar">
       <div class="hero-body">
-		  <div class="container">
-			  <h1 class="hero-title">
-				  Clement Tsang
-			  </h1>
-			  <hr class="is-divider"/>
-			  <h2 class="hero-subtitle">
-				  Welcome to my website!
-			  </h2>
-		  </div>
+		<div class="container">
+			<h1 class="hero-title">
+				Clement Tsang
+			</h1>
+			<hr class="is-divider"/>
+			<h2 class="hero-subtitle">
+				Welcome to my website!
+			</h2>
+		</div>
 	  </div>
 	</section>
 	<section>
@@ -61,14 +61,14 @@ export default {
 .hero-body {
 	background-color: var(--accent-1);
 	color: var(--main-background) !important;
-	font-family: "Karla", sans-serif !important;
+	font-family: "Raleway", sans-serif !important;
 }
 
 
 .hero-title {
 	font-size: 4rem !important;
 	color: var(--main-background) !important;
-	font-weight: bold;
+	font-family: "Quicksand", sans-serif !important;
 }
 
 .hero-subtitle {
