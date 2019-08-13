@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <router-link class="navbar-item" to="/#home">
+        <router-link @click.native='mobileCloseHamburger' class="navbar-item" to="/#home">
           <p>Clement Tsang</p>
         </router-link>
 
@@ -23,14 +23,15 @@
 
       <div id="mainNavBar" class="navbar-menu is-shadowless is-marginless is-paddingless">
         <div class="navbar-end">
-          <router-link @click.native='mobileCloseHamburger' class="navbar-item" to="/#about">About</router-link>
-          <router-link @click.native='mobileCloseHamburger' class="navbar-item" to="/#experience">Experience</router-link>
-          <router-link @click.native='mobileCloseHamburger' class="navbar-item" to="/#skills">Skills</router-link>
-          <router-link @click.native='mobileCloseHamburger' class="navbar-item" to="/#projects">Projects</router-link>
+          <router-link id="about-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#about">About</router-link>
+          <router-link id="experience-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#experience">Experience</router-link>
+          <router-link id="skills-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#skills">Skills</router-link>
+          <router-link id="projects-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#projects">Projects</router-link>
+          <router-link id="contact-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#contact">Contact</router-link>
         </div>
       </div>
     </nav>
-    <router-view />
+    <router-view/>
   </div>
 </template>
 
@@ -38,6 +39,15 @@
 export default {
 	data() {
 		return {};
+	},
+	mounted: () => {
+		const handleScroll = navItem => {
+			const correspondingLink = document.querySelector(`#${navItem.id}-link`)
+		
+			// TODO: Add scroll spy
+		}
+
+		Array.from(document.querySelectorAll(".page-item")).forEach(handleScroll)
 	},
 	methods: {
 		toggleHamburger() {
@@ -58,10 +68,9 @@ export default {
 
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Raleway|Quicksand|Karla&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap');
 
 :root {
-	/*https://coolors.co/fbf5f3-848c8e-bb4430-435058-f3efe0*/
 	--main-background:whitesmoke;
 	--dark-text-colour: #071013;
 	--accent-1: #50B19F;
@@ -75,7 +84,10 @@ export default {
 	background-color: var(--accent-3) !important;
 	color: var(--main-background) !important;
 	font-family: "Raleway", sans-serif !important;
-	font-size: 1.2rem !important;
+	font-size: 1em !important;
+	outline: 0;
+	border: none;
+	/*opacity: 0.95;*/  /* TODO: Add this after scroll spy is added! */
 }
 
 .navbar-item:hover {
@@ -83,74 +95,95 @@ export default {
 	color: var(--main-background) !important;
 }
 
-.navbar-item:active, .navbar-item:focus {
+.navbar-item:active, .navbar-item:focus, .on-navbar-item {
 	outline: 0;
 	border: none;
 	-moz-outline-style: none;
 	outline-style: none;
 }
 
+.navbar-brand > .navbar-item {
+	font-size: 1.2em !important;
+}
+
 @media screen and (min-width: 1024px) {
 	.navbar {
-		height: 4rem;
+		height: 4em;
 	}
 }
 
 @media screen and (max-width: 1023px) {
 	.navbar-item:hover {
-		background-color: var(--accent-2-dark) !important;
+		background-color: var(--accent-1) !important;
 		color: var(--main-background) !important;
 	}
 
 	div>.navbar-item:hover {
-		background-color: var(--accent-2) !important;
+		background-color: var(--accent-1) !important;
 	}
 
 	.navbar, .navbar-menu, .navbar-item, .navbar-link, .navbar-dropdown, #menu-hamburger {
-		font-size: 1.1rem !important;
+		font-size: 0.975em !important;
+	}
+
+	.navbar-brand > .navbar-item {
+		font-size: 1.1em !important;
 	}
 
 }
 
-.is-divider {
-	background-color: var(--dark-text-colour);
+hr.is-divider {
+	background-color: var(--accent-1);
 	display: block;
 	height: 2px;
 	border: 0;
-	margin: 1em 0;
-	margin-top: 0.5em;
+	margin: 2em auto;
+	margin-top: 1em;
 	padding: 0;
 }
 
-.is-thin-divider {
-	background-color: var(--dark-text-colour);
+hr.is-thin-divider {
+	background-color: var(--accent-1);
 	display: block;
 	height: 1px;
 	border: 0;
-	margin: 1em 0;
+	margin: 1.5em auto;
 	margin-top: 0.5em;
 	padding: 0;
+	width: 95%;
 }
 
 
 .title {
-	font-size: 2.75rem !important;
+	font-size: 2.75em !important;
 	color: var(--dark-text-colour) !important;
 	font-family: "Quicksand", sans-serif !important;
 	font-weight: 300;
 }
 
 .subtitle {
-	font-size: 1.75rem !important;
+	font-size: 2em !important;
 	color: var(--dark-text-colour) !important;
 	font-family: "Raleway", sans-serif !important;
 }
 
 h3 {
-	font-size: 1.05rem !important;
+	font-size: 1.05em !important;
 	color: var(--dark-text-colour) !important;
 	font-family: "Raleway", sans-serif !important;
 	line-height: 160%;
+}
+
+a {
+	color: var(--accent-1);
+}
+
+a:visited {
+	color: #8B008B;
+}
+
+a:hover {
+	color: var(--accent-3);
 }
 
 </style>

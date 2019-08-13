@@ -1,8 +1,8 @@
 <template>
-  <div id="skills" class="columns is-marginless is-centered">
-		<div class="column is-8">
+  <div id="skills" class="columns is-marginless is-centered page-item">
+		<div class="column is-10 is-8-desktop">
 			<article>
-				<p class="title">Skills</p>
+				<p class="title has-text-centered">Skills</p>
 				<hr class="is-divider"/>
 			</article>
 		</div>

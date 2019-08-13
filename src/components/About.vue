@@ -1,8 +1,8 @@
 <template>
-	<div id="about" class="columns is-marginless is-centered">
-		<div class="column is-8">
+	<div id="about" class="columns is-marginless is-centered page-item">
+		<div class="column is-10 is-8-desktop">
 			<article>
-				<p class="title">About me</p>
+				<p class="title has-text-centered">About</p>
 				<hr class="is-divider"/>
 				<h3>I'm a developer who enjoys working on all sorts of projects, 
 					currently studying at the University of Waterloo as a third year Computer Science student. 

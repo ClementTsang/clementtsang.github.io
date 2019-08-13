@@ -3,11 +3,11 @@
     <section class="hero is-fullheight-with-navbar">
       <div class="hero-body">
 		<div class="container">
-			<h1 class="hero-title">
+			<h1 class="hero-title has-text-centered">
 				Clement Tsang
 			</h1>
 			<hr class="is-divider"/>
-			<h2 class="hero-subtitle">
+			<h2 class="hero-subtitle has-text-centered">
 				Welcome to my website!
 			</h2>
 		</div>
@@ -26,10 +26,14 @@
 		<Projects/>
 	</section>
 	<section>
-		<!--Contact me-->
+		<Contact/>
 	</section>
 	<section>
-		<!--Footer-->
+		<section id="footer">
+			<div style="height: 4rem;">
+				<p>Like the website?  Source code can be found <a href="" target="_blank">here</a></p>
+			</div>
+		</section>
 	</section>
   </div>
 </template>
@@ -39,6 +43,7 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default {
 	name: "HomePage",
@@ -47,6 +52,7 @@ export default {
 		Experience,
 		Skills,
 		Projects,
+		Contact,
 	},
 	data () {
 		return {
@@ -78,6 +84,10 @@ export default {
 
 .is-divider {
 	background-color: var(--main-background)
+}
+
+#footer {
+	background-color: var(--main-background);
 }
 
 </style>

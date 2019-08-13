@@ -1,16 +1,16 @@
 <template>
-  <div id="experience" class="columns is-marginless is-centered">
-		<div class="column is-8">
+  <div id="experience" class="columns is-marginless is-centered page-item">
+		<div class="column is-10 is-8-desktop">
 			<article>
-				<p class="title">Experience</p>
+				<p class="title has-text-centered">Experience</p>
 				<hr class="is-divider"/>
 				<p class="subtitle">Work</p>
 				<WorkInfo
 					entryTitle="YuJa Inc."
-					dateRange="May 2019 - Aug 2019"
-					jobPosition="Co-op - Software Developer"
-					jobDescription="In my second co-op, I returned to YuJa as a full stack software 
-									developer for a new product, Panorama, which automatically creates 
+					dateRange="2019"
+					jobPosition="Fulltime - Software Developer"
+					jobDescription="Worked as a full stack software developer
+									for a new product, Panorama, automatically creating 
 									accessible documents for files uploaded to LMS sites like D2L and Blackboard,
 									ensuring users wouldn't have to worry about being able to access documents that 
 									others have uploaded."
@@ -20,9 +20,9 @@
 				/>
 				<WorkInfo
 					entryTitle="YuJa Inc."
-					dateRange="Sept 2018 - Dec 2018"
-					jobPosition="Co-op - Test Automation Engineer"
-					jobDescription="In my first co-op, I ran QA tests to ensure the quality of our product and new
+					dateRange="2018"
+					jobPosition="Fulltime - Test Automation Engineer"
+					jobDescription="Ran QA tests to ensure the quality of our product and new
 									features without any regressions, in addition to developing automated tests to save time 
 									and improve test quality using Selenium."
 					jobLocation="Ontario, Canada"
@@ -36,7 +36,7 @@
 					entryTitle="University of Waterloo"
 					dateRange="Sept 2017 - Present"
 					jobPosition="Computer Science, Honours"
-					jobDescription="I'm currently a Computer Science student at the Unviersity of Waterloo." 
+					jobDescription="I'm currently a third year Computer Science student at the Unviersity of Waterloo." 
 					jobLocation="Ontario, Canada"
 					style="padding-bottom: 2rem;"
 				/>
