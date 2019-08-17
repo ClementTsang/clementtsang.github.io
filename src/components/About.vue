@@ -12,9 +12,13 @@
 					<h3 class="has-text-centered" style="display:inline">
 						<a href="#" target="_blank">Resume</a>
 					</h3>
-					<h3 class="has-text-centered" style="display:inline"> | </h3>
+					<h3 class="has-text-centered" style="display:inline">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</h3>
 					<h3 class="has-text-centered" style="display:inline">
 						<a href="https://github.com/ClementTsang" target="_blank">GitHub</a>
+					</h3>
+					<h3 class="has-text-centered" style="display:inline">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</h3>
+					<h3 class="has-text-centered" style="display:inline">
+						<a href="https://www.linkedin.com/in/clement-tsang" target="_blank">LinkedIn</a>
 					</h3>
 				</div>
 			</article>

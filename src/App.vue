@@ -25,7 +25,6 @@
         <div class="navbar-end">
           <router-link id="about-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#about">About</router-link>
           <router-link id="experience-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#experience">Experience</router-link>
-          <router-link id="skills-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#skills">Skills</router-link>
           <router-link id="projects-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#projects">Projects</router-link>
           <router-link id="contact-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#contact">Contact</router-link>
         </div>

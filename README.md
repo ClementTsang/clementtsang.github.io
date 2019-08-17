@@ -8,7 +8,7 @@ Source code for my personal website, hosted using GitHub Pages [over here](https
 * Footer
 * Contacts
 * Resume link
-* Icons?
+* Icons!
 * Email
 * Fill in projects
 * Accessibility

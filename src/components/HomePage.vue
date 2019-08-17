@@ -20,9 +20,6 @@
 		<Experience/>
 	</section>
 	<section>
-		<Skills/>
-	</section>
-	<section>
 		<Projects/>
 	</section>
 	<section>
@@ -31,7 +28,7 @@
 	<section>
 		<section id="footer">
 			<div style="height: 4rem;">
-				<p>Like the website?  Source code can be found <a href="" target="_blank">here</a></p>
+				<p>Like the website?  Source code can be found <a href="https://github.com/ClementTsang/personal-website/" target="_blank">here</a></p>
 			</div>
 		</section>
 	</section>
@@ -41,7 +38,6 @@
 <script>
 import About from "@/components/About";
 import Experience from "@/components/Experience";
-import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 
@@ -50,7 +46,6 @@ export default {
 	components: {
 		About,
 		Experience,
-		Skills,
 		Projects,
 		Contact,
 	},
@@ -87,7 +82,7 @@ export default {
 }
 
 #footer {
-	background-color: var(--main-background);
+	background-color: var(--main-background-two);
 }
 
 </style>
