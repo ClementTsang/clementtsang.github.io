@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
-import 'buefy/dist/buefy.css';
+import 'babel-polyfill'
 import smoothscroll from 'smoothscroll-polyfill';
+import 'buefy/dist/buefy.css';
 
 import Vue from 'vue';
 import Buefy from 'buefy';
