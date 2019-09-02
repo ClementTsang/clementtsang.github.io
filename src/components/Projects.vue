@@ -22,14 +22,6 @@
 				/>
 				<ProjectInfo
 					projectImage=""
-					projectLink="https://github.com/ClementTsang/megane"
-					projectSite="GitHub"
-					projectTitle="Megane"
-					projectDescription="A fully-featured comic/manga desktop reader app."
-					style="padding-bottom: 2rem;"
-				/>
-				<ProjectInfo
-					projectImage=""
 					projectLink="https://github.com/ClementTsang/brainfC"
 					projectSite="GitHub"
 					projectTitle="brainfC"
