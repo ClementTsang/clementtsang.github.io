@@ -14,9 +14,9 @@
 				/>
 				<ProjectInfo
 					projectImage=""
-					projectLink="https://github.com/ClementTsang/RustNAO"
+					projectLink="https://github.com/ClementTsang/rustcc"
 					projectSite="GitHub"
-					projectTitle="RustCC"
+					projectTitle="rustcc"
 					projectDescription="A simple C compiler, written from scratch in Rust."
 					style="padding-bottom: 2rem;"
 				/>
@@ -26,6 +26,14 @@
 					projectSite="GitHub"
 					projectTitle="brainfC"
 					projectDescription="A Brainf**k to C transpiler."
+					style="padding-bottom: 2rem;"
+				/>
+                <ProjectInfo
+					projectImage=""
+					projectLink="https://github.com/ClementTsang/rusttop"
+					projectSite="GitHub"
+					projectTitle="rusttop"
+					projectDescription="A gotop clone, written in Rust."
 					style="padding-bottom: 2rem;"
 				/>
 			</article>

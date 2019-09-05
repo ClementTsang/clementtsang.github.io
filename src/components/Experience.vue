@@ -34,7 +34,7 @@
 				<p class="subtitle">Education</p>
 				<WorkInfo
 					entryTitle="University of Waterloo"
-					dateRange="Sept 2017 - Present"
+					dateRange="2017 - Present"
 					jobPosition="Computer Science, Honours"
 					jobDescription="I'm currently a third year Computer Science student at the Unviersity of Waterloo." 
 					jobLocation="Ontario, Canada"
