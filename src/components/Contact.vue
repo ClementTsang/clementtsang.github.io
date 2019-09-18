@@ -2,7 +2,6 @@
   <div id="contact" class="columns is-marginless is-centered page-item">
 		<div class="column is-10 is-8-desktop">
 			<article>
-				<p class="title has-text-centered">Contact</p>
 				<hr class="is-divider"/>
 				<h3>Feel free to contact me with the following:</h3>
 				<p>Phone: 647-993-6280</p>

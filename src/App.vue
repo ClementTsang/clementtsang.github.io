@@ -26,7 +26,6 @@
           <router-link id="about-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#about">About</router-link>
           <router-link id="experience-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#experience">Experience</router-link>
           <router-link id="projects-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#projects">Projects</router-link>
-          <router-link id="contact-link" @click.native='mobileCloseHamburger' class="navbar-item" to="/#contact">Contact</router-link>
         </div>
       </div>
     </nav>
@@ -70,20 +69,20 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap');
 
 :root {
-	--main-background:whitesmoke;
-	--dark-text-colour: #071013;
-	--accent-1: #50B19F;
+	--main-background:#ffffff;
+	--dark-text-colour: #1c1b20;
+	--accent-1: #ff5851;
 	--accent-2: #407B97;
 	--accent-3: #383542;
 	--accent-4: #A1E2D2;
-	--main-background-two: #f3efe0;
+	--main-background-two: #f8f8f8;
 }
 
 .navbar, .navbar-menu, .navbar-item, .navbar-link, .navbar-dropdown, #menu-hamburger {
-	background-color: var(--accent-3) !important;
-	color: var(--main-background) !important;
+	background-color: var(--main-background) !important;
+	color: var(--dark-text-colour) !important;
 	font-family: "Raleway", sans-serif !important;
-	font-size: 1em !important;
+	font-size: 0.97em !important;
 	outline: 0;
 	border: none;
 	/*opacity: 0.95;*/  /* TODO: Add this after scroll spy is added! */
@@ -91,7 +90,7 @@ export default {
 
 .navbar-item:hover {
 	background-color: var(--accent-1) !important;
-	color: var(--main-background) !important;
+	color: var(--dark-text-colour) !important;
 }
 
 .navbar-item:active, .navbar-item:focus, .on-navbar-item {
@@ -102,13 +101,7 @@ export default {
 }
 
 .navbar-brand > .navbar-item {
-	font-size: 1.2em !important;
-}
-
-@media screen and (min-width: 1024px) {
-	.navbar {
-		height: 4em;
-	}
+	font-size: 1.1em !important;
 }
 
 @media screen and (max-width: 1023px) {

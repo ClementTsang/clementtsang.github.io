@@ -1,7 +1,7 @@
 <template>
-  <div class="columns is-marginless is-centered">
+  <div class="columns is-marginless is-centered is-vcentered">
     <div class="column is-4 is-paddingless">
-	  <div>{{projectImage}}</div>
+	  <img :src=projectImage>
     </div>
 	<div class="column is-1"></div>
     <div class="column is-7 is-paddingless">
@@ -13,6 +13,7 @@
 </template>
 
 <script>
+
 export default {
 	props: {
 		projectImage: {

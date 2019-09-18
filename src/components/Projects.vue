@@ -5,6 +5,14 @@
 				<p class="title has-text-centered">Projects</p>
 				<hr class="is-divider"/>
 				<ProjectInfo
+					projectImage="./assets/bottom.gif"
+					projectLink="https://github.com/ClementTsang/bottom"
+					projectSite="GitHub"
+					projectTitle="bottom"
+					projectDescription="A top clone, written in Rust."
+					style="padding-bottom: 2rem;"
+				/>
+				<ProjectInfo
 					projectImage=""
 					projectLink="https://github.com/ClementTsang/RustNAO"
 					projectSite="GitHub"
@@ -18,22 +26,6 @@
 					projectSite="GitHub"
 					projectTitle="rustcc"
 					projectDescription="A simple C compiler, written from scratch in Rust."
-					style="padding-bottom: 2rem;"
-				/>
-				<ProjectInfo
-					projectImage=""
-					projectLink="https://github.com/ClementTsang/brainfC"
-					projectSite="GitHub"
-					projectTitle="brainfC"
-					projectDescription="A Brainf**k to C transpiler."
-					style="padding-bottom: 2rem;"
-				/>
-                <ProjectInfo
-					projectImage=""
-					projectLink="https://github.com/ClementTsang/rusttop"
-					projectSite="GitHub"
-					projectTitle="rusttop"
-					projectDescription="A gotop clone, written in Rust."
 					style="padding-bottom: 2rem;"
 				/>
 			</article>

@@ -4,7 +4,7 @@
       <div class="hero-body">
 		<div class="container">
 			<h1 class="hero-title has-text-centered">
-				Clement Tsang
+				Hello
 			</h1>
 			<hr class="is-divider"/>
 			<h2 class="hero-subtitle has-text-centered">
@@ -59,26 +59,27 @@ export default {
 
 <style scoped>
 
+.hero-body:after {
+	background-color: var(--main-background);
+}
+
 .hero-body {
 	background-color: var(--accent-1);
-	color: var(--main-background) !important;
+	color: var(--dark-text-colour) !important;
 	font-family: "Raleway", sans-serif !important;
 }
 
-
 .hero-title {
 	font-size: 4rem !important;
-	color: var(--main-background) !important;
 	font-family: "Quicksand", sans-serif !important;
 }
 
 .hero-subtitle {
 	font-size: 2rem !important;
-	color: var(--main-background) !important;
 }
 
 .is-divider {
-	background-color: var(--main-background)
+	background-color: var(--dark-text-colour)
 }
 
 #footer {
