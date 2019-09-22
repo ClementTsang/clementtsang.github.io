@@ -12,7 +12,7 @@
         </h3>
         <br />
         <div class="columns is-centered is-marginless">
-          <div class="column is-4 has-text-centered">
+          <div class="column has-text-centered">
             <font-awesome-icon :icon="['fas', 'phone']" size="2x" fixed-width />
             <h3>
               <a href="tel:+16479936280" target="_blank">
@@ -20,7 +20,7 @@
               </a>
             </h3>
           </div>
-          <div class="column is-4 has-text-centered">
+          <div class="column has-text-centered">
             <font-awesome-icon
               :icon="['fas', 'envelope']"
               size="2x"

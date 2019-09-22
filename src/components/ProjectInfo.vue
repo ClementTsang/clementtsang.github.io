@@ -3,12 +3,16 @@
     <div class="column is-4 is-paddingless">
       <img :src="projectImage" />
     </div>
-    <div class="column is-1"></div>
+    <div class="column is-1" />
     <div class="column is-7 is-paddingless">
-      <p class="entry-subtitle">{{projectTitle}}</p>
-      <h3>{{projectDescription}}</h3>
+      <p class="entry-subtitle">
+        {{ projectTitle }}
+      </p>
+      <h3>{{ projectDescription }}</h3>
       <h3 class="project-link">
-        <a :href="projectLink" target="_blank">{{projectSite}}</a>
+        <a :href="projectLink" target="_blank">
+          {{ projectSite }}
+        </a>
       </h3>
     </div>
   </div>

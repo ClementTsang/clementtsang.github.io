@@ -13,8 +13,8 @@
           personal projects in my free time.
         </h3>
         <br />
-        <div class="columns is-centered is-marginless">
-          <div class="column is-3 has-text-centered">
+        <div class="columns is-centered is-marginless is-mobile">
+          <div class="column has-text-centered">
             <font-awesome-icon :icon="['fas', 'file']" size="2x" fixed-width />
             <h3>
               <a href="../../public/assets/resume.pdf" target="_blank">
@@ -22,7 +22,7 @@
               </a>
             </h3>
           </div>
-          <div class="column is-3 has-text-centered">
+          <div class="column has-text-centered">
             <font-awesome-icon
               :icon="['fab', 'github']"
               size="2x"
@@ -34,7 +34,7 @@
               </a>
             </h3>
           </div>
-          <div class="column is-3 has-text-centered">
+          <div class="column has-text-centered">
             <font-awesome-icon
               :icon="['fab', 'linkedin']"
               size="2x"

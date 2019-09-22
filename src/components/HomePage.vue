@@ -26,6 +26,7 @@
     <section>
       <Contact />
     </section>
+    <!--TODO: Consider a footer?-->
   </div>
 </template>
 
@@ -63,7 +64,7 @@ export default {
   object-position: center center;
   width: 100%;
   height: 100%;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .hero-body {
