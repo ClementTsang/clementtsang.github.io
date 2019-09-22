@@ -17,7 +17,7 @@
           <div class="column has-text-centered">
             <font-awesome-icon :icon="['fas', 'file']" size="2x" fixed-width />
             <h3>
-              <a href="../../public/assets/resume.pdf" target="_blank">
+              <a href="/assets/resume.pdf" target="_blank">
                 Resume
               </a>
             </h3>
