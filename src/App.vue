@@ -106,8 +106,6 @@ export default {
 
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap");
-
 :root {
   --main-background: #ffffff;
   --dark-text-colour: #1c1b20;
