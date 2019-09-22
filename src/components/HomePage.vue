@@ -1,7 +1,8 @@
 <template>
   <div id="home">
     <section class="hero is-fullheight-with-navbar">
-      <img class="hero-background" src="../../public/assets/tri.png" />
+      <!--Maybe autogen this in the future?-->
+      <img class="hero-background" src="assets/tri.png" />
       <div class="hero-body">
         <div class="container">
           <h1 class="hero-title has-text-centered">
@@ -64,7 +65,7 @@ export default {
   object-position: center center;
   width: 100%;
   height: 100%;
-  opacity: 0.3;
+  opacity: 0.25;
 }
 
 .hero-body {
