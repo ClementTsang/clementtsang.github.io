@@ -65,7 +65,7 @@ export default {
 }
 
 article {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 </style>
