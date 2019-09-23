@@ -27,18 +27,18 @@
         <div class="columns is-centered">
           <div class="column">
             <ProjectInfo
-              project-image="assets/banshee.png"
-              project-link="https://github.com/ClementTsang/banshee"
-              project-title="Banshee"
-              project-description="A osu! clone, written in C++ and featuring automatic map generation."
-            />
-          </div>
-          <div class="column">
-            <ProjectInfo
               project-image="assets/rustcc.png"
               project-link="https://github.com/ClementTsang/rustcc"
               project-title="rustcc"
               project-description="A simple C compiler, written from scratch in Rust."
+            />
+          </div>
+          <div class="column">
+            <ProjectInfo
+              project-image="assets/banshee.png"
+              project-link="https://github.com/ClementTsang/banshee"
+              project-title="Banshee"
+              project-description="A osu! clone, written in C++ and featuring automatic map generation."
             />
           </div>
         </div>
