@@ -37,6 +37,7 @@
       <p class="entry-subtitle larger-subtitle">
         {{ jobPosition }}
       </p>
+      <!--TODO: Make this expandable on mobile-->
       <h3 class="job-desc">
         {{ jobDescription }}
       </h3>
