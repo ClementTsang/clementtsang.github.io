@@ -1,25 +1,43 @@
 <template>
   <div class="columns is-marginless is-centered">
     <div class="column is-4 is-paddingless">
-      <p class="entry-title" v-if="jobWebsite !== ''">
-        <a :href="jobWebsite" target="_blank">{{ entryTitle }}</a>
-      </p>
-      <p class="entry-title" v-else>
+      <p class="entry-title">
         {{ entryTitle }}
       </p>
+      <p class="smaller-subtitle entry-subtitle">
+        {{ jobPosition }}
+      </p>
       <h3>
+        <font-awesome-icon
+          :icon="['fas', 'calendar-alt']"
+          size="sm"
+          fixed-width
+        />
+
         {{ dateRange }}
       </h3>
       <h3>
+        <font-awesome-icon
+          :icon="['fas', 'map-marker-alt']"
+          size="sm"
+          fixed-width
+        />
+
         {{ jobLocation }}
+      </h3>
+      <h3 v-if="jobWebsite !== ''">
+        <a :href="jobWebsite" target="_blank">
+          <font-awesome-icon :icon="['fas', 'link']" size="sm" fixed-width />
+          {{ jobWebsiteName }}
+        </a>
       </h3>
     </div>
     <div class="column is-1" />
     <div class="column is-7 is-paddingless">
-      <p class="entry-subtitle">
+      <p class="entry-subtitle larger-subtitle">
         {{ jobPosition }}
       </p>
-      <h3>
+      <h3 class="job-desc">
         {{ jobDescription }}
       </h3>
     </div>
@@ -53,6 +71,10 @@ export default {
     jobWebsite: {
       type: String,
       default: ""
+    },
+    jobWebsiteName: {
+      type: String,
+      default: ""
     }
   }
 };
@@ -68,10 +90,25 @@ export default {
 }
 
 .entry-subtitle {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: var(--dark-text-colour);
-  font-family: "Raleway", sans-serif;
+  font-family: "QuickSand", sans-serif;
   font-weight: bold;
   margin-bottom: 0.2em;
+}
+
+.smaller-subtitle {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .job-desc,
+  .larger-subtitle {
+    display: none;
+  }
+
+  .smaller-subtitle {
+    display: flex;
+  }
 }
 </style>

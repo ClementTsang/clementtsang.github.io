@@ -106,6 +106,8 @@ export default {
 
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap");
+
 :root {
   --main-background: #f8f8f8;
   --dark-text-colour: #1c1b20;
@@ -113,6 +115,7 @@ export default {
   --accent-2: #e85a4f;
   --accent-3: #383542;
   --accent-4: #8e8d8a;
+  --accent-5: #c874e9;
   --main-background-two: #f3f2ec;
 }
 
@@ -154,6 +157,13 @@ article {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  article {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .navbar-item:hover {
     background-color: var(--accent-1) !important;
@@ -175,11 +185,6 @@ article {
 
   .navbar-brand > .navbar-item {
     font-size: 1.1em !important;
-  }
-
-  article {
-    width: 100%;
-    margin: 0 auto;
   }
 }
 
@@ -226,18 +231,15 @@ h3 {
 }
 
 a {
-  color: #60afe7;
+  color: var(--accent-1);
 }
 
 a:visited {
-  color: #800080;
+  color: var(--accent-4);
 }
 
 a:hover {
   color: var(--accent-3);
-}
-
-a {
   text-decoration: underline;
 }
 
