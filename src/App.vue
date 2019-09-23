@@ -225,11 +225,12 @@ h3 {
 }
 
 a {
-  color: var(--accent-1);
+  color: #60afe7;
+  text-decoration: underline;
 }
 
 a:visited {
-  color: #8b008b;
+  color: #800080;
 }
 
 a:hover {
