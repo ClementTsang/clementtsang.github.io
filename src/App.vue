@@ -227,7 +227,6 @@ h3 {
 
 a {
   color: #60afe7;
-  text-decoration: underline;
 }
 
 a:visited {
@@ -236,5 +235,13 @@ a:visited {
 
 a:hover {
   color: var(--accent-3);
+}
+
+a {
+  text-decoration: underline;
+}
+
+.navbar a {
+  text-decoration: none;
 }
 </style>
