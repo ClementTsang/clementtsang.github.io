@@ -75,7 +75,7 @@ export default {
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
   margin: 0 auto;
-  height: 350px;
+  height: 450px;
   width: 100%;
   background-color: var(--accent-1);
   opacity: 0;
@@ -97,7 +97,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 350px;
+  height: 450px;
   background-color: #f3f3f3;
 }
 
