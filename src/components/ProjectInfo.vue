@@ -11,8 +11,15 @@
         <p class="entry-subtitle">
           {{ projectDescription }}
         </p>
+        <br />
         <p class="entry-subtitle">
-          <a :href="projectLink" target="_blank">GitHub</a>
+          <a :href="projectLink" target="_blank">
+            <font-awesome-icon
+              :icon="['fab', 'github']"
+              size="2x"
+              fixed-width
+            />
+          </a>
         </p>
       </div>
     </div>
@@ -112,5 +119,18 @@ img {
   img {
     object-position: left;
   }
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited {
+  color: var(--dark-text-colour);
+}
+
+a:hover {
+  color: var(--accent-4);
 }
 </style>

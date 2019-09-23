@@ -1,6 +1,6 @@
 <template>
   <div id="contact" class="columns is-marginless is-centered page-item">
-    <div class="column is-11 is-8-desktop">
+    <div class="column is-11">
       <article>
         <p class="title has-text-centered">
           Contact

@@ -1,11 +1,12 @@
 <template>
   <div id="experience" class="columns is-marginless is-centered page-item">
-    <div class="column is-11 is-8-desktop">
+    <div class="column is-11">
       <article>
         <p class="title has-text-centered">
           Experience
         </p>
         <hr class="is-divider" />
+        <br />
         <p class="subtitle">
           Work
         </p>
@@ -20,6 +21,7 @@
 									others have uploaded."
           job-location="Ontario, Canada"
           job-website="https://www.yuja.com/"
+          job-website-name="YuJa"
           style="padding-bottom: 2rem;"
         />
         <WorkInfo
@@ -31,10 +33,11 @@
 									and improve test quality using Selenium."
           job-location="Ontario, Canada"
           job-website="https://www.yuja.com/"
+          job-website-name="YuJa"
           style="padding-bottom: 2rem;"
         />
         <hr class="is-thin-divider" />
-        <!--TODO: fill in rest of uni details-->
+        <br />
         <p class="subtitle">
           Education
         </p>
@@ -42,7 +45,7 @@
           entry-title="University of Waterloo"
           date-range="2017 - Present"
           job-position="Computer Science, Honours"
-          job-description="I'm currently a third year Computer Science student at the Unviersity of Waterloo."
+          job-description="Currently a third year Computer Science student at the Unviersity of Waterloo, and set to graduate in 2022."
           job-location="Ontario, Canada"
           style="padding-bottom: 2rem;"
         />
