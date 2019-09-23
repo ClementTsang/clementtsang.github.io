@@ -27,7 +27,6 @@
     <section>
       <Contact />
     </section>
-    <!--TODO: Consider a footer?-->
   </div>
 </template>
 

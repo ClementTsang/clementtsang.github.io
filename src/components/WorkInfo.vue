@@ -1,7 +1,10 @@
 <template>
   <div class="columns is-marginless is-centered">
     <div class="column is-4 is-paddingless">
-      <p class="entry-title">
+      <p class="entry-title" v-if="jobWebsite !== ''">
+        <a :href="jobWebsite" target="_blank">{{ entryTitle }}</a>
+      </p>
+      <p class="entry-title" v-else>
         {{ entryTitle }}
       </p>
       <h3>
@@ -9,9 +12,6 @@
       </h3>
       <h3>
         {{ jobLocation }}
-      </h3>
-      <h3 v-if="jobWebsite !== ''">
-        <a :href="jobWebsite" target="_blank">{{ jobWebsite }}</a>
       </h3>
     </div>
     <div class="column is-1" />

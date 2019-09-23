@@ -10,11 +10,11 @@ import router from './router';
 import App from './App.vue';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faFile, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFile, faPhone, faEnvelope, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-library.add(faFile, faPhone, faEnvelope);
+library.add(faFile, faPhone, faEnvelope, faChevronRight);
 library.add(faGithub, faLinkedin);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
@@ -24,4 +24,3 @@ Vue.config.productionTip = false;
 new Vue({ router, render: h => h(App) }).$mount('#app');
 
 // TODO: IE11 polyfill for bulma
-// TODO: favicon

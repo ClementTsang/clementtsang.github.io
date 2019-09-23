@@ -107,13 +107,13 @@ export default {
 
 <style>
 :root {
-  --main-background: #ffffff;
+  --main-background: #f8f8f8;
   --dark-text-colour: #1c1b20;
-  --accent-1: #ff5851;
-  --accent-2: #df0d0d;
+  --accent-1: #e98074;
+  --accent-2: #e85a4f;
   --accent-3: #383542;
-  --accent-4: #a1e2d2;
-  --main-background-two: #f8f8f8;
+  --accent-4: #8e8d8a;
+  --main-background-two: #f3f2ec;
 }
 
 .navbar,
@@ -122,8 +122,8 @@ export default {
 .navbar-link,
 .navbar-dropdown,
 #menu-hamburger {
-  background-color: var(--main-background) !important;
-  color: var(--dark-text-colour) !important;
+  background-color: var(--accent-3) !important;
+  color: var(--main-background-two) !important;
   font-family: "Raleway", sans-serif !important;
   font-size: 0.97em !important;
   outline: 0;
@@ -149,6 +149,11 @@ export default {
   font-size: 1.1em !important;
 }
 
+article {
+  width: 80%;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1023px) {
   .navbar-item:hover {
     background-color: var(--accent-1) !important;
@@ -170,6 +175,11 @@ export default {
 
   .navbar-brand > .navbar-item {
     font-size: 1.1em !important;
+  }
+
+  article {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -228,10 +238,5 @@ a:hover {
 
 .is-divider {
   width: 3em;
-}
-
-article {
-  width: 70%;
-  margin: 0 auto;
 }
 </style>

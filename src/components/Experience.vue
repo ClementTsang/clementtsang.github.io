@@ -1,6 +1,6 @@
 <template>
   <div id="experience" class="columns is-marginless is-centered page-item">
-    <div class="column is-10 is-8-desktop">
+    <div class="column is-11 is-8-desktop">
       <article>
         <p class="title has-text-centered">
           Experience
@@ -19,7 +19,7 @@
 									ensuring users wouldn't have to worry about being able to access documents that 
 									others have uploaded."
           job-location="Ontario, Canada"
-          job-website
+          job-website="https://www.yuja.com/"
           style="padding-bottom: 2rem;"
         />
         <WorkInfo
