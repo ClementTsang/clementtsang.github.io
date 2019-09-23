@@ -191,6 +191,7 @@ hr.is-divider {
   margin: 2em auto;
   margin-top: 1em;
   padding: 0;
+  width: 3em;
 }
 
 hr.is-thin-divider {
@@ -201,7 +202,7 @@ hr.is-thin-divider {
   margin: 1.5em auto;
   margin-top: 0.5em;
   padding: 0;
-  width: 95%;
+  width: 3em;
 }
 
 .title {
@@ -235,9 +236,5 @@ a:visited {
 
 a:hover {
   color: var(--accent-3);
-}
-
-.is-divider {
-  width: 3em;
 }
 </style>
