@@ -119,6 +119,18 @@ img {
   img {
     object-position: left;
   }
+
+  .project-img,
+  .project-card {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-img,
+  .project-card {
+    height: 300px;
+  }
 }
 
 a {
