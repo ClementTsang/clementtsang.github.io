@@ -136,7 +136,7 @@ export default {
 
 .navbar-item:hover {
   background-color: var(--accent-1) !important;
-  color: var(--dark-text-colour) !important;
+  color: var(--main-background) !important;
 }
 
 .navbar-item:active,
@@ -165,13 +165,11 @@ article {
 }
 
 @media screen and (max-width: 1023px) {
-  .navbar-item:hover {
-    background-color: var(--accent-1) !important;
-    color: var(--main-background) !important;
-  }
-
-  div > .navbar-item:hover {
-    background-color: var(--accent-1) !important;
+  .navbar-item:hover,
+  .navbar-item:active,
+  .navbar-item:focus {
+    background-color: var(--main-background) !important;
+    color: var(--dark-text-colour) !important;
   }
 
   .navbar,

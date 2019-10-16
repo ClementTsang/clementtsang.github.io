@@ -33,3 +33,4 @@ new Vue({ router, render: h => h(App) }).$mount('#app');
 
 // TODO: IE11 polyfill for bulma
 // TODO: Consider https://webpack.js.org/guides/code-splitting/
+// TODO: Reduce file size
