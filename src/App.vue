@@ -109,7 +109,7 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap");
 
 :root {
-  --main-background: #f8f8f8;
+  --main-background: #f5f5f5;
   --dark-text-colour: #1c1b20;
   --accent-1: #e98074;
   --accent-2: #e85a4f;
@@ -125,8 +125,8 @@ export default {
 .navbar-link,
 .navbar-dropdown,
 #menu-hamburger {
-  background-color: var(--accent-3) !important;
-  color: var(--main-background-two) !important;
+  background-color: var(--main-background) !important;
+  color: var(--dark-text-colour) !important;
   font-family: "Raleway", sans-serif !important;
   font-size: 0.97em !important;
   outline: 0;
