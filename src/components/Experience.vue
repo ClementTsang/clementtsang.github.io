@@ -17,7 +17,7 @@
           job-description="Worked as a full stack software developer
 									for a new product, Panorama, automatically creating 
 									accessible documents for files uploaded to LMS sites like D2L and Blackboard,
-									ensuring users wouldn't have to worry about being able to access documents that 
+									ensuring users wouldn't have to worry about being unable to access documents that 
 									others have uploaded."
           job-location="Ontario, Canada"
           job-website="https://www.yuja.com/"
