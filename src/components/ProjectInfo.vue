@@ -12,15 +12,62 @@
           {{ projectDescription }}
         </p>
         <br />
-        <p class="entry-subtitle">
-          <a :href="projectLink" target="_blank">
-            <font-awesome-icon
-              :icon="['fab', 'github']"
-              size="2x"
-              fixed-width
-            />
-          </a>
-        </p>
+        <div class="entry-subtitle" style="display: inline;">
+          <b-tooltip label="GitHub" position="is-bottom" type="is-dark">
+            <a :href="projectLink" target="_blank">
+              <font-awesome-icon
+                :icon="['fab', 'github']"
+                size="2x"
+                fixed-width
+              />
+            </a>
+          </b-tooltip>
+        </div>
+        <div
+          class="entry-subtitle"
+          v-if="projectDemo != ''"
+          style="display: inline;"
+        >
+          <b-tooltip label="Demo" position="is-bottom" type="is-dark">
+            <a :href="projectLink" target="_blank">
+              <font-awesome-icon
+                :icon="['fas', 'play']"
+                size="2x"
+                fixed-width
+              />
+            </a>
+          </b-tooltip>
+        </div>
+        <div
+          class="entry-subtitle"
+          v-if="projectWebsite != ''"
+          style="display: inline;"
+        >
+          <b-tooltip label="Project Page" position="is-bottom" type="is-dark">
+            <a :href="projectLink" target="_blank">
+              <font-awesome-icon
+                :icon="['fas', 'desktop']"
+                size="2x"
+                fixed-width
+              />
+            </a>
+          </b-tooltip>
+        </div>
+        <div
+          class="entry-subtitle"
+          v-if="projectDownload != ''"
+          style="display: inline;"
+        >
+          <b-tooltip label="Download" position="is-bottom" type="is-dark">
+            <a :href="projectLink" target="_blank">
+              <font-awesome-icon
+                :icon="['fas', 'download']"
+                size="2x"
+                fixed-width
+              />
+            </a>
+          </b-tooltip>
+        </div>
       </div>
     </div>
   </div>
@@ -44,6 +91,18 @@ export default {
     projectDescription: {
       type: String,
       required: true
+    },
+    projectDemo: {
+      type: String,
+      default: ""
+    },
+    projectWebsite: {
+      type: String,
+      default: ""
+    },
+    projectDownload: {
+      type: String,
+      default: ""
     }
   },
   name: "ProjectInfo"
