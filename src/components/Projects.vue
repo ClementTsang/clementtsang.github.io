@@ -42,6 +42,26 @@
             />
           </div>
         </div>
+        <div class="columns is-centered">
+          <div class="column">
+            <ProjectInfo
+              project-image=""
+              project-link="https://github.com/ClementTsang/dinaj_android"
+              project-title="Do I Need a Jacket?"
+              project-description="A simple weather app to answer a simple question."
+              project-website="https://clementtsang.github.io/dinaj_android/"
+            />
+          </div>
+          <div class="column">
+            <ProjectInfo
+              project-image=""
+              project-link="https://github.com/ClementTsang/polify"
+              project-title="Polify"
+              project-description="A simple low poly art generator."
+              project-demo="https://clementtsang.github.io/polify/"
+            />
+          </div>
+        </div>
       </article>
     </div>
   </div>

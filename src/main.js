@@ -17,12 +17,26 @@ import {
   faChevronRight,
   faLink,
   faCalendarAlt,
-  faMapMarkerAlt
+  faMapMarkerAlt,
+  faDownload,
+  faDesktop,
+  faPlay
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-library.add(faFile, faPhone, faEnvelope, faChevronRight, faLink, faCalendarAlt, faMapMarkerAlt);
+library.add(
+  faFile,
+  faPhone,
+  faEnvelope,
+  faChevronRight,
+  faLink,
+  faCalendarAlt,
+  faMapMarkerAlt,
+  faDownload,
+  faDesktop,
+  faPlay
+);
 library.add(faGithub, faLinkedin);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
