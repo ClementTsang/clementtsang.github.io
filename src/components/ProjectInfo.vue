@@ -13,25 +13,10 @@
         </p>
         <br />
         <div class="entry-subtitle" style="display: inline;">
-          <b-tooltip label="GitHub" position="is-bottom" type="is-dark">
+          <b-tooltip label="GitHub Page" position="is-bottom" type="is-dark">
             <a :href="projectLink" target="_blank">
               <font-awesome-icon
                 :icon="['fab', 'github']"
-                size="2x"
-                fixed-width
-              />
-            </a>
-          </b-tooltip>
-        </div>
-        <div
-          class="entry-subtitle"
-          v-if="projectDemo != ''"
-          style="display: inline;"
-        >
-          <b-tooltip label="Demo" position="is-bottom" type="is-dark">
-            <a :href="projectLink" target="_blank">
-              <font-awesome-icon
-                :icon="['fas', 'play']"
                 size="2x"
                 fixed-width
               />
@@ -46,7 +31,7 @@
           <b-tooltip label="Project Page" position="is-bottom" type="is-dark">
             <a :href="projectLink" target="_blank">
               <font-awesome-icon
-                :icon="['fas', 'desktop']"
+                :icon="['fas', 'external-link-alt']"
                 size="2x"
                 fixed-width
               />
@@ -92,10 +77,6 @@ export default {
       type: String,
       required: true
     },
-    projectDemo: {
-      type: String,
-      default: ""
-    },
     projectWebsite: {
       type: String,
       default: ""
@@ -122,6 +103,8 @@ export default {
   color: var(--dark-text-colour);
   font-family: "Quicksand", sans-serif;
   margin-bottom: 0.2em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
 }
 
 .project-div {

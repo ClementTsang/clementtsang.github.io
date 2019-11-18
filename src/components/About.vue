@@ -14,40 +14,58 @@
         </h3>
         <br />
         <div class="columns is-centered is-marginless is-mobile">
-          <div class="column has-text-centered">
-            <font-awesome-icon :icon="['fas', 'file']" size="2x" fixed-width />
-            <h3>
-              <a href="/assets/resume.pdf" target="_blank">
-                Resume
-              </a>
-            </h3>
+          <div class="column">
+            <div class="columns is-centered is-marginless is-mobile">
+              <div class="column" />
+              <div class="column has-text-centered">
+                <a href="/assets/resume.pdf" target="_blank">
+                  <font-awesome-icon
+                    :icon="['fas', 'file']"
+                    size="2x"
+                    fixed-width
+                  />
+                  <h3>
+                    Resume
+                  </h3>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="column has-text-centered">
-            <font-awesome-icon
-              :icon="['fab', 'github']"
-              size="2x"
-              fixed-width
-            />
-            <h3>
-              <a href="https://github.com/ClementTsang" target="_blank">
-                GitHub
-              </a>
-            </h3>
+          <div class="column">
+            <div class="columns is-centered is-marginless is-mobile">
+              <div class="column has-text-centered">
+                <a href="https://github.com/ClementTsang" target="_blank">
+                  <font-awesome-icon
+                    :icon="['fab', 'github']"
+                    size="2x"
+                    fixed-width
+                  />
+                  <h3>
+                    GitHub
+                  </h3>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="column has-text-centered">
-            <font-awesome-icon
-              :icon="['fab', 'linkedin']"
-              size="2x"
-              fixed-width
-            />
-            <h3>
-              <a
-                href="https://www.linkedin.com/in/clement-tsang"
-                target="_blank"
-              >
-                LinkedIn
-              </a>
-            </h3>
+          <div class="column">
+            <div class="columns is-centered is-marginless is-mobile">
+              <div class="column has-text-centered">
+                <a
+                  href="https://www.linkedin.com/in/clement-tsang"
+                  target="_blank"
+                >
+                  <font-awesome-icon
+                    :icon="['fab', 'linkedin']"
+                    size="2x"
+                    fixed-width
+                  />
+                  <h3>
+                    LinkedIn
+                  </h3>
+                </a>
+              </div>
+              <div class="column" />
+            </div>
           </div>
         </div>
       </article>

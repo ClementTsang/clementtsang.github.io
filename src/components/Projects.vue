@@ -58,7 +58,7 @@
               project-link="https://github.com/ClementTsang/polify"
               project-title="Polify"
               project-description="A simple low poly art generator."
-              project-demo="https://clementtsang.github.io/polify/"
+              project-website="https://clementtsang.github.io/polify/"
             />
           </div>
         </div>
