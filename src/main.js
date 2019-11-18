@@ -1,15 +1,15 @@
 /* eslint-disable no-unused-vars */
-import 'babel-polyfill';
-import Vue from 'vue';
+import "babel-polyfill";
+import Vue from "vue";
 
-import smoothscroll from 'smoothscroll-polyfill';
-import 'buefy/dist/buefy.css';
+import smoothscroll from "smoothscroll-polyfill";
+import "buefy/dist/buefy.css";
 
-import Buefy from 'buefy';
-import router from './router';
-import App from './App.vue';
+import Buefy from "buefy";
+import router from "./router";
+import App from "./App.vue";
 
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faFile,
   faPhone,
@@ -19,11 +19,10 @@ import {
   faCalendarAlt,
   faMapMarkerAlt,
   faDownload,
-  faDesktop,
-  faPlay
-} from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+  faExternalLinkAlt
+} from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(
   faFile,
@@ -34,16 +33,15 @@ library.add(
   faCalendarAlt,
   faMapMarkerAlt,
   faDownload,
-  faDesktop,
-  faPlay
+  faExternalLinkAlt
 );
 library.add(faGithub, faLinkedin);
-Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 smoothscroll.polyfill();
 Vue.use(Buefy);
 Vue.config.productionTip = false;
-new Vue({ router, render: h => h(App) }).$mount('#app');
+new Vue({ router, render: h => h(App) }).$mount("#app");
 
 // TODO: IE11 polyfill for bulma
 // TODO: Consider https://webpack.js.org/guides/code-splitting/
