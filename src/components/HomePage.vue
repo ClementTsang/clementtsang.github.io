@@ -27,6 +27,25 @@
     <section>
       <Contact />
     </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Website source can be found
+          <a href="https://github.com/ClementTsang/personal-website">
+            on GitHub here.
+          </a>
+          If you want to use it, feel free!
+        </p>
+        <p>
+          The source code is licensed under
+          <a
+            href="https://github.com/ClementTsang/personal-website/blob/master/LICENSE"
+          >
+            MIT.
+          </a>
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -86,7 +105,8 @@ export default {
   background-color: var(--dark-text-colour);
 }
 
-#footer {
-  background-color: var(--main-background-two);
+.footer {
+  background-color: var(--accent-3);
+  color: var(--main-background);
 }
 </style>
