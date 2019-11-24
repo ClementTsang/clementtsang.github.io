@@ -109,14 +109,15 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap");
 
 :root {
-  --main-background: #f5f5f5;
+  --main-background: #fefefe;
   --dark-text-colour: #1c1b20;
   --accent-1: #e98074;
   --accent-2: #e85a4f;
   --accent-3: #383542;
-  --accent-4: #8e8d8a;
-  --accent-5: #c874e9;
-  --main-background-two: #f3f2ec;
+  --url-hover: #5e81ac;
+  --url-visited: #b48ead;
+  --url-not-visited: #bf616a;
+  --main-background-two: #eceff4;
 }
 
 .navbar,
@@ -229,15 +230,15 @@ h3 {
 }
 
 a {
-  color: var(--accent-1);
+  color: var(--url-not-visited);
 }
 
 a:visited {
-  color: var(--accent-4);
+  color: var(--url-visited);
 }
 
 a:hover {
-  color: var(--accent-3);
+  color: var(--url-hover);
   text-decoration: underline;
 }
 

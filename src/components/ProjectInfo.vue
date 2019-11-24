@@ -185,6 +185,6 @@ a:visited {
 }
 
 a:hover {
-  color: var(--accent-4);
+  color: var(--url-hover);
 }
 </style>
