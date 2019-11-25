@@ -81,8 +81,6 @@ export default {
   mounted: () => {
     const handleScroll = navItem => {
       const correspondingLink = document.querySelector(`#${navItem.id}-link`);
-
-      // TODO: Add scroll spy
     };
 
     Array.from(document.querySelectorAll(".page-item")).forEach(handleScroll);
@@ -103,7 +101,6 @@ export default {
   }
 };
 </script>
-
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap");
@@ -132,7 +129,6 @@ export default {
   font-size: 0.97em !important;
   outline: 0;
   border: none;
-  /*opacity: 0.95;*/ /* TODO: Add this after scroll spy is added! */
 }
 
 .navbar-item:hover {
@@ -150,7 +146,7 @@ export default {
 }
 
 .navbar-brand > .navbar-item {
-  font-size: 1.1em !important;
+  font-size: 1.15em !important;
 }
 
 article {
