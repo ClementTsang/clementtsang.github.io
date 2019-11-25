@@ -37,12 +37,9 @@ router.beforeEach((to, from, next) => {
 });
 
 router.afterEach((to, from) => {
-  // TODO: Should I keep this...?
-  if (to.path != from.path) {
+  if (to.fullPath === "/#home") {
     // Stop deduplication.
-    router.replace({ path: "/" }).catch(err => {
-      console.error(err);
-    });
+    router.replace({ path: "/" }).catch(_ => {});
   }
 });
 

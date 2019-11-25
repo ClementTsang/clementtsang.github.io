@@ -42,6 +42,7 @@
             />
           </div>
         </div>
+        <!--
         <div class="columns is-centered">
           <div class="column">
             <ProjectInfo
@@ -62,6 +63,7 @@
             />
           </div>
         </div>
+        -->
       </article>
     </div>
   </div>
