@@ -9,6 +9,8 @@ import Buefy from "buefy";
 import router from "./router";
 import App from "./App.vue";
 
+import "in-view";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faFile,
