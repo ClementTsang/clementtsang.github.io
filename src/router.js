@@ -27,6 +27,11 @@ const router = new Router({
           1,
         behavior: "smooth"
       });
+    } else if (to.fullPath === "/") {
+      return window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     }
   }
 });
@@ -34,13 +39,6 @@ const router = new Router({
 router.beforeEach((to, from, next) => {
   document.title = to.name;
   next();
-});
-
-router.afterEach((to, from) => {
-  if (to.fullPath === "/#home") {
-    // Stop deduplication.
-    router.replace({ path: "/" }).catch(_ => {});
-  }
 });
 
 export default router;
