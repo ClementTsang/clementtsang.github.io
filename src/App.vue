@@ -9,7 +9,7 @@
         <router-link
           @click.native="mobileCloseHamburger"
           class="navbar-item"
-          to="/#home"
+          to="/"
         >
           <p>Clement Tsang</p>
         </router-link>
