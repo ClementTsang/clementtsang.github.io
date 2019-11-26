@@ -106,7 +106,7 @@ export default {
 }
 
 .footer {
-  background-color: var(--accent-3);
-  color: var(--main-background);
+  background-color: var(--main-background-two);
+  color: var(--dark-text-colour);
 }
 </style>
