@@ -48,6 +48,6 @@ export default {
 #contact {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: var(--main-background-two);
+  background-color: var(--main-background);
 }
 </style>

@@ -83,6 +83,6 @@ export default {
 #about {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: var(--main-background);
+  background-color: var(--main-background-two);
 }
 </style>

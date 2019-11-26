@@ -114,7 +114,7 @@ export default {
   --url-hover: #5e81ac;
   --url-visited: #b48ead;
   --url-not-visited: #bf616a;
-  --main-background-two: #eceff4;
+  --main-background-two: #fafafa;
 }
 
 .navbar,
