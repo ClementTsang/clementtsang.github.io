@@ -9,7 +9,7 @@
         <router-link
           @click.native="mobileCloseHamburger"
           class="navbar-item"
-          to="/"
+          to="/#home"
         >
           <p>Clement Tsang</p>
         </router-link>
@@ -108,7 +108,7 @@ export default {
 :root {
   --main-background: #fefefe;
   --dark-text-colour: #1c1b20;
-  --accent-1: #e98074;
+  --accent-1: #ee7067;
   --accent-2: #e85a4f;
   --accent-3: #383542;
   --url-hover: #5e81ac;
@@ -127,8 +127,10 @@ export default {
   color: var(--dark-text-colour) !important;
   font-family: "Raleway", sans-serif !important;
   font-size: 0.97em !important;
-  outline: 0;
-  border: none;
+}
+
+.navbar {
+  box-shadow: 0px 4px 5px -6px #999;
 }
 
 .navbar-item:hover {
@@ -139,8 +141,6 @@ export default {
 .navbar-item:active,
 .navbar-item:focus,
 .on-navbar-item {
-  outline: 0;
-  border: none;
   -moz-outline-style: none;
   outline-style: none;
 }

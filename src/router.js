@@ -27,11 +27,6 @@ const router = new Router({
           1,
         behavior: "smooth"
       });
-    } else if (to.fullPath === "/") {
-      return window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
     }
   }
 });
@@ -41,4 +36,7 @@ router.beforeEach((to, from, next) => {
   next();
 });
 
+router.afterEach((to, from) => {
+  router.replace({ path: "/" }).catch(err => {});
+});
 export default router;
