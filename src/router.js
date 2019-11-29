@@ -24,7 +24,7 @@ const router = new Router({
         top:
           document.querySelector(to.hash).offsetTop -
           document.querySelector(".navbar-brand").offsetHeight +
-          1,
+          (to.hash === "#home" ? 0 : 1),
         behavior: "smooth"
       });
     }
