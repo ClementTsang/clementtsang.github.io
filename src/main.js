@@ -2,14 +2,13 @@
 import "babel-polyfill";
 import Vue from "vue";
 
-import smoothscroll from "smoothscroll-polyfill";
 import "buefy/dist/buefy.css";
-
 import Buefy from "buefy";
 import router from "./router";
 import App from "./App.vue";
 
-import "in-view";
+import { ObserveVisibility } from "vue-observe-visibility";
+Vue.directive("observe-visibility", ObserveVisibility);
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -40,10 +39,15 @@ library.add(
 library.add(faGithub, faLinkedin);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
-smoothscroll.polyfill();
 Vue.use(Buefy);
 Vue.config.productionTip = false;
 new Vue({ router, render: h => h(App) }).$mount("#app");
+
+// Polyfills
+import smoothscroll from "smoothscroll-polyfill";
+import IntersectionObserver from "intersection-observer";
+smoothscroll.polyfill();
+Vue.use(IntersectionObserver);
 
 // TODO: IE11 polyfill for bulma
 // TODO: Consider https://webpack.js.org/guides/code-splitting/
