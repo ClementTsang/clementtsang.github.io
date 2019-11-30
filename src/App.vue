@@ -78,13 +78,7 @@ export default {
   data() {
     return {};
   },
-  mounted: () => {
-    const handleScroll = navItem => {
-      const correspondingLink = document.querySelector(`#${navItem.id}-link`);
-    };
-
-    Array.from(document.querySelectorAll(".page-item")).forEach(handleScroll);
-  },
+  mounted: () => {},
   methods: {
     toggleHamburger() {
       const burgerEle = document.getElementById("menu-hamburger");
@@ -133,7 +127,8 @@ export default {
   box-shadow: 0px 4px 5px -6px #999;
 }
 
-.navbar-item:hover {
+.navbar-item:hover,
+.pseudo-navbar-focus {
   background-color: var(--accent-1) !important;
   color: var(--main-background) !important;
 }
