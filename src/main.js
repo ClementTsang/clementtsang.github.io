@@ -43,7 +43,7 @@ Vue.use(Buefy);
 Vue.config.productionTip = false;
 new Vue({ router, render: h => h(App) }).$mount("#app");
 
-// Polyfills
+// Polyfills (TODO: load only when needed)
 import smoothscroll from "smoothscroll-polyfill";
 import IntersectionObserver from "intersection-observer";
 smoothscroll.polyfill();

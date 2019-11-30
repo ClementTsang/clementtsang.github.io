@@ -22,8 +22,8 @@ const router = new Router({
     if (to.hash && document.querySelector(to.hash)) {
       return window.scrollTo({
         top:
-          document.querySelector(to.hash).offsetTop -
-          document.querySelector(".navbar-brand").offsetHeight +
+          document.getElementById(to.hash.substring(1)).offsetTop -
+          document.getElementsByClassName("navbar-brand")[0].offsetHeight +
           (to.hash === "#home" ? 0 : 1),
         behavior: "smooth"
       });
