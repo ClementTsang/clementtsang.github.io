@@ -125,7 +125,7 @@ export default {
       scroll_elements: new Map([]),
       throttle: 0,
       intersection: {
-        threshold: 0.11
+        threshold: 0.105
       }
     };
   },
