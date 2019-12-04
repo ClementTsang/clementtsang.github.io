@@ -3,7 +3,11 @@
     <section
       id="home"
       class="hero is-fullheight-with-navbar"
-      v-observe-visibility="visibilityChanged"
+      v-observe-visibility="{
+        callback: visibilityChanged,
+        throttle: this.throttle,
+        intersection: this.intersection
+      }"
     >
       <!--Maybe autogen this in the future?-->
       <img class="hero-background" src="assets/tri.png" />
@@ -20,16 +24,41 @@
       </div>
     </section>
     <section>
-      <About v-observe-visibility="visibilityChanged" />
+      <About
+        v-observe-visibility="{
+          callback: visibilityChanged,
+          throttle: this.throttle,
+          intersection: this.intersection
+        }"
+      />
     </section>
     <section>
-      <Experience v-observe-visibility="visibilityChanged" />
+      <Experience
+        v-observe-visibility="{
+          callback: visibilityChanged,
+          throttle: this.throttle,
+          intersection: this.intersection
+        }"
+      />
     </section>
     <section>
-      <Projects v-observe-visibility="visibilityChanged" />
+      <Projects
+        v-observe-visibility="{
+          callback: visibilityChanged,
+          intersection: {
+            threshold: 0.4
+          }
+        }"
+      />
     </section>
     <section>
-      <Contact v-observe-visibility="visibilityChanged" />
+      <Contact
+        v-observe-visibility="{
+          callback: visibilityChanged,
+          throttle: this.throttle,
+          intersection: this.intersection
+        }"
+      />
     </section>
     <footer class="footer">
       <div class="content has-text-centered">
@@ -93,7 +122,11 @@ export default {
   },
   data() {
     return {
-      scroll_elements: new Map([])
+      scroll_elements: new Map([]),
+      throttle: 0,
+      intersection: {
+        threshold: 0.11
+      }
     };
   },
   methods: {
