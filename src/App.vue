@@ -131,6 +131,11 @@ export default {
   box-shadow: 0px 4px 5px -6px #999;
 }*/
 
+.navbar-item {
+  background-color: var(--main-background) !important;
+  transition: background-color 0.15s ease-in-out;
+}
+
 .navbar-item:active,
 .navbar-item:focus,
 .on-navbar-item {
@@ -157,7 +162,7 @@ article {
 
 @media screen and (min-width: 1023px) {
   .pseudo-navbar-focus {
-    border-bottom: 3px solid var(--red-accent) !important;
+    border-bottom: 2px solid var(--red-accent) !important;
   }
 }
 
