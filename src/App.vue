@@ -69,14 +69,16 @@
         </div>
       </div>
     </nav>
-    <router-view />
+    <router-view :navbar-click-state="this.clickState" />
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {};
+    return {
+      clickState: false
+    };
   },
   mounted: () => {},
   methods: {
@@ -102,9 +104,11 @@ export default {
 :root {
   --main-background: #fefefe;
   --dark-text-colour: #1c1b20;
-  --accent-1: #ee7067;
+  --red-accent: #ee7067;
   --accent-2: #e85a4f;
   --accent-3: #383542;
+  --navbar-hover: rgba(0, 0, 0, 0.075);
+  --navbar-click: rgba(0, 0, 0, 0.15);
   --url-hover: #5e81ac;
   --url-visited: #b48ead;
   --url-not-visited: #bf616a;
@@ -123,21 +127,23 @@ export default {
   font-size: 0.97em !important;
 }
 
-.navbar {
+/*.navbar {
   box-shadow: 0px 4px 5px -6px #999;
-}
-
-.navbar-item:hover,
-.pseudo-navbar-focus {
-  background-color: var(--accent-1) !important;
-  color: var(--main-background) !important;
-}
+}*/
 
 .navbar-item:active,
 .navbar-item:focus,
 .on-navbar-item {
   -moz-outline-style: none;
   outline-style: none;
+}
+
+.navbar-item:hover {
+  background-color: var(--navbar-hover) !important;
+}
+
+.navbar-item:active {
+  background-color: var(--navbar-click) !important;
 }
 
 .navbar-brand > .navbar-item {
@@ -149,6 +155,12 @@ article {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1023px) {
+  .pseudo-navbar-focus {
+    border-bottom: 3px solid var(--red-accent) !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   article {
     width: 95%;
@@ -157,13 +169,6 @@ article {
 }
 
 @media screen and (max-width: 1023px) {
-  .navbar-item:hover,
-  .navbar-item:active,
-  .navbar-item:focus {
-    background-color: var(--main-background) !important;
-    color: var(--dark-text-colour) !important;
-  }
-
   .navbar,
   .navbar-menu,
   .navbar-item,
@@ -179,7 +184,7 @@ article {
 }
 
 hr.is-divider {
-  background-color: var(--accent-1);
+  background-color: var(--red-accent);
   display: block;
   height: 2px;
   border: 0;
@@ -190,7 +195,7 @@ hr.is-divider {
 }
 
 hr.is-thin-divider {
-  background-color: var(--accent-1);
+  background-color: var(--red-accent);
   display: block;
   height: 1px;
   border: 0;
