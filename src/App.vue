@@ -138,6 +138,7 @@ export default {
 
 .navbar-item:active,
 .navbar-item:focus,
+.navbar-item:hover,
 .on-navbar-item {
   -moz-outline-style: none;
   outline-style: none;
@@ -185,6 +186,10 @@ article {
 
   .navbar-brand > .navbar-item {
     font-size: 1.1em !important;
+  }
+
+  .navbar-item:hover {
+    background-color: var(--main-background) !important;
   }
 }
 
