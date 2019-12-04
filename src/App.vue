@@ -133,7 +133,7 @@ export default {
 
 .navbar-item {
   background-color: var(--main-background) !important;
-  transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.13s ease-in-out;
 }
 
 .navbar-item:active,
@@ -162,7 +162,7 @@ article {
 
 @media screen and (min-width: 1023px) {
   .pseudo-navbar-focus {
-    border-bottom: 2px solid var(--red-accent) !important;
+    box-shadow: inset 0 -3px 0 0 var(--red-accent);
   }
 }
 
