@@ -1,7 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
 import HomePage from "@/components/HomePage";
-import NotFoundComponent from "@/components/NotFoundComponent";
 
 Vue.use(Router);
 
@@ -11,11 +10,10 @@ const router = new Router({
     {
       path: "/",
       name: "Clement Tsang",
-      component: HomePage
-    },
-    {
-      path: "*",
-      component: NotFoundComponent
+      component: HomePage,
+      props: {
+        navbarClickState: Boolean
+      }
     }
   ],
   scrollBehavior(to) {

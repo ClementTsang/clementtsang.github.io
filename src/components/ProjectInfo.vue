@@ -126,7 +126,7 @@ export default {
   margin: 0 auto;
   height: 450px;
   width: 100%;
-  background-color: var(--accent-1);
+  background-color: var(--red-accent);
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;

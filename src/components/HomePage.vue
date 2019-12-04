@@ -173,7 +173,7 @@ export default {
 }
 
 .hero-body {
-  background-color: var(--accent-1);
+  background-color: var(--red-accent);
   color: var(--dark-text-colour);
   font-family: "Raleway", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
