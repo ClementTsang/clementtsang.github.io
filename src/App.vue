@@ -162,7 +162,7 @@ article {
 
 @media screen and (min-width: 1023px) {
   .pseudo-navbar-focus {
-    box-shadow: inset 0 -3px 0 0 var(--red-accent);
+    box-shadow: inset 0 -2px 0 0 var(--red-accent);
   }
 }
 
