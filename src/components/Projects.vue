@@ -9,7 +9,7 @@
         <div class="columns is-centered">
           <div class="column">
             <ProjectInfo
-              project-image="assets/bottom.png"
+              project-image="assets/bottom.webp"
               project-link="https://github.com/ClementTsang/bottom"
               project-title="bottom"
               project-description="A crossplatform top clone, written in Rust."
@@ -17,7 +17,7 @@
           </div>
           <div class="column">
             <ProjectInfo
-              project-image="assets/rustnao.png"
+              project-image="assets/rustnao.webp"
               project-link="https://github.com/ClementTsang/RustNAO"
               project-title="RustNAO"
               project-description="A Rust wrapper for the SauceNAO API, a popular reverse image search engine."
@@ -27,7 +27,7 @@
         <div class="columns is-centered">
           <div class="column">
             <ProjectInfo
-              project-image="assets/rustcc.png"
+              project-image="assets/rustcc.webp"
               project-link="https://github.com/ClementTsang/rustcc"
               project-title="rustcc"
               project-description="A simple C compiler, written from scratch in Rust."
@@ -35,7 +35,7 @@
           </div>
           <div class="column">
             <ProjectInfo
-              project-image="assets/banshee.png"
+              project-image="assets/banshee.webp"
               project-link="https://github.com/ClementTsang/banshee"
               project-title="Banshee"
               project-description="A osu! clone, written in C++ and featuring automatic map generation."

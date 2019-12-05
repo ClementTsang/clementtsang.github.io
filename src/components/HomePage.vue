@@ -10,7 +10,7 @@
       }"
     >
       <!--Maybe autogen this in the future?-->
-      <img class="hero-background" src="assets/tri.png" />
+      <img class="hero-background" src="assets/tri.webp" />
       <div class="hero-body">
         <div class="container">
           <h1 class="hero-title has-text-centered">

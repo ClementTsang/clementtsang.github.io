@@ -133,7 +133,7 @@ export default {
 
 .navbar-item {
   background-color: var(--main-background) !important;
-  transition: background-color 0.13s ease-in-out;
+  transition: background-color 0.12s ease-in-out;
 }
 
 .navbar-item:active,

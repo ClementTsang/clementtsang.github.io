@@ -51,4 +51,4 @@ Vue.use(IntersectionObserver);
 
 // TODO: IE11 polyfill for bulma
 // TODO: Consider https://webpack.js.org/guides/code-splitting/
-// TODO: Reduce file size
+// TODO: Reduce file size, perhaps shrink images
