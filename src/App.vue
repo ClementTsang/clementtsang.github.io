@@ -104,6 +104,7 @@ export default {
 :root {
   --main-background: #fefefe;
   --dark-text-colour: #1c1b20;
+  --white-text-colour: #fefefe;
   --red-accent: #ee7067;
   --accent-2: #e85a4f;
   --accent-3: #383542;
