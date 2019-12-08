@@ -95,14 +95,14 @@ export default {
 <style scoped>
 .entry-title {
   font-size: 1.8em;
-  color: var(--dark-text-colour);
+  color: var(--black-text-colour);
   font-family: "Raleway", sans-serif;
   margin-top: -0.2em;
 }
 
 .entry-subtitle {
   font-size: 1.2em;
-  color: var(--dark-text-colour);
+  color: var(--black-text-colour);
   font-family: "Quicksand", sans-serif;
   margin-bottom: 0.2em;
   margin-left: 0.3em;
@@ -127,7 +127,7 @@ export default {
   margin: 0 auto;
   height: 450px;
   width: 100%;
-  background-color: var(--main-background-two);
+  background-color: var(--main-background);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,7 +190,7 @@ a {
 
 a,
 a:visited {
-  color: var(--dark-text-colour);
+  color: var(--black-text-colour);
 }
 
 a:hover {

@@ -84,7 +84,7 @@ export default {
 <style scoped>
 .entry-title {
   font-size: 1.5em;
-  color: var(--dark-text-colour);
+  color: var(--text-colour);
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   margin-top: -0.2em;
@@ -92,7 +92,7 @@ export default {
 
 .entry-subtitle {
   font-size: 1.1em;
-  color: var(--dark-text-colour);
+  color: var(--text-colour);
   font-family: "QuickSand", sans-serif;
   font-weight: bold;
   margin-bottom: 0.2em;

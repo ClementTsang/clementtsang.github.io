@@ -11,9 +11,7 @@ const router = new Router({
       path: "/",
       name: "Clement Tsang",
       component: HomePage,
-      props: {
-        navbarClickState: Boolean
-      }
+      props: {}
     }
   ],
   scrollBehavior(to) {
