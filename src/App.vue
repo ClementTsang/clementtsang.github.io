@@ -141,8 +141,8 @@ export default {
   --navbar-hover: rgba(0, 0, 0, 0.05);
   --navbar-click: rgba(0, 0, 0, 0.1);
   --url-hover: #5e81ac;
-  --url-visited: #b48ead;
-  --url-not-visited: #bf616a;
+  --url-visited: #373a82;
+  --url-not-visited: #5e81ac;
 }
 
 [data-theme="dark"] {

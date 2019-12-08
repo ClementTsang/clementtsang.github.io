@@ -187,13 +187,4 @@ export default {
 a {
   text-decoration: none;
 }
-
-a,
-a:visited {
-  color: var(--black-text-colour);
-}
-
-a:hover {
-  color: var(--url-hover);
-}
 </style>
