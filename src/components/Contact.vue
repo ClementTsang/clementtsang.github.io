@@ -13,24 +13,28 @@
         <br />
         <div class="columns is-centered is-marginless">
           <div class="column has-text-centered">
-            <font-awesome-icon :icon="['fas', 'phone']" size="2x" fixed-width />
-            <h3>
-              <a href="tel:+16479936280" target="_blank">
+            <a href="tel:+16479936280" target="_blank">
+              <font-awesome-icon
+                :icon="['fas', 'phone']"
+                size="2x"
+                fixed-width
+              />
+              <h3>
                 +1 (647) 993-6280
-              </a>
-            </h3>
+              </h3>
+            </a>
           </div>
           <div class="column has-text-centered">
-            <font-awesome-icon
-              :icon="['fas', 'envelope']"
-              size="2x"
-              fixed-width
-            />
-            <h3>
-              <a href="mailto: cjhtsang@edu.uwaterloo.ca" target="_blank">
+            <a href="mailto: cjhtsang@edu.uwaterloo.ca" target="_blank">
+              <font-awesome-icon
+                :icon="['fas', 'envelope']"
+                size="2x"
+                fixed-width
+              />
+              <h3>
                 cjhtsang@edu.uwaterloo.ca
-              </a>
-            </h3>
+              </h3>
+            </a>
           </div>
         </div>
       </article>
