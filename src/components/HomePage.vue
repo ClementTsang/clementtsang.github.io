@@ -174,7 +174,7 @@ export default {
 
 .hero-body {
   background-color: var(--red-accent);
-  color: var(--dark-text-colour);
+  color: var(--black-text-colour);
   font-family: "Raleway", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -188,11 +188,11 @@ export default {
 }
 
 .is-divider {
-  background-color: var(--dark-text-colour);
+  background-color: var(--black-text-colour);
 }
 
 .footer {
   background-color: var(--main-background-two);
-  color: var(--dark-text-colour);
+  color: var(--text-colour);
 }
 </style>

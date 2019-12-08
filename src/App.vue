@@ -8,7 +8,7 @@
       <div class="navbar-brand">
         <router-link
           @click.native="mobileCloseHamburger"
-          class="navbar-item"
+          class="navbar-item brand"
           to="/#home"
         >
           <p>Clement Tsang</p>
@@ -26,6 +26,16 @@
           <span aria-hidden="true" />
           <span aria-hidden="true" />
           <span aria-hidden="true" />
+        </a>
+        <a
+          id="dark-by-hamburger"
+          class="navbar-item dark-mode-btn"
+          @click="toggleDarkMode"
+        >
+          <font-awesome-icon
+            :icon="isDark ? ['fas', 'sun'] : ['fas', 'moon']"
+            fixed-width
+          />
         </a>
       </div>
 
@@ -68,8 +78,18 @@
           </router-link>
         </div>
       </div>
+      <a
+        id="dark-away-from-hamburger"
+        class="navbar-item dark-mode-btn"
+        @click="toggleDarkMode"
+      >
+        <font-awesome-icon
+          :icon="isDark ? ['fas', 'sun'] : ['fas', 'moon']"
+          fixed-width
+        />
+      </a>
     </nav>
-    <router-view :navbar-click-state="this.clickState" />
+    <router-view />
   </div>
 </template>
 
@@ -77,7 +97,7 @@
 export default {
   data() {
     return {
-      clickState: false
+      isDark: false
     };
   },
   mounted: () => {},
@@ -93,6 +113,15 @@ export default {
       if (burgerEle.classList.contains("is-active")) {
         this.toggleHamburger();
       }
+    },
+    toggleDarkMode() {
+      if (this.isDark) {
+        this.isDark = false;
+        document.documentElement.removeAttribute("data-theme");
+      } else {
+        this.isDark = true;
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
     }
   }
 };
@@ -103,17 +132,25 @@ export default {
 
 :root {
   --main-background: #fefefe;
-  --dark-text-colour: #1c1b20;
-  --white-text-colour: #fefefe;
+  --main-background-two: #fafafa;
+  --text-colour: #1c1b20;
+  --black-text-colour: #1c1b20;
   --red-accent: #ee7067;
   --accent-2: #e85a4f;
   --accent-3: #383542;
-  --navbar-hover: rgba(0, 0, 0, 0.075);
-  --navbar-click: rgba(0, 0, 0, 0.15);
+  --navbar-hover: rgba(0, 0, 0, 0.05);
+  --navbar-click: rgba(0, 0, 0, 0.1);
   --url-hover: #5e81ac;
   --url-visited: #b48ead;
   --url-not-visited: #bf616a;
-  --main-background-two: #fafafa;
+}
+
+[data-theme="dark"] {
+  --main-background: #121212;
+  --main-background-two: #393e46;
+  --text-colour: #fefefe;
+  --navbar-hover: rgba(255, 255, 255, 0.05);
+  --navbar-click: rgba(255, 255, 255, 0.1);
 }
 
 .navbar,
@@ -123,7 +160,7 @@ export default {
 .navbar-dropdown,
 #menu-hamburger {
   background-color: var(--main-background) !important;
-  color: var(--dark-text-colour) !important;
+  color: var(--text-colour) !important;
   font-family: "Raleway", sans-serif !important;
   font-size: 0.97em !important;
 }
@@ -153,8 +190,12 @@ export default {
   background-color: var(--navbar-click) !important;
 }
 
-.navbar-brand > .navbar-item {
+.navbar-brand > .brand {
   font-size: 1.15em !important;
+}
+
+.dark-mode-btn {
+  font-size: 1rem !important;
 }
 
 article {
@@ -165,6 +206,10 @@ article {
 @media screen and (min-width: 1023px) {
   .pseudo-navbar-focus {
     box-shadow: inset 0 -2px 0 0 var(--red-accent);
+  }
+
+  #dark-by-hamburger {
+    display: none;
   }
 }
 
@@ -192,6 +237,10 @@ article {
   .navbar-item:hover {
     background-color: var(--main-background) !important;
   }
+
+  #dark-away-from-hamburger {
+    display: none;
+  }
 }
 
 hr.is-divider {
@@ -218,20 +267,20 @@ hr.is-thin-divider {
 
 .title {
   font-size: 2.75em !important;
-  color: var(--dark-text-colour) !important;
+  color: var(--text-colour) !important;
   font-family: "Quicksand", sans-serif !important;
   font-weight: 300;
 }
 
 .subtitle {
   font-size: 2em !important;
-  color: var(--dark-text-colour) !important;
+  color: var(--text-colour) !important;
   font-family: "Raleway", sans-serif !important;
 }
 
 h3 {
   font-size: 1.05em !important;
-  color: var(--dark-text-colour) !important;
+  color: var(--text-colour) !important;
   font-family: "Raleway", sans-serif !important;
   line-height: 160%;
 }
