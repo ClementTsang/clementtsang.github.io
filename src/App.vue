@@ -140,9 +140,9 @@ export default {
   --accent-3: #383542;
   --navbar-hover: rgba(0, 0, 0, 0.05);
   --navbar-click: rgba(0, 0, 0, 0.1);
-  --url-hover: #5e81ac;
-  --url-visited: #373a82;
-  --url-not-visited: #5e81ac;
+  --url-hover: #e62719;
+  --url-visited: #cf2317;
+  --url-not-visited: #ee8968;
 }
 
 [data-theme="dark"] {
