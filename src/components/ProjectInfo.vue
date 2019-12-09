@@ -160,11 +160,11 @@ export default {
   bottom: 0;
   background: inherit;
   z-index: -1;
-  box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.39);
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.45);
 
-  -webkit-filter: blur(5px) contrast(125%) brightness(100%);
-  filter: blur(5px) contrast(125%) brightness(100%);
-  margin: -5px;
+  -webkit-filter: blur(10px) contrast(100%) brightness(100%);
+  filter: blur(10px) contrast(100%) brightness(100%);
+  margin: -15px;
 }
 
 .frost-card:hover,
