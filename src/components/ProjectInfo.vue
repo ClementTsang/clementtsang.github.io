@@ -160,7 +160,7 @@ export default {
   bottom: 0;
   background: inherit;
   z-index: -1;
-  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.45);
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.42);
 
   -webkit-filter: blur(10px) contrast(100%) brightness(100%);
   filter: blur(10px) contrast(100%) brightness(100%);
