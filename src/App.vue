@@ -149,13 +149,12 @@ export default {
   --main-background: #121212;
   --main-background-two: #393e46;
   --text-colour: #fefefe;
-  --navbar-hover: rgba(255, 255, 255, 0.05);
-  --navbar-click: rgba(255, 255, 255, 0.1);
+  --navbar-hover: rgba(255, 255, 255, 0.15);
+  --navbar-click: rgba(255, 255, 255, 0.2);
 }
 
 .navbar,
 .navbar-menu,
-.navbar-item,
 .navbar-link,
 .navbar-dropdown,
 #menu-hamburger {
@@ -165,13 +164,11 @@ export default {
   font-size: 0.97em !important;
 }
 
-/*.navbar {
-  box-shadow: 0px 4px 5px -6px #999;
-}*/
-
 .navbar-item {
+  color: var(--text-colour) !important;
   background-color: var(--main-background) !important;
-  transition: background-color 0.12s ease-in-out;
+  font-family: "Raleway", sans-serif !important;
+  font-size: 0.97em !important;
 }
 
 .navbar-item:active,
@@ -182,16 +179,23 @@ export default {
   outline-style: none;
 }
 
+.burger:focus,
+.navbar-item:focus {
+  background-color: var(--main-background) !important;
+}
+
+.burger:hover,
 .navbar-item:hover {
   background-color: var(--navbar-hover) !important;
 }
 
+.burger:active,
 .navbar-item:active {
   background-color: var(--navbar-click) !important;
 }
 
 .navbar-brand > .brand {
-  font-size: 1.15em !important;
+  font-size: 1.2em !important;
 }
 
 .dark-mode-btn {
@@ -223,23 +227,27 @@ article {
 @media screen and (max-width: 1023px) {
   .navbar,
   .navbar-menu,
-  .navbar-item,
   .navbar-link,
   .navbar-dropdown,
   #menu-hamburger {
     font-size: 0.975em !important;
   }
 
-  .navbar-brand > .navbar-item {
-    font-size: 1.1em !important;
-  }
-
-  .navbar-item:hover {
-    background-color: var(--main-background) !important;
+  .navbar-brand > .brand {
+    font-size: 1.2em !important;
   }
 
   #dark-away-from-hamburger {
     display: none;
+  }
+}
+
+@media (hover: none) {
+  #menu-hamburger:focus,
+  .navbar-item:focus,
+  #menu-hamburger:hover,
+  .navbar-item:hover {
+    background-color: var(--main-background) !important;
   }
 }
 
