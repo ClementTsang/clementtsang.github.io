@@ -65,7 +65,7 @@
         <p>
           Website source can be found
           <a href="https://github.com/ClementTsang/personal-website">
-            on GitHub here.
+            on GitHub.
           </a>
           If you want to use it, feel free!
         </p>
