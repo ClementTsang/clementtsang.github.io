@@ -2,8 +2,8 @@
 import "babel-polyfill";
 import Vue from "vue";
 
+import { Tooltip } from "buefy";
 import "buefy/dist/buefy.css";
-import Buefy from "buefy";
 import router from "./router";
 import App from "./App.vue";
 
@@ -43,7 +43,7 @@ library.add(
 library.add(faGithub, faLinkedin);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
-Vue.use(Buefy);
+Vue.use(Tooltip);
 Vue.config.productionTip = false;
 new Vue({ router, render: h => h(App) }).$mount("#app");
 
