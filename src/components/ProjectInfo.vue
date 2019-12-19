@@ -189,6 +189,6 @@ a:visited {
   color: var(--black-text-colour);
 }
 a:hover {
-  color: var(--url-hover);
+  color: var(--dark-colour);
 }
 </style>

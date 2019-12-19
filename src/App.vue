@@ -45,14 +45,6 @@
       >
         <div class="navbar-end">
           <router-link
-            id="about-link"
-            @click.native="mobileCloseHamburger"
-            class="navbar-item"
-            to="/#about"
-          >
-            About
-          </router-link>
-          <router-link
             id="experience-link"
             @click.native="mobileCloseHamburger"
             class="navbar-item"
@@ -100,7 +92,16 @@ export default {
       isDark: false
     };
   },
-  mounted: () => {},
+  created: function() {
+    /*if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      // Toggle dark mode...
+      this.isDark = true;
+      document.documentElement.setAttribute("data-theme", "dark");
+    }*/
+  },
   methods: {
     toggleHamburger() {
       const burgerEle = document.getElementById("menu-hamburger");
@@ -133,8 +134,10 @@ export default {
 :root {
   --main-background: #fefefe;
   --main-background-two: #fafafa;
-  --text-colour: #1c1b20;
-  --black-text-colour: #1c1b20;
+  --light-colour: #fefefe;
+  --dark-colour: #4c566a;
+  --text-colour: #2e3440;
+  --black-text-colour: #2e3440;
   --red-accent: #ee7067;
   --accent-2: #e85a4f;
   --accent-3: #383542;
@@ -287,9 +290,9 @@ hr.is-thin-divider {
 }
 
 h3 {
-  font-size: 1.05em !important;
-  color: var(--text-colour) !important;
-  font-family: "Raleway", sans-serif !important;
+  font-size: 1.05em;
+  color: var(--text-colour);
+  font-family: "Raleway", sans-serif;
   line-height: 160%;
 }
 

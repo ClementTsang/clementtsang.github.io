@@ -17,20 +17,88 @@
             Clement Tsang
           </h1>
           <hr class="is-divider" />
-          <h2 class="hero-subtitle has-text-centered">
-            Welcome to my website!
-          </h2>
+          <article>
+            <h3 class="has-text-centered">
+              I'm a developer who enjoys working on all sorts of projects,
+              currently studying at the University of Waterloo as a third year
+              Computer Science student. I enjoy music, reading, video games, and
+              working on personal projects in my free time.
+            </h3>
+            <br />
+            <div class="columns is-centered is-marginless is-mobile">
+              <div class="column is-half">
+                <div class="columns is-centered is-marginless is-mobile">
+                  <div class="column">
+                    <div class="columns is-centered is-marginless is-mobile">
+                      <div class="column" />
+                      <div class="column has-text-centered">
+                        <b-tooltip
+                          label="Resume"
+                          position="is-bottom"
+                          type="is-dark"
+                        >
+                          <a href="/assets/resume.pdf" target="_blank">
+                            <font-awesome-icon
+                              :icon="['fas', 'file']"
+                              size="2x"
+                              fixed-width
+                            />
+                          </a>
+                        </b-tooltip>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="columns is-centered is-marginless is-mobile">
+                      <div class="column has-text-centered">
+                        <b-tooltip
+                          label="GitHub"
+                          position="is-bottom"
+                          type="is-dark"
+                        >
+                          <a
+                            href="https://github.com/ClementTsang"
+                            target="_blank"
+                          >
+                            <font-awesome-icon
+                              :icon="['fab', 'github']"
+                              size="2x"
+                              fixed-width
+                            />
+                          </a>
+                        </b-tooltip>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="columns is-centered is-marginless is-mobile">
+                      <div class="column has-text-centered">
+                        <b-tooltip
+                          label="LinkedIn"
+                          position="is-bottom"
+                          type="is-dark"
+                        >
+                          <a
+                            href="https://www.linkedin.com/in/clement-tsang"
+                            target="_blank"
+                          >
+                            <font-awesome-icon
+                              :icon="['fab', 'linkedin']"
+                              size="2x"
+                              fixed-width
+                            />
+                          </a>
+                        </b-tooltip>
+                      </div>
+                      <div class="column" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
-    </section>
-    <section>
-      <About
-        v-observe-visibility="{
-          callback: visibilityChanged,
-          throttle: this.throttle,
-          intersection: this.intersection
-        }"
-      />
     </section>
     <section>
       <Experience
@@ -83,7 +151,6 @@
 </template>
 
 <script>
-import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
@@ -91,7 +158,6 @@ import Contact from "@/components/Contact";
 export default {
   name: "HomePage",
   components: {
-    About,
     Experience,
     Projects,
     Contact
@@ -194,5 +260,19 @@ export default {
 .footer {
   background-color: var(--main-background-two);
   color: var(--text-colour);
+}
+
+h3 {
+  font-size: 1.2em !important;
+  color: var(--black-text-colour);
+}
+
+.hero-body > a,
+.hero-body > a:visited {
+  color: var(--black-text-colour);
+}
+
+.hero-body > a:hover {
+  color: var(--dark-colour);
 }
 </style>
