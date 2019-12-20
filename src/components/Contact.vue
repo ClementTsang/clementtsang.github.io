@@ -8,13 +8,17 @@
         <hr class="is-divider" />
         <h3 class="has-text-centered">
           Interested in getting in touch with me? Feel free to contact me with
-          the following:
+          one of the following:
         </h3>
         <br />
         <div class="columns is-centered is-marginless is-mobile">
-          <div class="column is-half">
-            <div class="columns is-centered is-marginless is-mobile">
-              <div class="column has-text-centered">
+          <div
+            class="column is-half-mobile is-marginless is-paddingless is-two-thirds-desktop"
+          >
+            <div class="columns is-centered is-marginless">
+              <div
+                class="column has-text-centered is-marginless is-paddingless"
+              >
                 <h3>
                   <a href="tel:+16479936280" target="_blank">
                     <font-awesome-icon
@@ -26,15 +30,17 @@
                   </a>
                 </h3>
               </div>
-              <div class="column has-text-centered">
+              <div
+                class="column has-text-centered is-marginless is-paddingless"
+              >
                 <h3>
-                  <a href="mailto: cjhtsang@edu.uwaterloo.ca" target="_blank">
+                  <a href="mailto: cjhtsang@uwaterloo.ca" target="_blank">
                     <font-awesome-icon
                       :icon="['fas', 'envelope']"
                       size="lg"
                       fixed-width
                     />
-                    cjhtsang@edu.uwaterloo.ca
+                    cjhtsang@uwaterloo.ca
                   </a>
                 </h3>
               </div>
