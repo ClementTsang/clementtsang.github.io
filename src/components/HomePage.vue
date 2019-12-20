@@ -26,7 +26,7 @@
             </h3>
             <br />
             <div class="columns is-centered is-marginless is-mobile">
-              <div class="column is-half">
+              <div class="column is-half is-paddingless is-marginless">
                 <div class="columns is-centered is-marginless is-mobile">
                   <div class="column">
                     <div class="columns is-centered is-marginless is-mobile">
