@@ -267,12 +267,12 @@ h3 {
   color: var(--black-text-colour);
 }
 
-.hero-body > a,
-.hero-body > a:visited {
+.hero-body a,
+.hero-body a:visited {
   color: var(--black-text-colour);
 }
 
-.hero-body > a:hover {
+.hero-body a:hover {
   color: var(--dark-colour);
 }
 </style>
