@@ -2,13 +2,13 @@ module.exports = {
   extends: [
     // add more generic rulesets here, such as:
     // 'eslint:recommended',
-    'plugin:vue/strongly-recommended',
-    'prettier'
+    "plugin:vue/strongly-recommended",
+    "prettier"
   ],
-  plugins: ['prettier'],
+  plugins: ["prettier"],
   rules: {
-    'vue/max-attributes-per-line': [
-      'warn',
+    "vue/max-attributes-per-line": [
+      "warn",
       {
         singleline: 5,
         multiline: {
@@ -17,16 +17,16 @@ module.exports = {
         }
       }
     ],
-    'vue/html-self-closing': [
-      'warn',
+    "vue/html-self-closing": [
+      "warn",
       {
         html: {
-          void: 'always',
-          normal: 'always',
-          component: 'always'
+          void: "always",
+          normal: "always",
+          component: "always"
         },
-        svg: 'always',
-        math: 'always'
+        svg: "always",
+        math: "always"
       }
     ]
   }

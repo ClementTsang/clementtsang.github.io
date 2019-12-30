@@ -129,21 +129,16 @@
       />
     </section>
     <footer class="footer">
+      <!-- prettier-ignore -->
       <div class="content has-text-centered">
         <p>
           Website source can be found
-          <a href="https://github.com/ClementTsang/personal-website">
-            on GitHub.
-          </a>
+          <a href="https://github.com/ClementTsang/personal-website">on GitHub</a>.
           If you want to use it, feel free!
         </p>
         <p>
           The source code is licensed under
-          <a
-            href="https://github.com/ClementTsang/personal-website/blob/master/LICENSE"
-          >
-            MIT.
-          </a>
+          <a href="https://github.com/ClementTsang/personal-website/blob/master/LICENSE">MIT</a>.
         </p>
       </div>
     </footer>
