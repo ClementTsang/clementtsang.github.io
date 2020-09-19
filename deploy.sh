@@ -14,6 +14,6 @@ git add -A
 git commit -m 'Deploying website...'
 
 # if you are deploying to https://<USERNAME>.github.io
-git push -f git@github.com:ClementTsang/clementtsang.github.io.git master
+git push -f https://github.com/ClementTsang/clementtsang.github.io.git master
 
 cd -
