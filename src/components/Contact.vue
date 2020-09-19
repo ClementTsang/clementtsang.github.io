@@ -20,20 +20,6 @@
                 class="column has-text-centered is-marginless is-paddingless"
               >
                 <h3>
-                  <a href="tel:+16479936280" target="_blank">
-                    <font-awesome-icon
-                      :icon="['fas', 'phone']"
-                      size="lg"
-                      fixed-width
-                    />
-                    +1 (647) 993-6280
-                  </a>
-                </h3>
-              </div>
-              <div
-                class="column has-text-centered is-marginless is-paddingless"
-              >
-                <h3>
                   <a href="mailto: cjhtsang@uwaterloo.ca" target="_blank">
                     <font-awesome-icon
                       :icon="['fas', 'envelope']"
@@ -54,7 +40,7 @@
 
 <script>
 export default {
-  name: "Contact"
+  name: "Contact",
 };
 </script>
 
