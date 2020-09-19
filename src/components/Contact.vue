@@ -7,8 +7,7 @@
         </p>
         <hr class="is-divider" />
         <h3 class="has-text-centered">
-          Interested in getting in touch with me? Feel free to contact me with
-          one of the following:
+          Interested in getting in touch with me? Feel free to contact me here:
         </h3>
         <br />
         <div class="columns is-centered is-marginless is-mobile">
