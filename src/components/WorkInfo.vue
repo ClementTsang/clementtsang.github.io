@@ -7,24 +7,32 @@
       <p class="smaller-subtitle entry-subtitle">
         {{ jobPosition }}
       </p>
+
       <h3>
         <font-awesome-icon
           :icon="['fas', 'calendar-alt']"
           size="sm"
           fixed-width
+          style="margin-bottom: 0.2em;"
         />
-
-        {{ dateRange }}
+        <ul style="display: inline-table; margin-left: 0.3em;">
+          <li v-for="date in dateRange" :key="date">
+            {{ date }}
+          </li>
+        </ul>
       </h3>
+
       <h3>
         <font-awesome-icon
           :icon="['fas', 'map-marker-alt']"
           size="sm"
           fixed-width
+          style="margin-bottom: 0.2em;"
         />
 
         {{ jobLocation }}
       </h3>
+
       <h3 v-if="jobWebsite !== ''">
         <a :href="jobWebsite" target="_blank">
           <font-awesome-icon :icon="['fas', 'link']" size="sm" fixed-width />
@@ -51,33 +59,33 @@ export default {
   props: {
     entryTitle: {
       type: String,
-      required: true
+      required: true,
     },
     dateRange: {
-      type: String,
-      required: true //TODO: make this accessible!
+      type: Array,
+      required: true,
     },
     jobPosition: {
       type: String,
-      required: true
+      required: true,
     },
     jobDescription: {
       type: String,
-      required: true
+      required: true,
     },
     jobLocation: {
       type: String,
-      default: ""
+      default: "",
     },
     jobWebsite: {
       type: String,
-      default: ""
+      default: "",
     },
     jobWebsiteName: {
       type: String,
-      default: ""
-    }
-  }
+      default: "",
+    },
+  },
 };
 </script>
 
