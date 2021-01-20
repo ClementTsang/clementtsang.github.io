@@ -11,14 +11,22 @@
           Work
         </p>
         <WorkInfo
+          entry-title="Wish"
+          :date-range="['Jan. 2020 - Apr. 2020', 'Sept. 2020 - Dec. 2020']"
+          job-position="Software Engineering Intern"
+          job-description="Worked on the Wish Marketplace team as a mobile and backend developer for the Wish Local app."
+          job-location="Ontario, Canada"
+          job-website="https://www.wish.com/companyinfo"
+          job-website-name="Wish"
+          style="padding-bottom: 2rem;"
+        />
+        <WorkInfo
           entry-title="YuJa Inc."
-          date-range="2019"
-          job-position="Fulltime - Software Developer"
+          :date-range="['May 2019 - Aug. 2019']"
+          job-position="Software Developer - Full Stack"
           job-description="Worked as a full stack software developer
 									for a new product, Panorama, automatically creating 
-									accessible documents for files uploaded to LMS sites like D2L and Blackboard,
-									ensuring users wouldn't have to worry about being unable to access documents that 
-									others have uploaded."
+									accessible documents for files uploaded to LMS sites like D2L and Blackboard."
           job-location="Ontario, Canada"
           job-website="https://www.yuja.com/"
           job-website-name="YuJa"
@@ -26,11 +34,11 @@
         />
         <WorkInfo
           entry-title="YuJa Inc."
-          date-range="2018"
-          job-position="Fulltime - Test Automation Engineer"
-          job-description="Ran QA tests to ensure the quality of our product and new
-									features without any regressions, in addition to developing automated tests to save time 
-									and improve test quality using Selenium."
+          :date-range="['Sept. 2018 - Dec. 2018']"
+          job-position="Software Developer - Testing and Operations"
+          job-description="Ran QA tests to ensure the quality of our product and
+        new features without any regressions, in addition to developing
+        automated tests to save time and improve test quality using Selenium."
           job-location="Ontario, Canada"
           job-website="https://www.yuja.com/"
           job-website-name="YuJa"
@@ -43,7 +51,7 @@
         </p>
         <WorkInfo
           entry-title="University of Waterloo"
-          date-range="2017 - Present"
+          :date-range="['2017 - Present']"
           job-position="Computer Science, Honours"
           job-description="Currently a third year Computer Science student at the Unviersity of Waterloo, and set to graduate in 2022."
           job-location="Ontario, Canada"
@@ -59,8 +67,8 @@ import WorkInfo from "@/components/WorkInfo";
 export default {
   name: "Experience",
   components: {
-    WorkInfo
-  }
+    WorkInfo,
+  },
 };
 </script>
 

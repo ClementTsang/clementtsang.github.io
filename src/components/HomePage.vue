@@ -6,7 +6,7 @@
       v-observe-visibility="{
         callback: visibilityChanged,
         throttle: this.throttle,
-        intersection: this.intersection
+        intersection: this.intersection,
       }"
     >
       <!--Maybe autogen this in the future?-->
@@ -105,7 +105,7 @@
         v-observe-visibility="{
           callback: visibilityChanged,
           throttle: this.throttle,
-          intersection: this.intersection
+          intersection: this.intersection,
         }"
       />
     </section>
@@ -114,8 +114,8 @@
         v-observe-visibility="{
           callback: visibilityChanged,
           intersection: {
-            threshold: 0.4
-          }
+            threshold: 0.4,
+          },
         }"
       />
     </section>
@@ -124,7 +124,7 @@
         v-observe-visibility="{
           callback: visibilityChanged,
           throttle: this.throttle,
-          intersection: this.intersection
+          intersection: this.intersection,
         }"
       />
     </section>
@@ -155,7 +155,7 @@ export default {
   components: {
     Experience,
     Projects,
-    Contact
+    Contact,
   },
   mounted() {
     this.scroll_elements = new Map([]);
@@ -186,8 +186,8 @@ export default {
       scroll_elements: new Map([]),
       throttle: 0,
       intersection: {
-        threshold: 0.105
-      }
+        threshold: 0.105,
+      },
     };
   },
   methods: {
@@ -213,8 +213,8 @@ export default {
           }
         }
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

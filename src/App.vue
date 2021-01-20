@@ -89,7 +89,7 @@
 export default {
   data() {
     return {
-      isDark: false
+      isDark: false,
     };
   },
   created: function() {
@@ -123,8 +123,8 @@ export default {
         this.isDark = true;
         document.documentElement.setAttribute("data-theme", "dark");
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -294,6 +294,10 @@ h3 {
   color: var(--text-colour);
   font-family: "Raleway", sans-serif;
   line-height: 160%;
+}
+
+.fa-sm {
+  vertical-align: middle;
 }
 
 a {
