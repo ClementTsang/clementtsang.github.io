@@ -53,7 +53,7 @@
           entry-title="University of Waterloo"
           :date-range="['2017 - Present']"
           job-position="Computer Science, Honours"
-          job-description="Currently a third year Computer Science student at the Unviersity of Waterloo, and set to graduate in 2022."
+          job-description="Currently a fourth year Computer Science student at the Unviersity of Waterloo, and set to graduate in 2022."
           job-location="Ontario, Canada"
           style="padding-bottom: 2rem;"
         />

@@ -20,7 +20,7 @@
           <article>
             <h3 class="has-text-centered">
               I'm a developer who enjoys working on all sorts of projects,
-              currently studying at the University of Waterloo as a third year
+              currently studying at the University of Waterloo as a fourth year
               Computer Science student. I enjoy music, reading, video games, and
               working on personal projects in my free time.
             </h3>
