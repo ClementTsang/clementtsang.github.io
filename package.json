@@ -3,12 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
-    "serverel": "serve -s dist",
     "build": "vue-cli-service build --modern",
-    "localdep": "npm run build; npm run serverel",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build; push-dir --dir=dist --branch=gh-pages --cleanup",
     "check": "depcheck"
   },
   "dependencies": {

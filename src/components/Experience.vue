@@ -11,10 +11,20 @@
           Work
         </p>
         <WorkInfo
+          entry-title="Datadog"
+          :date-range="['May 2021 - Current']"
+          job-position="Software Engineering Intern - Metrics"
+          job-description="Currently working remotely as an SE intern at Datadog."
+          job-location="New York, NY"
+          job-website="https://www.datadoghq.com/"
+          job-website-name="Datadog"
+          style="padding-bottom: 2rem;"
+        />
+        <WorkInfo
           entry-title="Wish"
-          :date-range="['Jan. 2020 - Apr. 2020', 'Sept. 2020 - Dec. 2020']"
+          :date-range="['Jan 2020 - Apr 2020', 'Sept 2020 - Dec 2020']"
           job-position="Software Engineering Intern"
-          job-description="Worked on the Wish Marketplace team as a mobile and backend developer for the Wish Local app."
+          job-description="Worked on the Wish Marketplace team as a mobile and backend developer for the Wish Local app, introducing new features and fixing bugs."
           job-location="Ontario, Canada"
           job-website="https://www.wish.com/companyinfo"
           job-website-name="Wish"
@@ -22,7 +32,7 @@
         />
         <WorkInfo
           entry-title="YuJa Inc."
-          :date-range="['May 2019 - Aug. 2019']"
+          :date-range="['May 2019 - Aug 2019']"
           job-position="Software Developer - Full Stack"
           job-description="Worked as a full stack software developer
 									for a new product, Panorama, automatically creating 
@@ -34,7 +44,7 @@
         />
         <WorkInfo
           entry-title="YuJa Inc."
-          :date-range="['Sept. 2018 - Dec. 2018']"
+          :date-range="['Sept 2018 - Dec 2018']"
           job-position="Software Developer - Testing and Operations"
           job-description="Ran QA tests to ensure the quality of our product and
         new features without any regressions, in addition to developing

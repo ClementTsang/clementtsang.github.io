@@ -12,15 +12,15 @@
               project-image="assets/bottom.webp"
               project-link="https://github.com/ClementTsang/bottom"
               project-title="bottom"
-              project-description="A crossplatform top clone, written in Rust."
+              project-description="A cross-platform graphical process/system monitor, inspired by gotop, gtop, and htop."
             />
           </div>
           <div class="column">
             <ProjectInfo
-              project-image="assets/rustnao.webp"
-              project-link="https://github.com/ClementTsang/RustNAO"
-              project-title="RustNAO"
-              project-description="A Rust wrapper for the SauceNAO API, a popular reverse image search engine."
+              project-image="assets/polify.webp"
+              project-link="https://github.com/ClementTsang/polify"
+              project-title="Polify"
+              project-description="Low-poly image generator library. Written in Rust, with some WebAssembly support."
             />
           </div>
         </div>
@@ -42,28 +42,6 @@
             />
           </div>
         </div>
-        <!--
-        <div class="columns is-centered">
-          <div class="column">
-            <ProjectInfo
-              project-image=""
-              project-link="https://github.com/ClementTsang/dinaj_android"
-              project-title="Do I Need a Jacket?"
-              project-description="A simple weather app to answer a simple question."
-              project-website="https://clementtsang.github.io/dinaj_android/"
-            />
-          </div>
-          <div class="column">
-            <ProjectInfo
-              project-image=""
-              project-link="https://github.com/ClementTsang/polify"
-              project-title="Polify"
-              project-description="A simple low poly art generator."
-              project-website="https://clementtsang.github.io/polify/"
-            />
-          </div>
-        </div>
-        -->
       </article>
     </div>
   </div>
