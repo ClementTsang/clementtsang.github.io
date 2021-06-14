@@ -19,10 +19,9 @@
           <hr class="is-divider" />
           <article>
             <h3 class="has-text-centered">
-              I'm a developer who enjoys working on all sorts of projects,
-              currently studying at the University of Waterloo as a fourth year
-              Computer Science student. I enjoy music, reading, video games, and
-              working on personal projects in my free time.
+              I'm a developer that is currently studying at the University of Waterloo
+              as a fourth year Computer Science student.  In my spare time, I enjoy music, reading,
+              video games, and taking on my evergrowing list of personal projects.
             </h3>
             <br />
             <div class="columns is-centered is-marginless is-mobile">
@@ -133,12 +132,12 @@
       <div class="content has-text-centered">
         <p>
           Website source can be found
-          <a href="https://github.com/ClementTsang/personal-website">on GitHub</a>.
+          <a href="https://github.com/ClementTsang/clementtsang.github.io">on GitHub</a>.
           If you want to use it, feel free!
         </p>
         <p>
           The source code is licensed under
-          <a href="https://github.com/ClementTsang/personal-website/blob/master/LICENSE">MIT</a>.
+          <a href="https://github.com/ClementTsang/clementtsang.github.io/blob/master/LICENSE">MIT</a>.
         </p>
       </div>
     </footer>
