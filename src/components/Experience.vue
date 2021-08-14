@@ -20,7 +20,7 @@
           entry-title="Datadog"
           :date-range="['May 2021 - August 2021']"
           job-position="Software Engineering Intern - Metrics"
-          job-description="Worked in the Metrics team to build internal tools to improve the development process of integral backend parts of the product."
+          job-description="Worked in the Metrics team to build internal tools to improve the development process for core backend components of the services provided."
           job-location="New York, United States"
           job-website="https://www.datadoghq.com/"
           job-website-name="Datadog"
