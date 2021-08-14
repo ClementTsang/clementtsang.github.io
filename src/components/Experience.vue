@@ -2,23 +2,19 @@
   <div id="experience" class="columns is-marginless is-centered page-item">
     <div class="column is-11">
       <article>
-        <p class="title has-text-centered">
-          Experience
-        </p>
+        <p class="title has-text-centered">Experience</p>
         <hr class="is-divider" />
         <br />
-        <p class="subtitle">
-          Work
-        </p>
+        <p class="subtitle">Work</p>
         <WorkInfo
           entry-title="Datadog"
-          :date-range="['May 2021 - Current']"
+          :date-range="['May 2021 - August 2021']"
           job-position="Software Engineering Intern - Metrics"
-          job-description="Currently working remotely as an SE intern at Datadog."
+          job-description="Worked in the Metrics team to build internal tools to improve the development process of integral backend parts of the product."
           job-location="New York, NY"
           job-website="https://www.datadoghq.com/"
           job-website-name="Datadog"
-          style="padding-bottom: 2rem;"
+          style="padding-bottom: 2rem"
         />
         <WorkInfo
           entry-title="Wish"
@@ -28,7 +24,7 @@
           job-location="Ontario, Canada"
           job-website="https://www.wish.com/companyinfo"
           job-website-name="Wish"
-          style="padding-bottom: 2rem;"
+          style="padding-bottom: 2rem"
         />
         <WorkInfo
           entry-title="YuJa Inc."
@@ -40,7 +36,7 @@
           job-location="Ontario, Canada"
           job-website="https://www.yuja.com/"
           job-website-name="YuJa"
-          style="padding-bottom: 2rem;"
+          style="padding-bottom: 2rem"
         />
         <WorkInfo
           entry-title="YuJa Inc."
@@ -52,20 +48,18 @@
           job-location="Ontario, Canada"
           job-website="https://www.yuja.com/"
           job-website-name="YuJa"
-          style="padding-bottom: 2rem;"
+          style="padding-bottom: 2rem"
         />
         <hr class="is-thin-divider" />
         <br />
-        <p class="subtitle">
-          Education
-        </p>
+        <p class="subtitle">Education</p>
         <WorkInfo
           entry-title="University of Waterloo"
           :date-range="['2017 - Present']"
           job-position="Computer Science, Honours"
           job-description="Currently a fourth year Computer Science student at the Unviersity of Waterloo. Set to graduate in 2022."
           job-location="Ontario, Canada"
-          style="padding-bottom: 2rem;"
+          style="padding-bottom: 2rem"
         />
       </article>
     </div>
