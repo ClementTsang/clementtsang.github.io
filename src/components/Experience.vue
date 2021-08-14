@@ -7,11 +7,21 @@
         <br />
         <p class="subtitle">Work</p>
         <WorkInfo
+          entry-title="Shopify"
+          :date-range="['Soon']"
+          job-position="Backend Developer Intern"
+          job-description="We'll find out soon!"
+          job-location="Ontario, Canada"
+          job-website="https://www.shopify.ca/"
+          job-website-name="Shopify"
+          style="padding-bottom: 2rem"
+        />
+        <WorkInfo
           entry-title="Datadog"
           :date-range="['May 2021 - August 2021']"
           job-position="Software Engineering Intern - Metrics"
           job-description="Worked in the Metrics team to build internal tools to improve the development process of integral backend parts of the product."
-          job-location="New York, NY"
+          job-location="New York, United States"
           job-website="https://www.datadoghq.com/"
           job-website-name="Datadog"
           style="padding-bottom: 2rem"
