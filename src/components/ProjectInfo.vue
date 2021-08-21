@@ -30,9 +30,9 @@
             style="display: inline;"
           >
             <b-tooltip label="Project Page" position="is-bottom" type="is-dark">
-              <a :href="projectLink" target="_blank">
+              <a :href="projectWebsite" target="_blank">
                 <font-awesome-icon
-                  :icon="['fas', 'external-link-alt']"
+                  :icon="['fas', 'link']"
                   size="2x"
                   fixed-width
                 />

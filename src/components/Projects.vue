@@ -11,6 +11,7 @@
             <ProjectInfo
               project-image="assets/bottom.webp"
               project-link="https://github.com/ClementTsang/bottom"
+              project-website="https://clementtsang.github.io/bottom/"
               project-title="bottom"
               project-description="A cross-platform graphical process/system monitor, inspired by gotop, gtop, and htop."
             />
@@ -19,6 +20,7 @@
             <ProjectInfo
               project-image="assets/polify.webp"
               project-link="https://github.com/ClementTsang/polify"
+              project-website="https://clementtsang.github.io/polify/"
               project-title="Polify"
               project-description="Low-poly image generator library. Written in Rust, with some WebAssembly support."
             />
