@@ -38,7 +38,7 @@
           style="padding-bottom: 2rem"
         />
         <WorkInfo
-          entry-title="YuJa Inc."
+          entry-title="YuJa"
           :date-range="['May 2019 - Aug 2019']"
           job-position="Software Developer - Full Stack"
           job-description="Worked as a full stack software developer
@@ -50,7 +50,7 @@
           style="padding-bottom: 2rem"
         />
         <WorkInfo
-          entry-title="YuJa Inc."
+          entry-title="YuJa"
           :date-range="['Sept 2018 - Dec 2018']"
           job-position="Software Developer - Testing and Operations"
           job-description="Ran QA tests to ensure the quality of our product and
@@ -68,8 +68,10 @@
           entry-title="University of Waterloo"
           :date-range="['2017 - Present']"
           job-position="Computer Science, Honours"
-          job-description="Currently a fourth year Computer Science student at the Unviersity of Waterloo. Set to graduate in 2022."
+          job-description="Currently a fourth year Computer Science student at the Unviersity of Waterloo. Set to graduate in April 2022!"
           job-location="Ontario, Canada"
+          job-website="https://uwaterloo.ca/"
+          job-website-name="University of Waterloo"
           style="padding-bottom: 2rem"
         />
       </article>
