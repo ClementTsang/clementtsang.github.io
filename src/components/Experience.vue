@@ -8,9 +8,9 @@
         <p class="subtitle">Work</p>
         <WorkInfo
           entry-title="Shopify"
-          :date-range="['Soon!']"
+          :date-range="['Sept 2021 - Present']"
           job-position="Backend Developer Intern"
-          job-description="We'll find out soon!"
+          job-description="Currently working as a backend developer."
           job-location="Ontario, Canada"
           job-website="https://www.shopify.ca/"
           job-website-name="Shopify"
@@ -18,7 +18,7 @@
         />
         <WorkInfo
           entry-title="Datadog"
-          :date-range="['May 2021 - August 2021']"
+          :date-range="['May 2021 - Aug 2021']"
           job-position="Software Engineering Intern - Metrics"
           job-description="Worked in the Metrics team to build an internal tool that recorded and replayed real-world loads from our services for the purposes of
           debugging and load-testing, helping speed up development time."
