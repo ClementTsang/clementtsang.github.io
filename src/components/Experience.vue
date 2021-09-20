@@ -10,7 +10,7 @@
           entry-title="Shopify"
           :date-range="['Sept 2021 - Present']"
           job-position="Backend Developer Intern"
-          job-description="Currently working as a backend developer."
+          job-description="Currently working as a backend developer at Shopify on the Commerce Trust and Integrity team."
           job-location="Ontario, Canada"
           job-website="https://www.shopify.ca/"
           job-website-name="Shopify"
