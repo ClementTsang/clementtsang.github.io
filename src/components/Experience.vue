@@ -8,9 +8,9 @@
         <p class="subtitle">Work</p>
         <WorkInfo
           entry-title="Shopify"
-          :date-range="['Sept 2021 - Present']"
+          :date-range="['Sept 2021 - Dec 2021']"
           job-position="Backend Developer Intern"
-          job-description="Currently working as a backend developer at Shopify on the Commerce Trust and Integrity team."
+          job-description="Worked as a backend developer at Shopify on the Commerce Trust and Integrity team to improve analyst tools and the quality of fraud detection."
           job-location="Ontario, Canada"
           job-website="https://www.shopify.ca/"
           job-website-name="Shopify"
