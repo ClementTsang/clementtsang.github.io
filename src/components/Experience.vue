@@ -66,9 +66,9 @@
         <p class="subtitle">Education</p>
         <WorkInfo
           entry-title="University of Waterloo"
-          :date-range="['2017 - Present']"
-          job-position="Computer Science, Honours"
-          job-description="Currently a fourth year Computer Science student at the Unviersity of Waterloo. Set to graduate in April 2022!"
+          :date-range="['2017 - 2022']"
+          job-position="Bachelor of Computer Science"
+          job-description="Studied and graduated from the University of Waterloo with distinction."
           job-location="Ontario, Canada"
           job-website="https://uwaterloo.ca/"
           job-website-name="University of Waterloo"

@@ -19,9 +19,7 @@
           <hr class="is-divider" />
           <article>
             <h3 class="has-text-centered">
-              I'm a developer that is currently studying at the University of Waterloo
-              as a fourth year Computer Science student.  In my spare time, I enjoy music, reading,
-              video games, and taking on my evergrowing list of personal projects.
+              Just a typical developer with an ever-growing list of projects to finish in my backlog.
             </h3>
             <br />
             <div class="columns is-centered is-marginless is-mobile">
