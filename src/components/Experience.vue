@@ -2,10 +2,14 @@
   <div id="experience" class="columns is-marginless is-centered page-item">
     <div class="column is-11">
       <article>
-        <p class="title has-text-centered">Experience</p>
+        <p class="title has-text-centered">
+          Experience
+        </p>
         <hr class="is-divider" />
         <br />
-        <p class="subtitle">Work</p>
+        <p class="subtitle">
+          Work
+        </p>
         <WorkInfo
           entry-title="Shopify"
           :date-range="['Sept 2021 - Dec 2021']"
@@ -63,7 +67,9 @@
         />
         <hr class="is-thin-divider" />
         <br />
-        <p class="subtitle">Education</p>
+        <p class="subtitle">
+          Education
+        </p>
         <WorkInfo
           entry-title="University of Waterloo"
           :date-range="['2017 - 2022']"
