@@ -44,6 +44,25 @@
             />
           </div>
         </div>
+        <div class="columns is-centered">
+          <div class="column">
+            <ProjectInfo
+              project-image="assets/opal.webp"
+              project-link="https://github.com/ClementTsang/opal"
+              project-website="https://clementtsang.github.io/opal/"
+              project-title="opal"
+              project-description="A static website to look up the IPA of words, written in Rust."
+            />
+          </div>
+          <div class="column">
+            <ProjectInfo
+              project-image="assets/transcripter.webp"
+              project-link="https://github.com/ClementTsang/Transcripter"
+              project-title="Transcripter"
+              project-description="A simple, offline program to automatically get transcriptions. Written in F#."
+            />
+          </div>
+        </div>
       </article>
     </div>
   </div>

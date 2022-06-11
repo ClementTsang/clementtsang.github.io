@@ -125,7 +125,7 @@ export default {
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
   margin: 0 auto;
-  height: 450px;
+  height: 500px;
   width: 100%;
   background-color: var(--main-background);
   background-position: center;
