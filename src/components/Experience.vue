@@ -10,6 +10,16 @@
         <p class="subtitle">
           Work
         </p>
+         <WorkInfo
+          entry-title="Datadog"
+          :date-range="['August 2022 - Present]"
+          job-position="Software Engineer - Metrics"
+          job-description="Currently work as a software engineer regarding the storage of timeseries data."
+          job-location="New York, United States"
+          job-website="https://www.datadoghq.com/"
+          job-website-name="Datadog"
+          style="padding-bottom: 2rem"
+        />
         <WorkInfo
           entry-title="Shopify"
           :date-range="['Sept 2021 - Dec 2021']"
