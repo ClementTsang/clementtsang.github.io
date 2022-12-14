@@ -46,7 +46,7 @@
     "purgecss-webpack-plugin": "^1.6.0",
     "serve": "^11.3.2",
     "vue-template-compiler": "^2.6.12",
-    "webpack-bundle-analyzer": "^3.9.0"
+    "webpack-bundle-analyzer": "^4.7.0"
   },
   "eslintConfig": {
     "root": true,
