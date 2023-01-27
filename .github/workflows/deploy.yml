@@ -5,20 +5,39 @@ on:
     branches:
       - master
 
+env:
+  GIT_USER: "github-actions[bot]"
+  GIT_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
+
 jobs:
+  ci:
+    uses: ./.github/workflows/ci.yml
+
   build-and-deploy:
+    needs: [ci]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
+        with:
+          fetch-depth: 1
 
-      - name: Install and Build
+      - name: Configure git user and email
+        run: |
+          git config --global user.name ${GIT_USER}
+          git config --global user.email ${GIT_EMAIL}
+          echo Name: $(git config --get user.name)
+          echo Email: $(git config --get user.email)
+
+      - name: npm install and build
         run: |
           npm install
           npm run build
 
-      - name: Deploy!
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@bd8c6b06eba6b3d25d72b7a1767993c0aeee42e7 #v3.9.2
+        if: github.ref == 'refs/heads/master'
         with:
-          branch: gh-pages
-          folder: dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site/build
+          publish_branch: gh-pages
