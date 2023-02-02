@@ -1,0 +1,45 @@
+:root {
+    --main-background: #fefefe;
+    --main-background-two: #fafafa;
+    --light-colour: #fefefe;
+    --dark-colour: #4c566a;
+    --text-colour: #2e3440;
+    --black-text-colour: #2e3440;
+    --red-accent: #ee7067;
+    --accent-2: #e85a4f;
+    --accent-3: #383542;
+    --navbar-hover: rgba(0, 0, 0, 0.05);
+    --navbar-click: rgba(0, 0, 0, 0.1);
+    --url-hover: #e62719;
+    --url-visited: #cf2317;
+    --url-not-visited: #ee8968;
+  }
+
+.title {
+    font-size: 2em;
+    color: var(--text-colour);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: var(--text-colour);
+    font-family: "Raleway", sans-serif;
+}
+
+hr.divider {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    width: 48px;
+    height: 2px;
+}
+
+/** Because PicoCSS sets them all to the same cursor type. **/
+h1, h2, h3, h4, h5, h6, p {
+    cursor: text !important;
+}

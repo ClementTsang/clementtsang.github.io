@@ -29,6 +29,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"purecss": "^3.0.0"
+		"@fontsource/quicksand": "^4.5.12",
+		"@fontsource/raleway": "^4.5.12",
+		"@picocss/pico": "^1.5.7"
 	}
 }
