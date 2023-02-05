@@ -22,13 +22,13 @@
 
 	#home {
 		font-size: 1rem;
-		font-family: 'Quicksand', sans-serif;
+		font-family: 'Raleway', sans-serif;
 		font-weight: 600;
 	}
 
 	.nav-items {
 		font-size: 0.9rem;
-		font-family: 'Quicksand', sans-serif;
+		font-family: 'Raleway', sans-serif;
 		font-weight: 500;
 		cursor: pointer;
 	}

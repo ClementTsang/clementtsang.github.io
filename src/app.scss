@@ -13,20 +13,51 @@
     --url-hover: #e62719;
     --url-visited: #cf2317;
     --url-not-visited: #ee8968;
-  }
-
-.title {
-    font-size: 2em;
-    color: var(--text-colour);
-    font-family: "Quicksand", sans-serif;
-    font-weight: 300;
 }
 
-.subtitle {
-    font-size: 1.5em;
+h1 {
+    font-size: 2.25rem;
     color: var(--text-colour);
     font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    margin: 0;
 }
+
+h2 {
+    font-size: 1.75rem;
+    color: var(--text-colour);
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.1rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+    color: var(--text-colour);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 0.95rem;
+    color: var(--text-colour);
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 0.3rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+    color: var(--text-colour);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 0.25rem;
+}
+
 
 hr.divider {
     display: block;
@@ -37,6 +68,16 @@ hr.divider {
     border: 0;
     width: 48px;
     height: 2px;
+
+    &-black {
+        @extend hr, .divider;
+		background-color: var(--black-text-colour);
+    }
+
+    &-red {
+        @extend hr, .divider;
+        background-color: var(--red-accent);
+    }
 }
 
 /** Because PicoCSS sets them all to the same cursor type. **/

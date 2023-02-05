@@ -5,7 +5,7 @@
 	<img src="/assets/tri.webp" class="background" />
 	<div class="text">
 		<h1>Clement Tsang</h1>
-		<hr class="divider" />
+		<hr class="divider-black" />
 		<p>A developer with too many things on his backlog.</p>
 	</div>
 </div>
@@ -40,21 +40,19 @@
 		z-index: 2;
 	}
 
-	.divider {
-		background-color: var(--black-text-colour);
-	}
-
 	h1 {
-		font-size: 4rem;
-		font-family: 'Quicksand', sans-serif;
+		font-size: 4.5rem;
+		font-family: 'Raleway', sans-serif;
 		font-weight: 500;
 		margin: 0rem;
 		color: var(--black-text-colour);
 	}
 
 	p {
-		margin: 0rem;
+		font-size: 1.1rem;
 		font-weight: 400;
+		font-family: 'Quicksand', sans-serif;
+		margin: 0rem;
 		color: var(--black-text-colour);
 	}
 </style>
