@@ -4,6 +4,7 @@
 	import Experience from '$lib/components/Experience.svelte';
 	import Projects from '$lib/components/Projects.svelte';
 	import Contact from '$lib/components/Contact.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <Header />
@@ -13,6 +14,7 @@
 	<Projects />
 	<Contact />
 </div>
+<Footer />
 
 <style>
 </style>

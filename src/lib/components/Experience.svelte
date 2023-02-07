@@ -1,20 +1,24 @@
 <script lang="ts"></script>
 
 <div class="body">
-	<h1 class="title">Experience</h1>
+	<h2 class="title">Experience</h2>
 	<hr class="divider-red" />
-	<h2>Work</h2>
+	<h3>Work</h3>
 	<div>
-		<h3>Datadog</h3>
-		<div class="grid card">
+		<div class="card">
 			<div class="work-info">
-				<h5>August 2022 - Present</h5>
-				<h5>New York, United States</h5>
-				<h5>Datadog</h5>
+				<div>
+					<h4>Datadog</h4>
+					<p>August 2022 - Present</p>
+					<p>New York, United States</p>
+					<p>Datadog</p>
+				</div>
 			</div>
 			<div class="work-description">
-				<h4>Software Engineer - Metrics</h4>
-				<h5>Currently work as a software engineer on the storage of timeseries data.</h5>
+				<div>
+					<h5>Software Engineer - Metrics</h5>
+					<p>Currently work as a software engineer regarding the storage of timeseries data.</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -29,9 +33,23 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding: 5rem 12.5%;
+		padding: 7rem 12.5%;
 	}
 
 	.card {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		grid-auto-rows: minmax(100px, auto);
+	}
+
+	.work-info {
+		grid-row: 1;
+		grid-column: 1 / span 4;
+	}
+
+	.work-description {
+		grid-row: 1;
+		grid-column: 2 / span 4;
 	}
 </style>

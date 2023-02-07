@@ -1,7 +1,7 @@
 <script lang="ts"></script>
 
 <div class="body">
-	<h1>Contact</h1>
+	<h2>Contact</h2>
 </div>
 
 <style>

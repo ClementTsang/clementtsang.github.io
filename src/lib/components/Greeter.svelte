@@ -40,18 +40,9 @@
 		z-index: 2;
 	}
 
-	h1 {
-		font-size: 4.5rem;
-		font-family: 'Raleway', sans-serif;
-		font-weight: 500;
-		margin: 0rem;
-		color: var(--black-text-colour);
-	}
-
 	p {
-		font-size: 1.1rem;
+		font-size: 1.25rem;
 		font-weight: 400;
-		font-family: 'Quicksand', sans-serif;
 		margin: 0rem;
 		color: var(--black-text-colour);
 	}

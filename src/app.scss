@@ -1,86 +1,97 @@
 :root {
-    --main-background: #fefefe;
-    --main-background-two: #fafafa;
-    --light-colour: #fefefe;
-    --dark-colour: #4c566a;
-    --text-colour: #2e3440;
-    --black-text-colour: #2e3440;
-    --red-accent: #ee7067;
-    --accent-2: #e85a4f;
-    --accent-3: #383542;
-    --navbar-hover: rgba(0, 0, 0, 0.05);
-    --navbar-click: rgba(0, 0, 0, 0.1);
-    --url-hover: #e62719;
-    --url-visited: #cf2317;
-    --url-not-visited: #ee8968;
+	--main-background: #fefefe;
+	--main-background-two: #fafafa;
+	--light-colour: #fefefe;
+	--dark-colour: #4c566a;
+	--text-colour: #2e3440;
+	--black-text-colour: #2e3440;
+	--red-accent: #ee7067;
+	--accent-2: #e85a4f;
+	--accent-3: #383542;
+	--navbar-hover: rgba(0, 0, 0, 0.05);
+	--navbar-click: rgba(0, 0, 0, 0.1);
+	--url-hover: #e62719;
+	--url-visited: #cf2317;
+	--url-not-visited: #ee8968;
+}
+
+body {
+	padding: 0;
+	margin: 0;
 }
 
 h1 {
-    font-size: 2.25rem;
-    color: var(--text-colour);
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    margin: 0;
+	font-size: 5rem;
+	color: var(--black-text-colour);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	margin: 0;
 }
 
 h2 {
-    font-size: 1.75rem;
-    color: var(--text-colour);
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    margin-bottom: 1.1rem;
+	font-size: 2.75rem;
+	color: var(--text-colour);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	line-height: 5.5rem;
+	margin: 0;
 }
 
 h3 {
-    font-size: 1.35rem;
-    color: var(--text-colour);
-    font-family: "Quicksand", sans-serif;
-    font-weight: 600;
-    margin: 0;
-    margin-bottom: 0.5rem;
+	font-size: 2.25rem;
+	color: var(--text-colour);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	margin-bottom: 1.75rem;
+	line-height: 2.25rem;
 }
 
 h4 {
-    font-size: 0.95rem;
-    color: var(--text-colour);
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    margin: 0;
-    margin-bottom: 0.3rem;
+	font-size: 1.7rem;
+	color: var(--text-colour);
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	margin: 0;
+	margin-bottom: 0.5rem;
+	line-height: 2rem;
 }
 
 h5 {
-    font-size: 0.9rem;
-    color: var(--text-colour);
-    font-family: "Quicksand", sans-serif;
-    font-weight: 400;
-    margin: 0;
-    margin-bottom: 0.25rem;
+	font-size: 1.1rem;
+	color: var(--text-colour);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	margin: 0;
+	margin-bottom: 0.3rem;
+	line-height: 2rem;
 }
 
+p {
+	font-size: 1.1rem;
+	color: var(--text-colour);
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	margin-bottom: 0.25rem;
+}
 
 hr.divider {
-    display: block;
-    margin-top: 16px;
-    margin-bottom: 32px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0;
-    width: 48px;
-    height: 2px;
+	display: block;
+	margin-top: 32px;
+	margin-bottom: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0;
+	width: 48px;
+	height: 2px;
 
-    &-black {
-        @extend hr, .divider;
+	&-black {
+		@extend .divider;
 		background-color: var(--black-text-colour);
-    }
+	}
 
-    &-red {
-        @extend hr, .divider;
-        background-color: var(--red-accent);
-    }
-}
-
-/** Because PicoCSS sets them all to the same cursor type. **/
-h1, h2, h3, h4, h5, h6, p {
-    cursor: text !important;
+	&-red {
+		@extend .divider;
+		background-color: var(--red-accent);
+	}
 }

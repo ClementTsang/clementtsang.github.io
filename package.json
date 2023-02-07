@@ -32,7 +32,6 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/quicksand": "^4.5.12",
-		"@fontsource/raleway": "^4.5.12",
-		"@picocss/pico": "^1.5.7"
+		"@fontsource/raleway": "^4.5.12"
 	}
 }
