@@ -107,7 +107,7 @@
 	p {
 		font-size: 1rem;
 		font-family: 'Quicksand', sans-serif;
-		font-weight: 500;
+		font-weight: 400;
 		line-height: 2.5rem;
 		margin: 0;
 
