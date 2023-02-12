@@ -42,7 +42,7 @@
 
 	p {
 		font-size: 1.25rem;
-		font-weight: 400;
+		font-weight: 600;
 		margin: 0rem;
 		color: var(--black-text-colour);
 	}

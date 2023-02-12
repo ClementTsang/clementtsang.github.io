@@ -1,5 +1,5 @@
 <script>
-	// TODO: Look at https://beta.nextjs.org/docs/optimizing/fonts
+	// TODO: Look at https://fontsource.org/docs/getting-started for font optimizations
 	import '@fontsource/raleway';
 	import '@fontsource/quicksand';
 	import '../app.scss';

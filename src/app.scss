@@ -20,8 +20,17 @@ body {
 	margin: 0;
 }
 
+.section {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 h1 {
-	font-size: 5rem;
+	font-size: 5.25rem;
 	color: var(--black-text-colour);
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
@@ -29,7 +38,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.75rem;
+	font-size: 2.8rem;
 	color: var(--text-colour);
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
@@ -38,16 +47,16 @@ h2 {
 }
 
 h3 {
-	font-size: 2.25rem;
+	font-size: 2.1rem;
 	color: var(--text-colour);
 	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	margin-bottom: 1.75rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
 	line-height: 2.25rem;
 }
 
 h4 {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	color: var(--text-colour);
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 600;
@@ -59,7 +68,7 @@ h4 {
 h5 {
 	font-size: 1.1rem;
 	color: var(--text-colour);
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-weight: 600;
 	margin: 0;
 	margin-bottom: 0.3rem;
@@ -94,4 +103,18 @@ hr.divider {
 		@extend .divider;
 		background-color: var(--red-accent);
 	}
+}
+
+a {
+	color: var(--url-not-visited);
+	text-decoration: none;
+}
+
+a:visited {
+	color: var(--url-visited);
+}
+
+a:hover {
+	color: var(--url-hover);
+	text-decoration: underline;
 }

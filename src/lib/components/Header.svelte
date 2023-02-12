@@ -1,12 +1,48 @@
-<script lang="ts"></script>
+<script lang="ts">
+	export let currentSection: string;
+
+	function scrollTo(event: MouseEvent) {
+		if (event.target) {
+			let element = event.target as HTMLParagraphElement;
+
+			let target = '';
+			if (element.id) {
+				target = element.id;
+			} else {
+				target = element.textContent || '';
+			}
+			target = target.toLowerCase();
+
+			const section = document.getElementById(target);
+			const header = document.getElementById('header');
+			if (target && section && header) {
+				// TODO: Fix the stuttering issue if you spam click a section.
+				window.scrollTo({
+					top: section.offsetTop - header.offsetHeight,
+					behavior: 'smooth'
+				});
+			}
+		}
+	}
+
+	function getClass(current: string, toCheck: string): string {
+		return current === toCheck ? 'nav-item on-section' : 'nav-item';
+	}
+</script>
 
 <div id="header">
 	<nav>
-		<ul><p id="home" class="nav-item">Clement Tsang</p></ul>
+		<ul><button class="nav-item" on:click={scrollTo}><p id="home">Clement Tsang</p></button></ul>
 		<ul>
-			<li class="nav-item"><p>Experience</p></li>
-			<li class="nav-item"><p>Projects</p></li>
-			<li class="nav-item"><p>Contact</p></li>
+			<li>
+				<button class={getClass(currentSection, 'experience')} on:click={scrollTo}><p>Experience</p></button>
+			</li>
+			<li>
+				<button class={getClass(currentSection, 'projects')} on:click={scrollTo}><p>Projects</p></button>
+			</li>
+			<li>
+				<button class={getClass(currentSection, 'contact')} on:click={scrollTo}><p>Contact</p></button>
+			</li>
 		</ul>
 		<!--TODO: Add hamburger-->
 	</nav>
@@ -21,14 +57,12 @@
 	}
 
 	#header > nav {
-		direction: ltr;
-
-		padding: 0;
-
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 
+		direction: ltr;
+		padding: 0;
 		width: 100vw;
 	}
 
@@ -47,13 +81,15 @@
 	.nav-item:active,
 	.nav-item:focus,
 	.nav-item:hover {
-		-moz-outline-style: none;
 		outline-style: none;
 	}
 
 	.nav-item {
 		padding: 8px 12px;
 		background-color: var(--main-background);
+		border: none;
+		box-shadow: none;
+		text-align: center;
 	}
 
 	.nav-item:focus {
@@ -65,16 +101,20 @@
 	}
 
 	#home {
-		font-size: 1.2rem;
+		font-size: 1.25rem;
 	}
 
 	p {
-		font-size: 0.95rem;
+		font-size: 1rem;
 		font-family: 'Quicksand', sans-serif;
 		font-weight: 500;
 		line-height: 2.5rem;
 		margin: 0;
 
 		cursor: pointer !important;
+	}
+
+	.on-section {
+		box-shadow: inset 0 -2px 0 0 var(--red-accent);
 	}
 </style>
