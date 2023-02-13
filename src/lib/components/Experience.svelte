@@ -77,18 +77,22 @@
 	<h2 class="title">Experience</h2>
 	<hr class="divider-red" />
 
-	<h3>Work</h3>
-	<div class="card-wrapper">
-		{#each workExperiences as exp}
-			<ExperienceCard {exp} />
-		{/each}
+	<div class="exp-section">
+		<h3>Work</h3>
+		<div class="card-wrapper">
+			{#each workExperiences as exp}
+				<ExperienceCard {exp} />
+			{/each}
+		</div>
 	</div>
 
-	<hr class="divider-red" />
+	<hr class="divider-thin-red" />
 
-	<h3>Education</h3>
-	<div class="card-wrapper">
-		<ExperienceCard exp={SCHOOL} />
+	<div class="exp-section">
+		<h3>Education</h3>
+		<div class="card-wrapper">
+			<ExperienceCard exp={SCHOOL} />
+		</div>
 	</div>
 </div>
 
@@ -122,5 +126,10 @@
 		display: flex;
 		flex-direction: column;
 		row-gap: 2rem;
+	}
+
+	.exp-section {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 	}
 </style>

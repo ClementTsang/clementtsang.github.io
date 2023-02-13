@@ -20,8 +20,8 @@ h3 {
 	color: var(--text-colour);
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
+	margin: 0;
 	margin-bottom: 2rem;
-	line-height: 2.25rem;
 }
 
 h4 {
@@ -50,7 +50,6 @@ p {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 400;
 	margin: 0;
-	margin-bottom: 0.25rem;
 }
 
 @supports (font-variation-settings: normal) {

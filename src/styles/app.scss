@@ -39,6 +39,14 @@ hr.divider {
 		@extend .divider;
 		background-color: var(--red-accent);
 	}
+
+	&-thin-red {
+		@extend .divider;
+		background-color: var(--red-accent);
+		margin-top: 32px;
+		margin-bottom: 32px;
+		height: 1px;
+	}
 }
 
 a {
