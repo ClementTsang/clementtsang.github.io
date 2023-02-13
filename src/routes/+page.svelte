@@ -46,6 +46,7 @@
 	}
 </script>
 
+<!-- TODO: Make an "section" component with observable attached to it! -->
 <Header bind:currentSection />
 <div>
 	<Greeter />

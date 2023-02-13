@@ -106,12 +106,9 @@
 
 	p {
 		font-size: 1rem;
-		font-family: 'Quicksand', sans-serif;
 		font-weight: 400;
 		line-height: 2.5rem;
 		margin: 0;
-
-		cursor: pointer !important;
 	}
 
 	.on-section {
