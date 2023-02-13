@@ -40,6 +40,11 @@
 		z-index: 2;
 	}
 
+	hr {
+		margin-top: 32px;
+		margin-bottom: 32px;
+	}
+
 	p {
 		font-size: 1.25rem;
 		font-weight: 400;

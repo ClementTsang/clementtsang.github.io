@@ -1,9 +1,8 @@
-<script lang="ts"></script>
+<script lang="ts">
+</script>
 
-<div id="contact" class="section">
-	<div class="body">
-		<h2>Contact</h2>
-	</div>
+<div class="body">
+	<h2>Contact</h2>
 </div>
 
 <style>

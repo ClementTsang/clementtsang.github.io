@@ -5,54 +5,50 @@
 	import Projects from '$lib/components/Projects.svelte';
 	import Contact from '$lib/components/Contact.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import { onDestroy, onMount } from 'svelte';
+	import Section from '$lib/components/Section.svelte';
+	import { onMount } from 'svelte';
 
 	let currentSectionMap: Map<string, boolean> = new Map();
 	let currentSection = '';
-	let observer: IntersectionObserver | null = null;
-
-	function generateCurrentSectionList() {
-		const observerSettings = {
-			threshold: 0.01
-		};
-
-		let observer = new IntersectionObserver((entries) => {
-			currentSectionMap.set(entries[0].target.id, entries[0].isIntersecting);
-			currentSection = getCurrentSection();
-		}, observerSettings);
-
-		for (const node of document.getElementsByClassName('section')) {
-			observer.observe(node);
-			currentSectionMap.set(node.id, false);
-		}
-	}
 
 	onMount(() => {
-		generateCurrentSectionList();
+		for (const node of document.getElementsByClassName('section')) {
+			if (node.id == 'home') {
+				currentSectionMap.set(node.id, true);
+			} else {
+				currentSectionMap.set(node.id, false);
+			}
+		}
 	});
 
-	onDestroy(() => {
-		observer?.disconnect;
-	});
+	function intersectionCallback(targetId: string, isIntersecting: boolean) {
+		currentSectionMap.set(targetId, isIntersecting);
 
-	function getCurrentSection(): string {
-		for (const current of currentSectionMap) {
-			if (current[1]) {
-				return current[0];
+		for (const [name, enabled] of currentSectionMap) {
+			if (enabled) {
+				currentSection = name;
+				return;
 			}
 		}
 
-		return 'home';
+		currentSection = 'home';
 	}
 </script>
 
-<!-- TODO: Make an "section" component with observable attached to it! -->
 <Header bind:currentSection />
 <div>
-	<Greeter />
-	<Experience />
-	<Projects />
-	<Contact />
+	<Section id="home" {intersectionCallback} pageSection={false}>
+		<Greeter />
+	</Section>
+	<Section id="experience" intersectionThreshold={0.1} {intersectionCallback}>
+		<Experience />
+	</Section>
+	<Section id="projects" intersectionThreshold={0.4} {intersectionCallback}>
+		<Projects />
+	</Section>
+	<Section id="contact" intersectionThreshold={0.1} {intersectionCallback}>
+		<Contact />
+	</Section>
 </div>
 <Footer />
 

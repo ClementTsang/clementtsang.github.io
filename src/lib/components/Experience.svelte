@@ -73,24 +73,22 @@
 	};
 </script>
 
-<div id="experience" class="section">
-	<div class="body">
-		<h2 class="title">Experience</h2>
-		<hr class="divider-red" />
+<div class="body">
+	<h2 class="title">Experience</h2>
+	<hr class="divider-red" />
 
-		<h3>Work</h3>
-		<div class="card-wrapper">
-			{#each workExperiences as exp}
-				<ExperienceCard {exp} />
-			{/each}
-		</div>
+	<h3>Work</h3>
+	<div class="card-wrapper">
+		{#each workExperiences as exp}
+			<ExperienceCard {exp} />
+		{/each}
+	</div>
 
-		<hr class="divider-red" />
+	<hr class="divider-red" />
 
-		<h3>Education</h3>
-		<div class="card-wrapper">
-			<ExperienceCard exp={SCHOOL} />
-		</div>
+	<h3>Education</h3>
+	<div class="card-wrapper">
+		<ExperienceCard exp={SCHOOL} />
 	</div>
 </div>
 
