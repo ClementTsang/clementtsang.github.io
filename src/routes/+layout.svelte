@@ -11,7 +11,8 @@
 	import '@fontsource/raleway/variable.css';
 	import '@fontsource/quicksand/variable.css';
 
-	import '../app.scss';
+	import '../styles/app.scss';
+	import '../styles/text.scss';
 </script>
 
 <slot />

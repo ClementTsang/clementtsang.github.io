@@ -1,0 +1,65 @@
+:root {
+	--main-background: #fefefe;
+	--main-background-two: #fafafa;
+	--light-colour: #fefefe;
+	--dark-colour: #4c566a;
+	--text-colour: #2e3440;
+	--black-text-colour: #2e3440;
+	--red-accent: #ee7067;
+	--accent-2: #e85a4f;
+	--accent-3: #383542;
+	--navbar-hover: rgba(0, 0, 0, 0.05);
+	--navbar-click: rgba(0, 0, 0, 0.1);
+	--url-hover: #e62719;
+	--url-visited: #cf2317;
+	--url-not-visited: #ee8968;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.section {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+hr.divider {
+	display: block;
+	margin-top: 32px;
+	margin-bottom: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0;
+	width: 48px;
+	height: 2px;
+
+	&-black {
+		@extend .divider;
+		background-color: var(--black-text-colour);
+	}
+
+	&-red {
+		@extend .divider;
+		background-color: var(--red-accent);
+	}
+}
+
+a {
+	color: var(--url-not-visited);
+	text-decoration: none;
+}
+
+a:visited {
+	color: var(--url-visited);
+}
+
+a:hover {
+	color: var(--url-hover);
+	text-decoration: underline;
+}
