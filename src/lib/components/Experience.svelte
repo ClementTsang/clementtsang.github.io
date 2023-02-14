@@ -28,7 +28,7 @@
 		link: { name: 'Datadog', url: 'https://www.datadoghq.com/' },
 		position: 'Software Engineering Intern - Metrics',
 		description:
-			'Worked in the Metrics team to build an internal tool that recorded and replayed real-world loads from our services for the purposes of debugging and load-testing, helping speed up development time.'
+			'Worked in the Metrics team to build an internal tool that recorded and replayed production workloads to aid in debugging and load-testing.'
 	};
 
 	const WISH: Experience = {
