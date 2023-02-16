@@ -11,9 +11,11 @@
 	<div class="work-info">
 		<div class="work-details">
 			<h4>{exp.name}</h4>
-			<div class="detail">
-				<Calendar size="18" />
-				<div class="dates">
+			<div class="date-detail">
+				<div class="date-icon">
+					<Calendar size="18" />
+				</div>
+				<div>
 					{#each exp.dates as date}
 						<p>{date}</p>
 					{/each}
@@ -69,8 +71,24 @@
 		column-gap: 4px;
 	}
 
-	.dates {
-		display: inline-table;
+	.date-detail {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		column-gap: 4px;
+	}
+
+	.date-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.date-icon::before {
+		content: 'a';
+		width: 0px;
+		visibility: hidden;
 	}
 
 	/* TODO: Add responsiveness for cards. */

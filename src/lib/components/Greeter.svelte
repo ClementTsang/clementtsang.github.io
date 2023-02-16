@@ -50,7 +50,7 @@
 	}
 
 	.body > div {
-		z-index: 2;
+		z-index: 116;
 	}
 
 	hr {
@@ -78,6 +78,6 @@
 		margin-top: 4rem;
 
 		display: flex;
-		column-gap: 3rem;
+		column-gap: 4rem;
 	}
 </style>
