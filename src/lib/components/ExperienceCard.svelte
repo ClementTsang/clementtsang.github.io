@@ -12,7 +12,7 @@
 		<div class="work-details">
 			<h4>{exp.name}</h4>
 			<div class="detail">
-				<Calendar size="1.1rem" />
+				<Calendar size="18" />
 				<div class="dates">
 					{#each exp.dates as date}
 						<p>{date}</p>
@@ -20,12 +20,12 @@
 				</div>
 			</div>
 			<div class="detail">
-				<MapPin size="1.1rem" />
+				<MapPin size="18" />
 				<p>{exp.location}</p>
 			</div>
 			{#if exp.link}
 				<div class="detail">
-					<Link size="1.1rem" />
+					<Link size="18" />
 					<p><a href={exp.link.url} target="_blank" rel="noreferrer">{exp.link.name}</a></p>
 				</div>
 			{/if}

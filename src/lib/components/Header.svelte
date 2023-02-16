@@ -3,7 +3,7 @@
 
 	function scrollTo(event: MouseEvent) {
 		if (event.target) {
-			let element = event.target as HTMLParagraphElement;
+			let element = event.target as HTMLElement;
 
 			let target = '';
 			if (element.id) {
@@ -12,6 +12,9 @@
 				target = element.textContent || '';
 			}
 			target = target.toLowerCase();
+			if (target == 'clement tsang') {
+				target = 'home';
+			}
 
 			const section = document.getElementById(target);
 			const header = document.getElementById('header');
@@ -90,6 +93,7 @@
 		border: none;
 		box-shadow: none;
 		text-align: center;
+		cursor: pointer;
 	}
 
 	.nav-item:focus {
