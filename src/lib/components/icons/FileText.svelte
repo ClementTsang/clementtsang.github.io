@@ -2,6 +2,7 @@
 	export let size: number | string = 24;
 </script>
 
+<!--Icons are from https://lucide.dev/-->
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	width={size}
