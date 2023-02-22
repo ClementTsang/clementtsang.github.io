@@ -88,7 +88,7 @@
 	}
 
 	.nav-item {
-		padding: 8px 12px;
+		padding: 8px 16px;
 		background-color: var(--main-background);
 		border: none;
 		box-shadow: none;
