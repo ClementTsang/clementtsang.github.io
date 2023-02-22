@@ -11,6 +11,7 @@
 	<div class="work-info">
 		<div class="work-details">
 			<h4>{exp.name}</h4>
+			<h5 class="mobile-work-title">{exp.position}</h5>
 			<div class="date-detail">
 				<div class="date-icon">
 					<Calendar size="18" />
@@ -45,13 +46,13 @@
 	.card {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-auto-rows: minmax(100px, auto);
+		grid-auto-rows: auto;
 		gap: 10px;
 	}
 
 	.work-info {
 		grid-row: 1;
-		grid-column: 1 / span 4;
+		grid-column: 1 / span 5;
 	}
 
 	.work-description {
@@ -91,5 +92,26 @@
 		visibility: hidden;
 	}
 
-	/* TODO: Add responsiveness for cards. */
+	/* By default this is disabled unless in a mobile view. */
+	.mobile-work-title {
+		display: none;
+	}
+
+	@media screen and (max-width: 767px) {
+		.work-description {
+			display: none;
+		}
+
+		.mobile-work-title {
+			display: flex;
+		}
+
+		.work-info {
+			grid-column: 1 / span 12;
+		}
+
+		h4 {
+			margin-bottom: 0rem;
+		}
+	}
 </style>
