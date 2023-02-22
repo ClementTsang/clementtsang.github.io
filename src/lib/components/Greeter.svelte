@@ -13,9 +13,9 @@
 		<p>A developer with too many things on his backlog.</p>
 	</div>
 	<div id="greeter-icons">
-		<a href="/assets/resume.pdf" target="_blank" rel="noreferrer"><FileText size={32} /></a>
-		<a href="https://github.com/ClementTsang" target="_blank" rel="noreferrer"><GitHub size={32} /></a>
-		<a href="https://www.linkedin.com/in/clement-tsang" target="_blank" rel="noreferrer"><LinkedIn size={32} /></a>
+		<a href="/assets/resume.pdf" target="_blank" rel="noreferrer"><FileText size={34} /></a>
+		<a href="https://github.com/ClementTsang" target="_blank" rel="noreferrer"><GitHub size={34} /></a>
+		<a href="https://www.linkedin.com/in/clement-tsang" target="_blank" rel="noreferrer"><LinkedIn size={34} /></a>
 	</div>
 </div>
 

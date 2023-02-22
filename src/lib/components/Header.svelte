@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Hamburger from './Hamburger.svelte';
+
 	export let currentSection: string;
 
 	function scrollTo(event: MouseEvent) {
@@ -37,19 +39,15 @@
 
 <div id="header">
 	<nav>
-		<ul><button class="nav-item" on:click={scrollTo}><p id="home">Clement Tsang</p></button></ul>
-		<ul>
-			<li>
-				<button class={getClass(currentSection, 'experience')} on:click={scrollTo}><p>Experience</p></button>
-			</li>
-			<li>
-				<button class={getClass(currentSection, 'projects')} on:click={scrollTo}><p>Projects</p></button>
-			</li>
-			<li>
-				<button class={getClass(currentSection, 'contact')} on:click={scrollTo}><p>Contact</p></button>
-			</li>
-		</ul>
-		<!--TODO: Add hamburger-->
+		<button class="nav-item" on:click={scrollTo}><p id="home">Clement Tsang</p></button>
+		<div class="right-nav">
+			<button class={getClass(currentSection, 'experience')} on:click={scrollTo}><p>Experience</p></button>
+			<button class={getClass(currentSection, 'projects')} on:click={scrollTo}><p>Projects</p></button>
+			<button class={getClass(currentSection, 'contact')} on:click={scrollTo}><p>Contact</p></button>
+		</div>
+		<div class="right-nav-mobile">
+			<Hamburger />
+		</div>
 	</nav>
 </div>
 
@@ -57,7 +55,7 @@
 	#header {
 		position: fixed;
 		top: 0;
-		background-color: white;
+		background-color: var(--main-background);
 		z-index: 116116;
 	}
 
@@ -69,24 +67,6 @@
 		direction: ltr;
 		padding: 0;
 		width: 100vw;
-	}
-
-	ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-
-		margin: 0;
-		padding: 0;
-
-		list-style-type: none;
-	}
-
-	.nav-item:active,
-	.nav-item:focus,
-	.nav-item:hover {
-		outline-style: none;
 	}
 
 	.nav-item {
@@ -119,5 +99,28 @@
 
 	.on-section {
 		box-shadow: inset 0 -2px 0 0 var(--red-accent);
+	}
+
+	.right-nav-mobile {
+		display: none;
+	}
+
+	@media screen and (max-width: 767px) {
+		.right-nav {
+			display: none;
+		}
+
+		.right-nav-mobile {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+
+			margin: 0;
+			padding: 0;
+
+			height: auto;
+			width: 56px;
+		}
 	}
 </style>

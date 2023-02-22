@@ -50,7 +50,7 @@
 	}
 
 	#hi-button:hover {
-		background-color: var(--main-background-two);
+		background-color: var(--navbar-hover);
 	}
 
 	.contact-entry {
