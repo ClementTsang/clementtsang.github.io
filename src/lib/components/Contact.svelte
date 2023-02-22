@@ -43,7 +43,7 @@
 		padding-bottom: 0.9rem;
 		text-decoration: none;
 		border-width: 2px;
-		border-radius: 5px;
+		border-radius: 4px;
 		border-style: solid;
 		border-color: var(--red-accent);
 		background-color: var(--main-background);
