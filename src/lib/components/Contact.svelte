@@ -24,6 +24,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 		width: 40rem;
 
 		text-align: center;
@@ -32,6 +33,7 @@
 
 	#contact-body {
 		margin-top: 16px;
+		width: 90%;
 	}
 
 	#hi-button {

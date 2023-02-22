@@ -47,6 +47,13 @@
 
 	.text {
 		margin-top: 6rem;
+		width: 90%;
+	}
+
+	@media screen and (max-width: 576px) {
+		.text {
+			width: 100%;
+		}
 	}
 
 	.body > div {
