@@ -56,7 +56,7 @@
 		position: fixed;
 		top: 0;
 		background-color: white;
-		z-index: 100;
+		z-index: 116116;
 	}
 
 	#header > nav {
