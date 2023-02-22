@@ -61,7 +61,7 @@
 			'Ran QA tests to ensure the quality of our product and new features without any regressions, in addition to developing automated tests to save time and improve test quality using Selenium.'
 	};
 
-	let workExperiences: Experience[] = [DATADOG, SHOPIFY, DATADOG_INTERN, WISH, YUJA_FULL_STACK, YUJA_QA];
+	const WORK_EXPERIENCES = [DATADOG, SHOPIFY, DATADOG_INTERN, WISH, YUJA_FULL_STACK, YUJA_QA];
 
 	const SCHOOL: Experience = {
 		name: 'University of Waterloo',
@@ -80,7 +80,7 @@
 	<div class="exp-section">
 		<h3>Work</h3>
 		<div class="card-wrapper">
-			{#each workExperiences as exp}
+			{#each WORK_EXPERIENCES as exp}
 				<ExperienceCard {exp} />
 			{/each}
 		</div>

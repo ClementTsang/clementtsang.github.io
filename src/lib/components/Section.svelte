@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { onDestroy, onMount } from 'svelte';
+	import { SectionType } from '../../types/SectionType';
 
 	export let id: string;
-	export let pageSection = true;
 	export let intersectionThreshold = 0;
 	export let intersectionCallback: (targetId: string, isIntersecting: boolean) => void;
+	export let sectionType: SectionType = SectionType.Main;
 
 	let self: Element;
 	let observer: IntersectionObserver | null = null;
@@ -37,9 +38,21 @@
 			observer.disconnect();
 		}
 	});
+
+	function getClasses(): string {
+		let classes = 'section';
+
+		if (sectionType == SectionType.Main) {
+			classes += ' non-hero main-background';
+		} else if (sectionType == SectionType.Alt) {
+			classes += ' non-hero alt-background';
+		}
+
+		return classes;
+	}
 </script>
 
-<section {id} class={pageSection ? 'section non-hero' : 'section'} bind:this={self}>
+<section {id} class={getClasses()} bind:this={self}>
 	<slot />
 </section>
 
@@ -51,7 +64,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
 
+	.main-background {
 		background-color: var(--main-background);
+	}
+
+	.alt-background {
+		background-color: var(--main-background-two);
 	}
 </style>

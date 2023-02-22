@@ -45,8 +45,8 @@
 	.card {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		gap: 10px;
 		grid-auto-rows: minmax(100px, auto);
+		gap: 10px;
 	}
 
 	.work-info {

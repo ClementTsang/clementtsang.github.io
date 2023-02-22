@@ -3,15 +3,13 @@
 		Website source can be found <a
 			href="https://github.com/ClementTsang/clementtsang.github.io"
 			target="_blank"
-			rel="noreferrer">on GitHub.</a
-		> Feel free to use it (preferably with reference)!
-	</p>
-	<p>
-		Source code is licensed under <a
+			rel="noreferrer">on GitHub</a
+		>, licensed under
+		<a
 			href="https://github.com/ClementTsang/clementtsang.github.io/blob/master/LICENSE"
 			target="_blank"
-			rel="noreferrer">the MIT license.</a
-		> .
+			rel="noreferrer">the MIT license</a
+		>.
 	</p>
 </div>
 
@@ -23,6 +21,12 @@
 
 		text-align: center;
 		row-gap: 1rem;
+
+		background-color: var(--main-background-two);
+		padding-top: 5rem;
+		padding-bottom: 6rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
 	}
 
 	p {
