@@ -1,6 +1,4 @@
 <script lang="ts">
-	import LinkedIn from './icons/LinkedIn.svelte';
-	import Mail from './icons/Mail.svelte';
 </script>
 
 <div class="body">
@@ -8,12 +6,15 @@
 	<hr class="divider-red" />
 
 	<div id="contact-body">
-		<p>Interested in getting in touch with me? Feel free to contact me here:</p>
-		<div id="contact-list">
-			<div class="contact-entry">
-				<Mail size={24} />
-				<p><a href="mailto:cjhtsang@uwaterloo.ca" target="_blank" rel="noreferrer">cjhtsang@uwaterloo.ca</a></p>
-			</div>
+		<p>
+			Need to get in touch with me for any reason? Feel free to contact me at <a
+				href="mailto:cjhtsang@uwaterloo.ca"
+				target="_blank"
+				rel="noreferrer">cjhtsang@uwaterloo.ca</a
+			> and I'll try to get back to you!
+		</p>
+		<div class="contact-entry">
+			<a id="hi-button" href="mailto:cjhtsang@uwaterloo.ca" target="_blank" rel="noreferrer"><p>Say hi</p></a>
 		</div>
 	</div>
 </div>
@@ -23,36 +24,33 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 90%;
+		width: 40rem;
 
 		text-align: center;
-	}
-
-	@media screen and (min-width: 1200px) {
-		.body {
-			width: 70%;
-			max-width: 1080px;
-		}
-	}
-
-	@media screen and (min-width: 1400px) {
-		.body {
-			width: 60%;
-			max-width: 1080px;
-		}
+		margin-bottom: 5rem;
 	}
 
 	#contact-body {
 		margin-top: 16px;
 	}
 
-	#contact-list {
-		margin-top: 24px;
+	#hi-button {
+		margin-top: 42px;
 
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		column-gap: 4rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		padding-top: 0.9rem;
+		padding-bottom: 0.9rem;
+		text-decoration: none;
+		border-width: 2px;
+		border-radius: 5px;
+		border-style: solid;
+		border-color: var(--red-accent);
+		background-color: var(--main-background);
+	}
+
+	#hi-button:hover {
+		background-color: var(--main-background-two);
 	}
 
 	.contact-entry {
@@ -60,7 +58,5 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		text-align: center;
-		column-gap: 4px;
 	}
 </style>
