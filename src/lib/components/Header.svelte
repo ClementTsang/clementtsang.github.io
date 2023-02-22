@@ -20,8 +20,10 @@
 			const header = document.getElementById('header');
 			if (target && section && header) {
 				// TODO: Fix the stuttering issue if you spam click a section.
+				// We offset by 1 for experience since it otherwise is just on the border of being
+				// selected by our header selector.
 				window.scrollTo({
-					top: section.offsetTop - header.offsetHeight,
+					top: section.offsetTop - header.offsetHeight + (target === 'experience' ? 1 : 0),
 					behavior: 'smooth'
 				});
 			}
