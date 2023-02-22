@@ -1,0 +1,86 @@
+h1 {
+	font-size: 5.25rem;
+	color: var(--black-text-colour);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	margin: 0;
+}
+
+h2 {
+	font-size: 2.8rem;
+	color: var(--text-colour);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	line-height: 5.5rem;
+	margin: 0;
+}
+
+h3 {
+	font-size: 2.1rem;
+	color: var(--text-colour);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	margin: 0;
+	margin-bottom: 2rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+	color: var(--text-colour);
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	margin: 0;
+	margin-bottom: 0.5rem;
+	line-height: 2rem;
+}
+
+h5 {
+	font-size: 1.1rem;
+	color: var(--text-colour);
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	margin: 0;
+	margin-bottom: 0.3rem;
+	line-height: 2rem;
+}
+
+p {
+	font-size: 1.1rem;
+	color: var(--text-colour);
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	line-height: 1.5rem;
+	margin: 0;
+}
+
+@supports (font-variation-settings: normal) {
+	h1 {
+		font-family: 'RalewayVariable', sans-serif;
+		font-variation-settings: 'wght' 400;
+	}
+
+	h2 {
+		font-family: 'RalewayVariable', sans-serif;
+		font-variation-settings: 'wght' 400;
+	}
+
+	h3 {
+		font-family: 'RalewayVariable', sans-serif;
+		font-variation-settings: 'wght' 500;
+	}
+
+	h4 {
+		font-family: 'QuicksandVariable', sans-serif;
+		font-variation-settings: 'wght' 600;
+	}
+
+	h5 {
+		font-family: 'QuicksandVariable', sans-serif;
+		font-variation-settings: 'wght' 600;
+	}
+
+	p {
+		font-family: 'QuicksandVariable', sans-serif;
+		font-variation-settings: 'wght' 400;
+	}
+}

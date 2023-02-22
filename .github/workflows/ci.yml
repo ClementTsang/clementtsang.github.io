@@ -1,0 +1,43 @@
+name: ci
+
+on:
+  workflow_dispatch:
+  pull_request:
+  workflow_call:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    name: 'Test building'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Run NPM install
+        run: |
+          npm install
+
+      - name: Lint site
+        run: |
+          npm run lint
+
+      - name: Run Qodana
+        continue-on-error: true
+        uses: JetBrains/qodana-action@main
+        env:
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+
+      - name: Test building site
+        run: |
+          npm run build
