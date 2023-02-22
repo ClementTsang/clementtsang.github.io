@@ -1,5 +1,7 @@
 <script lang="ts">
 	import type { ProjectInfo } from '../../types/Projects';
+	import GitHub from './icons/GitHub.svelte';
+	import Link from './icons/Link.svelte';
 
 	export let project: ProjectInfo;
 
@@ -12,6 +14,12 @@
 		<div class="card-details">
 			<h2>{project.name}</h2>
 			<p>{project.description}</p>
+			<div class="card-links">
+				<a href={project.sourceUrl} target="_blank" rel="noreferrer"><GitHub size={40} /></a>
+				{#if project.projectUrl}
+					<a href={project.projectUrl} target="_blank" rel="noreferrer"><Link size={40} /></a>
+				{/if}
+			</div>
 		</div>
 	</div>
 </div>
@@ -84,18 +92,34 @@
 		align-items: center;
 		text-align: center;
 
-		width: 90%;
+		width: 85%;
 		height: 90%;
 	}
 
 	h2 {
-		margin-bottom: 0.8rem;
+		margin-bottom: 1rem;
 		font-size: 1.8rem;
 		line-height: 1.8rem;
 	}
 
 	p {
-		font-size: 1.15rem;
+		font-size: 1.16rem;
 		line-height: 1.7rem;
+	}
+
+	.card-links {
+		display: flex;
+		flex-direction: row;
+		margin-top: 1.75rem;
+		column-gap: 1rem;
+	}
+
+	a,
+	a:visited {
+		color: var(--black-text-colour);
+	}
+
+	a:hover {
+		color: var(--dark-colour);
 	}
 </style>

@@ -11,7 +11,7 @@
 
 	const POLIFY: ProjectInfo = {
 		name: 'Polify',
-		description: 'Low-poly image generator library. Written in Rust, with some WebAssembly support.',
+		description: 'Low-poly image generator library with some WebAssembly support. Written in Rust.',
 		sourceUrl: 'https://github.com/ClementTsang/polify',
 		projectUrl: 'https://clementtsang.github.io/polify/'
 	};
@@ -31,7 +31,7 @@
 	const OPAL: ProjectInfo = {
 		name: 'opal',
 		description:
-			'A static website to convert between IPA and English words using a statically hosted SQLite database. Written in Rust + WASM.',
+			'A static WASM website to convert between IPA and English words using a statically hosted SQLite database. Written with Rust and JavaScript.',
 		sourceUrl: 'https://github.com/ClementTsang/opal',
 		projectUrl: 'https://clementtsang.github.io/opal/'
 	};
