@@ -71,7 +71,7 @@
 	#cards-section {
 		margin-top: 2rem;
 		display: grid;
-		grid-template-columns: 1;
+		grid-template-columns: repeat(1, 1fr);
 		grid-auto-rows: 300px;
 		row-gap: 3rem;
 	}

@@ -3,6 +3,8 @@
 
 	export let currentSection: string;
 
+	let isHamburgerOpen = false;
+
 	function scrollTo(event: MouseEvent) {
 		if (event.target) {
 			let element = event.target as HTMLElement;
@@ -35,20 +37,29 @@
 	function getClass(current: string, toCheck: string): string {
 		return current === toCheck ? 'nav-item on-section' : 'nav-item';
 	}
+
+	function handleHamburger(event: CustomEvent<{ isOpen: boolean }>) {
+		isHamburgerOpen = event.detail.isOpen;
+	}
 </script>
 
 <div id="header">
 	<nav>
 		<button class="nav-item" on:click={scrollTo}><p id="home">Clement Tsang</p></button>
-		<div class="right-nav">
+		<div id="right-nav">
 			<button class={getClass(currentSection, 'experience')} on:click={scrollTo}><p>Experience</p></button>
 			<button class={getClass(currentSection, 'projects')} on:click={scrollTo}><p>Projects</p></button>
 			<button class={getClass(currentSection, 'contact')} on:click={scrollTo}><p>Contact</p></button>
 		</div>
-		<div class="right-nav-mobile">
-			<Hamburger />
+		<div id="right-nav-mobile">
+			<Hamburger on:message={handleHamburger} />
 		</div>
 	</nav>
+	<div id="nav-menu-mobile" class={isHamburgerOpen ? 'open' : ''}>
+		<button class={getClass(currentSection, 'experience')} on:click={scrollTo}><p>Experience</p></button>
+		<button class={getClass(currentSection, 'projects')} on:click={scrollTo}><p>Projects</p></button>
+		<button class={getClass(currentSection, 'contact')} on:click={scrollTo}><p>Contact</p></button>
+	</div>
 </div>
 
 <style>
@@ -101,16 +112,20 @@
 		box-shadow: inset 0 -2px 0 0 var(--red-accent);
 	}
 
-	.right-nav-mobile {
+	#right-nav-mobile {
+		display: none;
+	}
+
+	#nav-menu-mobile {
 		display: none;
 	}
 
 	@media screen and (max-width: 767px) {
-		.right-nav {
+		#right-nav {
 			display: none;
 		}
 
-		.right-nav-mobile {
+		#right-nav-mobile {
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
@@ -121,6 +136,20 @@
 
 			height: auto;
 			width: 56px;
+		}
+
+		#nav-menu-mobile.open {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#nav-menu-mobile > .nav-item {
+			text-align: left;
+			padding: 6px 16px;
+		}
+
+		.on-section {
+			box-shadow: none;
 		}
 	}
 </style>

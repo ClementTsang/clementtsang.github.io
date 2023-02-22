@@ -1,9 +1,15 @@
 <script lang="ts">
+	import { createEventDispatcher } from 'svelte';
+
 	let isOpen = false;
 
+	const dispatch = createEventDispatcher<{ message: { isOpen: boolean } }>();
+
 	function toggleMenu() {
-		// TODO: Emit this to caller.
 		isOpen = !isOpen;
+		dispatch('message', {
+			isOpen: isOpen
+		});
 	}
 </script>
 
@@ -53,7 +59,7 @@
 		background-color: var(--text-colour);
 		color: var(--text-colour);
 
-		transition: transform 0.4s ease-in-out;
+		transition: 0.3s ease-in-out;
 	}
 
 	#line-top {
@@ -61,7 +67,7 @@
 	}
 
 	#line-mid {
-		transition: transform 0.2s ease-in-out;
+		transition: 0.3s ease-in-out;
 	}
 
 	#line-bot {
@@ -73,7 +79,7 @@
 	}
 
 	#line-mid.open {
-		opacity: none;
+		opacity: 0;
 		transform: scaleY(0);
 	}
 
