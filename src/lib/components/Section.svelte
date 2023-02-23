@@ -3,12 +3,16 @@
 	import { SectionType } from '../../types/SectionType';
 
 	export let id: string;
-	export let intersectionThreshold = 0;
 	export let intersectionCallback: (targetId: string, isIntersecting: boolean) => void;
 	export let sectionType: SectionType = SectionType.Main;
 
 	let self: Element;
 	let observer: IntersectionObserver | null = null;
+
+	// Not elegant but it works well enough I guess. Ideally we dynamically
+	// scale this based on window/section height but I'm not sure how to do
+	// that other than some ugly bindings.
+	let intersectionThreshold = sectionType == SectionType.Hero ? 0 : 0.05;
 
 	onMount(() => {
 		const header = document.getElementById('header');

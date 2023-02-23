@@ -9,14 +9,21 @@
 	import { onMount } from 'svelte';
 	import { SectionType } from '../types/SectionType';
 
+	// We store the "head" at the top, and every other element in reverse order.
 	let currentSectionMap: Map<string, boolean> = new Map();
 	let currentSection = '';
 
 	onMount(() => {
-		for (const node of document.getElementsByClassName('section')) {
+		let sections = [...document.getElementsByClassName('section')];
+		for (const node of sections) {
 			if (node.id == 'home') {
 				currentSectionMap.set(node.id, true);
-			} else {
+				break;
+			}
+		}
+
+		for (const node of sections.reverse()) {
+			if (node.id !== 'home') {
 				currentSectionMap.set(node.id, false);
 			}
 		}
@@ -41,13 +48,13 @@
 	<Section id="home" {intersectionCallback} sectionType={SectionType.Hero}>
 		<Greeter />
 	</Section>
-	<Section id="experience" intersectionThreshold={0.1} {intersectionCallback}>
+	<Section id="experience" {intersectionCallback}>
 		<Experience />
 	</Section>
-	<Section id="projects" intersectionThreshold={0.4} {intersectionCallback} sectionType={SectionType.Alt}>
+	<Section id="projects" {intersectionCallback} sectionType={SectionType.Alt}>
 		<Projects />
 	</Section>
-	<Section id="contact" intersectionThreshold={0.1} {intersectionCallback}>
+	<Section id="contact" {intersectionCallback}>
 		<Contact />
 	</Section>
 </div>
