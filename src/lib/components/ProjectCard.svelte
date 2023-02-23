@@ -15,9 +15,13 @@
 			<h2>{project.name}</h2>
 			<p>{project.description}</p>
 			<div class="card-links">
-				<a href={project.sourceUrl} target="_blank" rel="noreferrer"><GitHub size={40} /></a>
+				<a href={project.sourceUrl} target="_blank" rel="noreferrer" aria-label="Link to project GitHub page">
+					<GitHub size={40} />
+				</a>
 				{#if project.projectUrl}
-					<a href={project.projectUrl} target="_blank" rel="noreferrer"><Link size={40} /></a>
+					<a href={project.projectUrl} target="_blank" rel="noreferrer" aria-label="Link to project website">
+						<Link size={40} />
+					</a>
 				{/if}
 			</div>
 		</div>

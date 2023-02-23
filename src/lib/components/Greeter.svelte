@@ -5,17 +5,20 @@
 </script>
 
 <div class="body">
-	<!-- svelte-ignore a11y-missing-attribute -->
-	<img src="/assets/tri.webp" class="background" />
+	<img src="/assets/tri.webp" class="background" alt="" role="presentation" />
 	<div class="text">
 		<h1>Clement Tsang</h1>
 		<hr class="divider-black" />
 		<p>A developer with too many things on his backlog.</p>
 	</div>
 	<div id="greeter-icons">
-		<a href="/assets/resume.pdf" target="_blank" rel="noreferrer"><FileText size={34} /></a>
-		<a href="https://github.com/ClementTsang" target="_blank" rel="noreferrer"><GitHub size={34} /></a>
-		<a href="https://www.linkedin.com/in/clement-tsang" target="_blank" rel="noreferrer"><LinkedIn size={34} /></a>
+		<a href="/assets/resume.pdf" target="_blank" rel="noreferrer" aria-label="Open resume"><FileText size={34} /></a>
+		<a href="https://github.com/ClementTsang" target="_blank" rel="noreferrer" aria-label="Open GitHub">
+			<GitHub size={34} />
+		</a>
+		<a href="https://www.linkedin.com/in/clement-tsang" target="_blank" rel="noreferrer" aria-label="Open LinkedIn">
+			<LinkedIn size={34} />
+		</a>
 	</div>
 </div>
 

@@ -13,7 +13,7 @@
 	}
 </script>
 
-<button class="hamburger" on:click={toggleMenu}>
+<button class="hamburger" on:click={toggleMenu} aria-label="menu">
 	<div class="lines">
 		<span class={isOpen ? 'line open' : 'line'} id="line-top" />
 		<span class={isOpen ? 'line open' : 'line'} id="line-mid" />
