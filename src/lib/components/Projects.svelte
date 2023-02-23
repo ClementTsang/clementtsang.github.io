@@ -2,6 +2,8 @@
 	import type { ProjectInfo } from '../../types/Projects';
 	import ProjectCard from './ProjectCard.svelte';
 
+	export let shouldLoadImages = true;
+
 	const BOTTOM: ProjectInfo = {
 		name: 'bottom',
 		description: 'A cross-platform graphical process and system monitor, inspired by gotop, gtop, and htop.',
@@ -51,7 +53,7 @@
 	<hr class="divider-red" />
 	<div id="cards-section">
 		{#each PROJECTS as project}
-			<ProjectCard {project} />
+			<ProjectCard {project} showImages={shouldLoadImages} />
 		{/each}
 	</div>
 </div>

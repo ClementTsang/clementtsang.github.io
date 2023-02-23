@@ -12,8 +12,11 @@
 	// We store the "head" at the top, and every other element in reverse order.
 	let currentSectionMap: Map<string, boolean> = new Map();
 	let currentSection = '';
+	let shouldLoadImages = false;
 
 	onMount(() => {
+		shouldLoadImages = true;
+
 		let sections = [...document.getElementsByClassName('section')];
 		for (const node of sections) {
 			if (node.id == 'home') {
@@ -54,7 +57,7 @@
 		<Experience />
 	</Section>
 	<Section id="projects" {intersectionCallback} sectionType={SectionType.Alt}>
-		<Projects />
+		<Projects {shouldLoadImages} />
 	</Section>
 	<Section id="contact" {intersectionCallback}>
 		<Contact />
