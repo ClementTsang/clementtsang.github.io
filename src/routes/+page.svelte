@@ -43,7 +43,9 @@
 	}
 </script>
 
-<Header bind:currentSection />
+<div id="header-wrapper">
+	<Header bind:currentSection />
+</div>
 <div>
 	<Section id="home" {intersectionCallback} sectionType={SectionType.Hero}>
 		<Greeter />
@@ -61,4 +63,7 @@
 <Footer />
 
 <style>
+	#header-wrapper {
+		width: 100vw;
+	}
 </style>
