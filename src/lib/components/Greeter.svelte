@@ -35,6 +35,7 @@
 
 		width: 100vw;
 		height: 100vh;
+		min-height: 25rem;
 
 		display: flex;
 		flex-direction: column;
@@ -43,6 +44,12 @@
 		text-align: center;
 
 		background-color: var(--red-accent);
+	}
+
+	@media screen and (max-width: 650px) {
+		.body {
+			min-height: 35rem;
+		}
 	}
 
 	.text {
