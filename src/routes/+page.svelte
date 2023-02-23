@@ -48,13 +48,13 @@
 	<Section id="home" {intersectionCallback} sectionType={SectionType.Hero}>
 		<Greeter />
 	</Section>
-	<Section id="experience" intersectionThreshold={0.05} {intersectionCallback}>
+	<Section id="experience" {intersectionCallback}>
 		<Experience />
 	</Section>
-	<Section id="projects" intersectionThreshold={0.05} {intersectionCallback} sectionType={SectionType.Alt}>
+	<Section id="projects" {intersectionCallback} sectionType={SectionType.Alt}>
 		<Projects />
 	</Section>
-	<Section id="contact" intersectionThreshold={0.05} {intersectionCallback}>
+	<Section id="contact" {intersectionCallback}>
 		<Contact />
 	</Section>
 </div>
