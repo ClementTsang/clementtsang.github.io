@@ -68,6 +68,7 @@
 		top: 0;
 		background-color: var(--main-background);
 		z-index: 116116;
+		width: 100%;
 	}
 
 	#header > nav {
@@ -77,7 +78,6 @@
 
 		direction: ltr;
 		padding: 0;
-		width: 100vw;
 	}
 
 	.nav-item {
