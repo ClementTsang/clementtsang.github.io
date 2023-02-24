@@ -21,7 +21,7 @@
 			}
 
 			const section = document.getElementById(target);
-			const header = document.getElementById('header');
+			const header = document.getElementById('inner-header');
 			if (target && section && header) {
 				// TODO: Fix the stuttering issue if you spam click a section.
 				// We offset by 1 for experience since it otherwise is just on the border of being
@@ -41,10 +41,15 @@
 	function handleHamburger(event: CustomEvent<{ isOpen: boolean }>) {
 		isHamburgerOpen = event.detail.isOpen;
 	}
+
+	function hamScrollTo(event: MouseEvent) {
+		isHamburgerOpen = false;
+		scrollTo(event);
+	}
 </script>
 
 <div id="header">
-	<nav>
+	<nav id="inner-header">
 		<button class="nav-item" on:click={scrollTo}><p id="home">Clement Tsang</p></button>
 		<div id="right-nav">
 			<button class={getClass(currentSection, 'experience')} on:click={scrollTo}><p>Experience</p></button>
@@ -52,13 +57,13 @@
 			<button class={getClass(currentSection, 'contact')} on:click={scrollTo}><p>Contact</p></button>
 		</div>
 		<div id="right-nav-mobile">
-			<Hamburger on:message={handleHamburger} />
+			<Hamburger on:message={handleHamburger} isOpen={isHamburgerOpen} />
 		</div>
 	</nav>
 	<div id="nav-menu-mobile" class={isHamburgerOpen ? 'open' : ''}>
-		<button class={getClass(currentSection, 'experience')} on:click={scrollTo}><p>Experience</p></button>
-		<button class={getClass(currentSection, 'projects')} on:click={scrollTo}><p>Projects</p></button>
-		<button class={getClass(currentSection, 'contact')} on:click={scrollTo}><p>Contact</p></button>
+		<button class={getClass(currentSection, 'experience')} on:click={hamScrollTo}><p>Experience</p></button>
+		<button class={getClass(currentSection, 'projects')} on:click={hamScrollTo}><p>Projects</p></button>
+		<button class={getClass(currentSection, 'contact')} on:click={hamScrollTo}><p>Contact</p></button>
 	</div>
 </div>
 
@@ -71,7 +76,7 @@
 		width: 100%;
 	}
 
-	#header > nav {
+	#inner-header {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;

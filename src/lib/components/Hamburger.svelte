@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 
-	let isOpen = false;
+	export let isOpen = false;
 
 	const dispatch = createEventDispatcher<{ message: { isOpen: boolean } }>();
 
