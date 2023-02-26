@@ -10,11 +10,28 @@ env:
   GIT_EMAIL: '41898282+github-actions[bot]@users.noreply.github.com'
 
 jobs:
+  # Check if things should be skipped.
+  pre-job:
+    runs-on: ubuntu-latest
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - name: Check if this action should be skipped
+        id: skip_check
+        uses: fkirc/skip-duplicate-actions@f11521568414503656a5af807dc3018c012552c4 # v5.2.0
+        with:
+          skip_after_successful_duplicate: 'true'
+          paths: '[".github/workflows/**", "src/**", "routes/**", "styles/**", "types/**", "static/**", "package.json", "package-lock.json"]'
+          do_not_skip: '["workflow_dispatch", "push"]'
+
   ci:
+    needs: pre-job
+    if: ${{ needs.pre-job.outputs.should_skip != 'true' }}
     uses: ./.github/workflows/ci.yml
 
   build-and-deploy:
-    needs: [ci]
+    needs: [ci, pre-job]
+    if: ${{ needs.pre-job.outputs.should_skip != 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
