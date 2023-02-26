@@ -22,7 +22,7 @@ jobs:
         with:
           skip_after_successful_duplicate: 'true'
           paths: '[".github/workflows/**", "src/**", "routes/**", "styles/**", "types/**", "static/**", "package.json", "package-lock.json"]'
-          do_not_skip: '["workflow_dispatch", "push"]'
+          do_not_skip: '["workflow_dispatch"]'
 
   ci:
     name: 'CI'
