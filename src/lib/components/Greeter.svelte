@@ -5,7 +5,7 @@
 </script>
 
 <div class="body">
-	<img src="/assets/tri.webp" class="background" alt="" role="presentation" />
+	<img src="/assets/tri.webp" class="background" alt="" role="presentation" width="2000" height="1000" />
 	<div class="text">
 		<h1>Clement Tsang</h1>
 		<hr class="divider-black" />
