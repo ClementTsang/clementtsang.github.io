@@ -16,17 +16,31 @@
 		<link rel="manifest" href="./favicons/site.webmanifest" />
 
 		<link rel="preload" href="./assets/tri.webp" as="image" type="image/webp" />
+		<link
+			rel="preload"
+			href="./fonts/Quicksand/quicksand-latin-variable-wghtOnly-normal.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="./fonts/Raleway/raleway-latin-variable-wghtOnly-normal.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
 
 		<title>Clement Tsang</title>
 
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout.1bb25661.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_layout.a7c2a43b.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/_page.5d6caf8a.css" rel="stylesheet">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/start.5ca0a8e0.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/start.c136ab89.mjs">
 		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/index.3bd1f177.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/singletons.81465b5a.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/app.c17a09a6.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_layout.svelte.92e4afad.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/singletons.4e0665fa.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/app.27d0e78b.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_layout.svelte.051d18f1.mjs">
 		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_layout.ts.fb1865a6.mjs">
 		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/_layout.da46b06b.mjs">
 		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_page.svelte.7f095f0e.mjs">
@@ -216,7 +230,7 @@
 			
 			<script>
 				{
-					__sveltekit_1vq9nav = {
+					__sveltekit_1gwylmk = {
 						env: {},
 						assets: new URL(".", location.href).pathname.replace(/^\/$/, ''),
 						element: document.currentScript.parentElement
@@ -225,10 +239,10 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.5ca0a8e0.mjs"),
-						import("./_app/immutable/entry/app.c17a09a6.mjs")
+						import("./_app/immutable/entry/start.c136ab89.mjs"),
+						import("./_app/immutable/entry/app.27d0e78b.mjs")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_1vq9nav.element, {
+						kit.start(app, __sveltekit_1gwylmk.element, {
 							node_ids: [0, 2],
 							data,
 							form: null,
