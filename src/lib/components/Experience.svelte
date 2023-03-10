@@ -25,7 +25,7 @@
 	const DATADOG_INTERN: Experience = {
 		name: 'Datadog',
 		dates: ['May 2021 - Aug 2021'],
-		location: 'New York, United States',
+		location: 'Ontario, Canada',
 		link: { name: 'Datadog', url: 'https://www.datadoghq.com/' },
 		position: 'Software Engineering Intern - Metrics',
 		description:
