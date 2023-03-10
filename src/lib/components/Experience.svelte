@@ -9,7 +9,7 @@
 		link: { name: 'Datadog', url: 'https://www.datadoghq.com/' },
 		position: 'Software Engineer - Metrics',
 		description:
-			'Currently working as a software engineer on the Metrics team dealing with the development and operations of software regarding the storage and querying of time series data.'
+			'Currently working as a software engineer on the Metrics team on the development and operation of software to store and query time series data.'
 	};
 
 	const SHOPIFY: Experience = {
