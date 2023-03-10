@@ -8,7 +8,8 @@
 		location: 'New York, United States',
 		link: { name: 'Datadog', url: 'https://www.datadoghq.com/' },
 		position: 'Software Engineer - Metrics',
-		description: 'Currently work as a software engineer regarding the storage of timeseries data.'
+		description:
+			'Currently working as a software engineer in the Metrics team on handling the storage and querying of time series data.'
 	};
 
 	const SHOPIFY: Experience = {
