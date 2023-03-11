@@ -8,7 +8,8 @@
 		location: 'New York, United States',
 		link: { name: 'Datadog', url: 'https://www.datadoghq.com/' },
 		position: 'Software Engineer - Metrics',
-		description: 'Currently work as a software engineer regarding the storage of timeseries data.'
+		description:
+			'Currently working as a software engineer on the Metrics team on the development and operation of software to store and query time series data.'
 	};
 
 	const SHOPIFY: Experience = {
@@ -24,7 +25,7 @@
 	const DATADOG_INTERN: Experience = {
 		name: 'Datadog',
 		dates: ['May 2021 - Aug 2021'],
-		location: 'New York, United States',
+		location: 'Ontario, Canada',
 		link: { name: 'Datadog', url: 'https://www.datadoghq.com/' },
 		position: 'Software Engineering Intern - Metrics',
 		description:
