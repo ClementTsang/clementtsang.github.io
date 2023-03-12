@@ -62,8 +62,8 @@
 
 <style>
 	.non-hero {
-		padding-top: 7rem;
-		padding-bottom: 7rem;
+		padding-top: 8.2rem;
+		padding-bottom: 8.2rem;
 
 		display: flex;
 		align-items: center;
