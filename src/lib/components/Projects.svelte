@@ -13,7 +13,7 @@
 
 	const POLIFY: ProjectInfo = {
 		name: 'Polify',
-		description: 'Low-poly image generator library with some WebAssembly support. Written in Rust.',
+		description: 'Low-poly image generator library with WebAssembly support and website. Written in Rust.',
 		sourceUrl: 'https://github.com/ClementTsang/polify',
 		projectUrl: 'https://clementtsang.github.io/polify/'
 	};
