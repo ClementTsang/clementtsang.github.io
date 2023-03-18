@@ -26,7 +26,7 @@
 
 	const BANSHEE: ProjectInfo = {
 		name: 'Banshee',
-		description: 'An osu!-inspired rhythm game featuring automatic map generation based on audio, written in C++.',
+		description: 'An osu!-inspired rhythm game featuring automatic map generation based on audio. Written in C++.',
 		sourceUrl: 'https://github.com/ClementTsang/banshee'
 	};
 
