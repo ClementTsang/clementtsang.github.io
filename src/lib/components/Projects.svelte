@@ -6,7 +6,8 @@
 
 	const BOTTOM: ProjectInfo = {
 		name: 'bottom',
-		description: 'A cross-platform graphical process and system monitor, inspired by gotop, gtop, and htop.',
+		description:
+			'A cross-platform graphical process and system monitor, inspired by gotop, gtop, and htop. Written in Rust.',
 		sourceUrl: 'https://github.com/ClementTsang/bottom',
 		projectUrl: 'https://clementtsang.github.io/bottom/'
 	};
