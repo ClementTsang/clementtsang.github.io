@@ -46,7 +46,7 @@
 		sourceUrl: 'https://github.com/ClementTsang/Transcripter'
 	};
 
-	const PROJECTS = [BOTTOM, POLIFY, RUSTCC, BANSHEE, OPAL, TRANSCRIPTER];
+	const PROJECTS = [BOTTOM, POLIFY, RUSTCC, OPAL, TRANSCRIPTER, BANSHEE];
 </script>
 
 <div class="body">
