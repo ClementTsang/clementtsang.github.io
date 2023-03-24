@@ -9,7 +9,7 @@
 	<div class="text">
 		<h1>Clement Tsang</h1>
 		<hr class="divider-black" />
-		<p>A developer with too many ideas on his backlog.</p>
+		<p>A developer with too many ideas on the backlog.</p>
 	</div>
 	<div id="greeter-icons">
 		<a href="/assets/resume.pdf" target="_blank" rel="noreferrer" aria-label="Open resume"><FileText size={34} /></a>
