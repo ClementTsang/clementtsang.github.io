@@ -70,7 +70,7 @@
 	}
 
 	p {
-		font-size: 1.25rem;
+		font-size: 1.3rem;
 		font-weight: 400;
 		margin: 0rem;
 		color: var(--black-text-colour);
