@@ -36,14 +36,14 @@
 		<meta http-equiv="content-security-policy" content="">
 		<link href="./_app/immutable/assets/_layout.7513ba19.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/_page.2af951c8.css" rel="stylesheet">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/start.dcb823ed.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/index.3bd1f177.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/singletons.e104386c.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/app.67f5ee47.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_layout.svelte.0bc8113a.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_layout.ts.fb1865a6.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/_layout.da46b06b.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_page.svelte.b11aee1f.mjs">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.1a920b60.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.8052287d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.44350dc4.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.629d3f8a.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.b3e589c4.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.ts.984db11e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_page.svelte.c22e38dd.js">
 	</head>
 
 	<body data-sveltekit-preload-data="hover">
@@ -230,19 +230,19 @@
 			
 			<script>
 				{
-					__sveltekit_1xy0t09 = {
+					__sveltekit_rwz3v9 = {
 						env: {},
-						assets: new URL(".", location.href).pathname.replace(/^\/$/, ''),
+						base: new URL(".", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
 					};
 
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.dcb823ed.mjs"),
-						import("./_app/immutable/entry/app.67f5ee47.mjs")
+						import("./_app/immutable/entry/start.1a920b60.js"),
+						import("./_app/immutable/entry/app.629d3f8a.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_1xy0t09.element, {
+						kit.start(app, __sveltekit_rwz3v9.element, {
 							node_ids: [0, 2],
 							data,
 							form: null,
