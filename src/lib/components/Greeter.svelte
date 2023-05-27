@@ -49,9 +49,9 @@
 		background-color: var(--red-accent);
 	}
 
-	@supports (height: 100dvh) {
+	@supports (height: 100svh) {
 		.body {
-			height: 100dvh;
+			height: 100svh;
 		}
 	}
 
