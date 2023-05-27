@@ -49,6 +49,12 @@
 		background-color: var(--red-accent);
 	}
 
+	@supports (height: 100dvh) {
+		.body {
+			height: 100dvh;
+		}
+	}
+
 	@media screen and (max-width: 650px) {
 		.body {
 			min-height: 35rem;
