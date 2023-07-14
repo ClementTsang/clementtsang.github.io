@@ -70,7 +70,7 @@
 		location: 'Ontario, Canada',
 		link: { name: 'University of Waterloo', url: 'https://uwaterloo.ca/' },
 		position: 'Bachelor of Computer Science',
-		description: 'Studied and graduated from the University of Waterloo with distinction.'
+		description: 'Studied computer science at the University of Waterloo, graduating with distinction.'
 	};
 </script>
 
