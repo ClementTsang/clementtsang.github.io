@@ -7,7 +7,7 @@
 
 	<div id="contact-body">
 		<p>
-			Need to get in touch with me for any reason? Feel free to contact me at <a
+			Need to get in touch with me? Feel free to contact me at <a
 				href="mailto:cjhtsang@uwaterloo.ca"
 				target="_blank"
 				rel="noreferrer">cjhtsang@uwaterloo.ca</a
