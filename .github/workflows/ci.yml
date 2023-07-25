@@ -48,12 +48,6 @@ jobs:
         run: |
           npm run lint
 
-      - name: Run Qodana
-        continue-on-error: true
-        uses: JetBrains/qodana-action@main
-        env:
-          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
-
       - name: Test building site
         run: |
           npm run build
