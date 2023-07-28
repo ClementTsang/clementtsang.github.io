@@ -9,7 +9,7 @@
 		link: { name: 'Datadog', url: 'https://www.datadoghq.com/' },
 		position: 'Software Engineer - Metrics',
 		description:
-			'Currently working as a software engineer on the Metrics team on the development and operation of software to store and query time series data.'
+			'Currently working as a software engineer on the Metrics team on the development, maintenance, and operation of services to store and query time series data.'
 	};
 
 	const SHOPIFY: Experience = {
@@ -39,7 +39,7 @@
 		link: { name: 'Wish', url: 'https://www.wish.com/companyinfo' },
 		position: 'Software Engineering Intern',
 		description:
-			'Worked on the Wish Marketplace team as a mobile and backend developer for the Wish Local app, introducing new features and fixing bugs.'
+			'Worked on the Wish Marketplace team as a mobile app and backend developer for the Wish Local app, introducing new features and fixing bugs.'
 	};
 
 	const YUJA_FULL_STACK: Experience = {
@@ -49,7 +49,7 @@
 		link: { name: 'YuJa', url: 'https://www.yuja.com/' },
 		position: 'Software Developer - Full Stack',
 		description:
-			'Worked as a full stack software developer for a new product, Panorama, automatically creating accessible documents for files uploaded to LMS sites like D2L and Blackboard.'
+			'Worked as a full stack software developer for Panorama, a new product to automatically create accessible documents for files uploaded to learning management systems such as D2L and Blackboard.'
 	};
 
 	const YUJA_QA: Experience = {
