@@ -2,7 +2,7 @@
 	export let size: number | string = 24;
 </script>
 
-<!--Icons are from https://lucide.dev/-->
+<!-- Icon is from https://lucide.dev/icons/calendar -->
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	width={size}
@@ -15,8 +15,8 @@
 	stroke-linecap="round"
 	stroke-linejoin="round"
 >
-	<rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-	<line x1="16" y1="2" x2="16" y2="6" />
-	<line x1="8" y1="2" x2="8" y2="6" />
-	<line x1="3" y1="10" x2="21" y2="10" />
+	<path d="M8 2v4" />
+	<path d="M16 2v4" />
+	<rect width="18" height="18" x="3" y="4" rx="2" />
+	<path d="M3 10h18" />
 </svg>
