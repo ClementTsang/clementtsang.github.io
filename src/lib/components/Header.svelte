@@ -1,9 +1,13 @@
 <script lang="ts">
 	import Hamburger from './Hamburger.svelte';
 
-	export let currentSection: string;
+	interface Props {
+		currentSection: string;
+	}
 
-	let isHamburgerOpen = false;
+	let { currentSection }: Props = $props();
+
+	let isHamburgerOpen = $state(false);
 
 	function scrollTo(event: MouseEvent) {
 		if (event.target) {
@@ -50,20 +54,20 @@
 
 <div id="header">
 	<nav id="inner-header">
-		<button class="nav-item" on:click={scrollTo}><p id="home">Clement Tsang</p></button>
+		<button class="nav-item" onclick={scrollTo}><p id="home">Clement Tsang</p></button>
 		<div id="right-nav">
-			<button class={getClass(currentSection, 'experience')} on:click={scrollTo}><p>Experience</p></button>
-			<button class={getClass(currentSection, 'projects')} on:click={scrollTo}><p>Projects</p></button>
-			<button class={getClass(currentSection, 'contact')} on:click={scrollTo}><p>Contact</p></button>
+			<button class={getClass(currentSection, 'experience')} onclick={scrollTo}><p>Experience</p></button>
+			<button class={getClass(currentSection, 'projects')} onclick={scrollTo}><p>Projects</p></button>
+			<button class={getClass(currentSection, 'contact')} onclick={scrollTo}><p>Contact</p></button>
 		</div>
 		<div id="right-nav-mobile">
 			<Hamburger on:message={handleHamburger} isOpen={isHamburgerOpen} />
 		</div>
 	</nav>
 	<div id="nav-menu-mobile" class={isHamburgerOpen ? 'open' : ''}>
-		<button class={getClass(currentSection, 'experience')} on:click={hamScrollTo}><p>Experience</p></button>
-		<button class={getClass(currentSection, 'projects')} on:click={hamScrollTo}><p>Projects</p></button>
-		<button class={getClass(currentSection, 'contact')} on:click={hamScrollTo}><p>Contact</p></button>
+		<button class={getClass(currentSection, 'experience')} onclick={hamScrollTo}><p>Experience</p></button>
+		<button class={getClass(currentSection, 'projects')} onclick={hamScrollTo}><p>Projects</p></button>
+		<button class={getClass(currentSection, 'contact')} onclick={hamScrollTo}><p>Contact</p></button>
 	</div>
 </div>
 
