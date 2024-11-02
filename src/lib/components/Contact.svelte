@@ -7,9 +7,9 @@
 
 	<div id="contact-body">
 		<p>
-			Need to get in touch with me? Reach out at <a href="mailto:cjhtsang@uwaterloo.ca" target="_blank" rel="noreferrer"
-				>cjhtsang@uwaterloo.ca</a
-			> and I'll try to get back to you!
+			Need to get in touch with me? Reach out at
+			<a href="mailto:cjhtsang@uwaterloo.ca" target="_blank" rel="noreferrer">cjhtsang@uwaterloo.ca</a>
+			and I'll try to get back to you as fast as I can!
 		</p>
 		<div class="contact-entry">
 			<a id="hi-button" href="mailto:cjhtsang@uwaterloo.ca" target="_blank" rel="noreferrer"><p>Say hi</p></a>

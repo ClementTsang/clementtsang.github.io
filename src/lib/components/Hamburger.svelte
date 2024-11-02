@@ -15,9 +15,9 @@
 
 <button class="hamburger" on:click={toggleMenu} aria-label="menu">
 	<div class="lines">
-		<span class={isOpen ? 'line open' : 'line'} id="line-top" />
-		<span class={isOpen ? 'line open' : 'line'} id="line-mid" />
-		<span class={isOpen ? 'line open' : 'line'} id="line-bot" />
+		<span class={isOpen ? 'line open' : 'line'} id="line-top"></span>
+		<span class={isOpen ? 'line open' : 'line'} id="line-mid"></span>
+		<span class={isOpen ? 'line open' : 'line'} id="line-bot"></span>
 	</div>
 </button>
 
