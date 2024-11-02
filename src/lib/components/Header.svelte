@@ -5,7 +5,7 @@
 		currentSection: string;
 	}
 
-	let { currentSection }: Props = $props();
+	let { currentSection = $bindable() }: Props = $props();
 
 	let isHamburgerOpen = $state(false);
 

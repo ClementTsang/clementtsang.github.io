@@ -11,8 +11,8 @@
 
 	// We store the "head" at the top, and every other element in reverse order.
 	let currentSectionMap: Map<string, boolean> = new Map();
-	let currentSection = '';
-	let shouldLoadImages = false;
+	let currentSection = $state('');
+	let shouldLoadImages = $state(false);
 
 	onMount(() => {
 		shouldLoadImages = true;
