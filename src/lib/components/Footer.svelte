@@ -1,6 +1,6 @@
 <div class="body">
 	<p>
-		<a href="https://github.com/ClementTsang/clementtsang.github.io" target="_blank" rel="noreferrer"
+		<a href="https://codeberg.org/ClementTsang/clementtsang.github.io" target="_blank" rel="noreferrer"
 			>Designed and built by Clement Tsang</a
 		>
 	</p>
