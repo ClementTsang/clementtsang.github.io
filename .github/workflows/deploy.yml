@@ -20,7 +20,7 @@ jobs:
         id: skip_check
         uses: ClementTsang/skip-duplicate-actions@41b0a75f656d455934ffa6a46b779d8d996ac47c
         with:
-          skip_after_successful_duplicate: "true"
+          skip_after_successful_duplicate: 'true'
           paths: '[".github/workflows/**", "src/**", "routes/**", "styles/**", "types/**", "static/**", "package.json", "package-lock.json"]'
           do_not_skip: '["workflow_dispatch"]'
 
