@@ -7,27 +7,27 @@
 	const BOTTOM: ProjectInfo = {
 		name: 'bottom',
 		description:
-			'A cross-platform graphical process and system monitor, inspired by gotop, gtop, and htop. Written in Rust.',
+			'A cross-platform graphical process and system monitor, inspired by gotop, gtop, and htop. Written with Rust.',
 		sourceUrl: 'https://github.com/ClementTsang/bottom',
-		projectUrl: 'https://clementtsang.github.io/bottom/'
+		projectUrl: 'https://bottom.pages.dev/'
 	};
 
 	const POLIFY: ProjectInfo = {
 		name: 'Polify',
-		description: 'Low-poly image generator library with WebAssembly support and website. Written in Rust.',
+		description: 'Low-poly image generator library with WebAssembly support and website. Written with Rust.',
 		sourceUrl: 'https://github.com/ClementTsang/polify',
 		projectUrl: 'https://clementtsang.github.io/polify/'
 	};
 
 	const RUSTCC: ProjectInfo = {
 		name: 'rustcc',
-		description: 'A simple C compiler, written in Rust.',
+		description: 'A simple C compiler, written with Rust.',
 		sourceUrl: 'https://github.com/ClementTsang/rustcc'
 	};
 
 	const BANSHEE: ProjectInfo = {
 		name: 'Banshee',
-		description: 'An osu!-inspired rhythm game featuring automatic map generation based on audio. Written in C++.',
+		description: 'An osu!-inspired rhythm game featuring automatic map generation based on audio. Written with C++.',
 		sourceUrl: 'https://github.com/ClementTsang/banshee'
 	};
 
@@ -42,11 +42,24 @@
 	const TRANSCRIPTER: ProjectInfo = {
 		name: 'Transcripter',
 		description:
-			'A simple, offline program to automatically create transcriptions of video and audio files. Written in F#.',
+			'A simple, offline program to automatically create transcriptions of video and audio files. Written with F#.',
 		sourceUrl: 'https://github.com/ClementTsang/Transcripter'
 	};
 
-	const PROJECTS = [BOTTOM, POLIFY, RUSTCC, OPAL, TRANSCRIPTER, BANSHEE];
+	const BARISTA: ProjectInfo = {
+		name: 'Barista',
+		description: "A small tray frontend for macOS's caffeinate to keep your device awake. Written with Swift.",
+		sourceUrl: 'https://github.com/ClementTsang/Barista'
+	};
+
+	// TODO: Probably remove this later for other projects.
+	const DIRCS: ProjectInfo = {
+		name: 'Dircs',
+		description: 'A small cross-platform utility to get the hash of a file or directory. Written with Rust.',
+		sourceUrl: 'https://github.com/ClementTsang/dircs'
+	};
+
+	const PROJECTS = [BOTTOM, POLIFY, RUSTCC, BARISTA, OPAL, TRANSCRIPTER, BANSHEE, DIRCS];
 </script>
 
 <div class="body">
