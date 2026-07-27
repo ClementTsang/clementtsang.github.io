@@ -5,9 +5,9 @@ on:
     branches:
       - main
 
-env:
-  GIT_USER: 'github-actions[bot]'
-  GIT_EMAIL: '41898282+github-actions[bot]@users.noreply.github.com'
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   # Check if things should be skipped.
@@ -20,7 +20,7 @@ jobs:
         id: skip_check
         uses: ClementTsang/skip-duplicate-actions@41b0a75f656d455934ffa6a46b779d8d996ac47c
         with:
-          skip_after_successful_duplicate: 'true'
+          skip_after_successful_duplicate: "true"
           paths: '[".github/workflows/**", "src/**", "routes/**", "styles/**", "types/**", "static/**", "package.json", "package-lock.json"]'
           do_not_skip: '["workflow_dispatch"]'
 
@@ -33,28 +33,29 @@ jobs:
     needs: [ci, pre-job]
     if: ${{ needs.pre-job.outputs.should_skip != 'true' }}
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: 1
 
-      - name: Configure git user and email
-        run: |
-          git config --global user.name ${GIT_USER}
-          git config --global user.email ${GIT_EMAIL}
-          echo Name: $(git config --get user.name)
-          echo Email: $(git config --get user.email)
-
       - name: npm install and build
         run: |
           npm install
           npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@bd8c6b06eba6b3d25d72b7a1767993c0aeee42e7 #v3.9.2
-        if: github.ref == 'refs/heads/main'
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          publish_branch: gh-pages
+          path: ./build
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
